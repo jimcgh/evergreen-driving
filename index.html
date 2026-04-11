@@ -37,8 +37,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 		
-		<!-- Tailwind CSS -->
-		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+		<!-- Tailwind CSS v3 (Supports custom bracket classes perfectly) -->
+		<script src="https://cdn.tailwindcss.com"></script>
 		
 		<style>
 			html { scroll-padding-top: 80px; }
@@ -453,7 +453,7 @@
 					"step2_title": "Practice", "step2_desc": "Structured lessons focusing on ICBC safety standards and road rules.",
 					"step3_title": "Mock Test", "step3_desc": "Simulated road tests conducted on actual ICBC exam routes.",
 					"step4_title": "Success", "step4_desc": "Pass your test with confidence and receive your BC driver's license.",
-					"contact_title": "Ready to Start?", "contact_desc": "Contact Evergreen today to book your evaluation or lesson package."
+					"contact_title": "Ready to Start?", "contact_desc": "Contact Evergreen today to book your evaluation or lesson package.",
 					"hero_h1_seo": "PREMIER DRIVING SCHOOL IN RICHMOND & VANCOUVER"
 				},
 				"zh-TW": {
@@ -479,7 +479,7 @@
 					"step2_title": "練習培訓", "step2_desc": "專注於 ICBC 標準的結構化課程。",
 					"step3_title": "模擬路考", "step3_desc": "在實際考試路線上進行模擬測試。",
 					"step4_title": "考取證照", "step4_desc": "充滿自信地通過測試並獲得駕照。",
-					"contact_title": "準備好了嗎？", "contact_desc": "聯繫 Evergreen 預約您的第一堂課。"
+					"contact_title": "準備好了嗎？", "contact_desc": "聯繫 Evergreen 預約您的第一堂課。",
 					"hero_h1_seo": "列治文與溫哥華首選駕訓班"
 				},
 				"zh-CN": {
@@ -505,7 +505,7 @@
 					"step2_title": "练习培训", "step2_desc": "专注于 ICBC 标准的结构化课程。",
 					"step3_title": "模拟路考", "step3_desc": "在实际考试路线上进行模拟测试。",
 					"step4_title": "考取证照", "step4_desc": "充满自信地通过测试并获得驾照。",
-					"contact_title": "准备好了吗？", "contact_desc": "联系 Evergreen 预约您的第一堂课。"
+					"contact_title": "准备好了吗？", "contact_desc": "联系 Evergreen 预约您的第一堂课。",
 					"hero_h1_seo": "列治文与温哥华首选驾训班"
 				}
 			};
@@ -590,8 +590,8 @@
 				if (menu && !menu.contains(e.target) && menuBtn && !menuBtn.contains(e.target)) closeMobileMenu();
 			});
 			
-			document.getElementById('year').innerText = "2019";
+			document.getElementById('year').innerText = "2019 - " + new Date().getFullYear();
 			window.onload = applyLanguage;
 		</script>
 	</body>
-</html>	
+</html>
