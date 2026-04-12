@@ -430,8 +430,19 @@
 			</div>
 		</section>
 		
-		<!-- DO NOT DELETE: Safelist for JavaScript Review Marquee -->
-		<div class="hidden text-yellow-400 mt-auto pt-6 w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-black text-sm text-slate-600 text-[15px] italic leading-relaxed scale-105 transition-transform origin-left"></div>
+		<!-- SAFELIST FOR TAILWIND COMPILER (Hidden) -->
+		<div class="hidden">
+			<div class="review-card group">
+				<div class="flex text-yellow-400 mb-4 group-hover:scale-105 transition-transform origin-left">
+					<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+				</div>
+				<p class="text-slate-600 text-[15px] italic leading-relaxed">Test</p>
+				<div class="mt-auto pt-6 flex items-center gap-3">
+					<div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-black text-sm">A</div>
+					<p class="font-bold text-slate-900">Name</p>
+				</div>
+			</div>
+		</div>
 		
 		<footer class="bg-slate-950 py-10 text-center border-t border-white/5">
 			<p class="text-slate-500 text-xs font-bold uppercase tracking-widest">© <span id="year"></span> Evergreen Driving School. All Rights Reserved.</p>
