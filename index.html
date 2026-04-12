@@ -14,6 +14,9 @@
 		
 		<meta name="description" content="Master the road with Evergreen Driving School. We offer professional Class 5 and Class 7 driving lessons in Richmond, Vancouver and Burnaby. High pass rates and ICBC-approved instruction. Professional driving instruction, comprehensive mock tests, and high pass rates for Class 5 & 7. 列治文/溫哥華專業華人駕訓班，高通過率，ICBC認證教練。">
 		
+		<!-- Preload Hero Image for faster LCP -->
+		<link rel="preload" as="image" href="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=80">
+		
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
@@ -32,13 +35,16 @@
 			}
 		</script>
 		
-		<!-- Fonts -->
+		<!-- Optimized Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+		<noscript>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+		</noscript>
 		
-		<!-- Tailwind CSS -->
-		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="style.css">
 		
 		<style>
 			html { scroll-padding-top: 80px; }
@@ -423,6 +429,9 @@
 				</div>
 			</div>
 		</section>
+		
+		<!-- DO NOT DELETE: Safelist for JavaScript Review Marquee -->
+		<div class="hidden text-yellow-400 mt-auto pt-6 w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-black text-sm text-slate-600 text-[15px] italic leading-relaxed scale-105 transition-transform origin-left"></div>
 		
 		<footer class="bg-slate-950 py-10 text-center border-t border-white/5">
 			<p class="text-slate-500 text-xs font-bold uppercase tracking-widest">© <span id="year"></span> Evergreen Driving School. All Rights Reserved.</p>
