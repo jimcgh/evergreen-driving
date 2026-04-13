@@ -24,7 +24,7 @@
 				"name": "Evergreen Driving School",
 				"description": "Professional driving instruction in Richmond, Vancouver and Burnaby. ICBC approved Class 5 & 7 prep.",
 				"url": "https://evergreendrivingschool.ca",
-				"telephone": "+17783886129",
+				"telephone": "+16725141176",
 				"areaServed": ["Richmond", "Vancouver", "Burnaby"],
 				"address": {
 					"@type": "PostalAddress",
@@ -129,30 +129,30 @@
 					
 					<!-- Desktop Menu (Pushed fully to the Right Side) -->
 					<div class="hidden md:flex items-center justify-end flex-1 space-x-8">
-						<button data-nosnippet onclick="scrollToSection('home')" class="text-slate-600 hover:text-indigo-600 font-semibold transition-colors" data-i18n="nav_home">Home</button>
-						<button data-nosnippet onclick="scrollToSection('features')" class="text-slate-600 hover:text-indigo-600 font-semibold transition-colors" data-i18n="nav_why">Why Us</button>
-						<button data-nosnippet onclick="scrollToSection('prep')" class="text-slate-600 hover:text-indigo-600 font-semibold transition-colors" data-i18n="nav_prep">ICBC Prep</button>
-						<button data-nosnippet onclick="scrollToSection('process')" class="text-slate-600 hover:text-indigo-600 font-semibold transition-colors" data-i18n="nav_process">Process</button>
+						<button data-nosnippet onclick="scrollToSection('home')" class="text-slate-600 hover:text-indigo-600 font-semibold transition-colors cursor-pointer" data-i18n="nav_home">Home</button>
+						<button data-nosnippet onclick="scrollToSection('features')" class="text-slate-600 hover:text-indigo-600 font-semibold transition-colors cursor-pointer" data-i18n="nav_why">Why Us</button>
+						<button data-nosnippet onclick="scrollToSection('prep')" class="text-slate-600 hover:text-indigo-600 font-semibold transition-colors cursor-pointer" data-i18n="nav_prep">ICBC Prep</button>
+						<button data-nosnippet onclick="scrollToSection('process')" class="text-slate-600 hover:text-indigo-600 font-semibold transition-colors cursor-pointer" data-i18n="nav_process">Process</button>
 						
 						<div class="relative group">
-							<button class="flex items-center gap-2 text-slate-500 hover:text-slate-900 bg-slate-100 px-4 py-2 rounded-full text-sm font-bold transition-all">
+							<button class="flex items-center gap-2 text-slate-500 hover:text-slate-900 bg-slate-100 px-4 py-2 rounded-full text-sm font-bold transition-all cursor-pointer">
 								<span id="lang-indicator">English</span>
 							</button>
 							<div class="lang-menu absolute right-0 mt-2 w-40 bg-white border border-slate-100 rounded-2xl shadow-xl z-50 overflow-hidden">
-								<button data-nosnippet onclick="setLanguage('en')" class="w-full text-left px-4 py-3 hover:bg-slate-50 text-sm font-bold text-slate-700">English</button>
-								<button data-nosnippet onclick="setLanguage('zh-TW')" class="w-full text-left px-4 py-3 hover:bg-slate-50 text-sm font-bold text-slate-700">繁體中文</button>
-								<button data-nosnippet onclick="setLanguage('zh-CN')" class="w-full text-left px-4 py-3 hover:bg-slate-50 text-sm font-bold text-slate-700">简体中文</button>
+								<button data-nosnippet onclick="setLanguage('en')" class="w-full text-left px-4 py-3 hover:bg-slate-50 text-sm font-bold text-slate-700 cursor-pointer">English</button>
+								<button data-nosnippet onclick="setLanguage('zh-TW')" class="w-full text-left px-4 py-3 hover:bg-slate-50 text-sm font-bold text-slate-700 cursor-pointer">繁體中文</button>
+								<button data-nosnippet onclick="setLanguage('zh-CN')" class="w-full text-left px-4 py-3 hover:bg-slate-50 text-sm font-bold text-slate-700 cursor-pointer">简体中文</button>
 							</div>
 						</div>
 						
-						<button data-nosnippet onclick="scrollToSection('contact')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-7 py-3 rounded-full font-bold transition-all shadow-lg shadow-indigo-100" data-i18n="nav_book">
+						<button data-nosnippet onclick="scrollToSection('contact')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-7 py-3 rounded-full font-bold transition-all shadow-lg shadow-indigo-100 cursor-pointer" data-i18n="nav_book">
 							Book Now
 						</button>
 					</div>
 					
 					<!-- Mobile Menu Button (Right Side on small screens) -->
 					<div class="md:hidden flex justify-end">
-						<button id="mobile-menu-btn" aria-label="Open Menu" class="text-slate-900 p-2">
+						<button id="mobile-menu-btn" aria-label="Open Menu" class="text-slate-900 p-2 cursor-pointer">
 							<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
 						</button>
 					</div>
@@ -161,22 +161,21 @@
 			
 			<!-- Mobile Dropdown Panel -->
 			<div id="mobile-menu" class="hidden bg-white border-t border-slate-100 px-6 py-8 space-y-4 shadow-xl absolute w-full z-50">
-				<button data-nosnippet onclick="scrollToSection('home')" class="block w-full text-left text-lg font-bold text-slate-800" data-i18n="nav_home">Home</button>
-				<button data-nosnippet onclick="scrollToSection('features')" class="block w-full text-left text-lg font-bold text-slate-800" data-i18n="nav_why">Why Us</button>
-				<button data-nosnippet onclick="scrollToSection('prep')" class="block w-full text-left text-lg font-bold text-slate-800" data-i18n="nav_prep">ICBC Prep</button>
-				<button data-nosnippet onclick="scrollToSection('process')" class="block w-full text-left text-lg font-bold text-slate-800" data-i18n="nav_process">Process</button>
+				<button data-nosnippet onclick="scrollToSection('home')" class="block w-full text-left text-lg font-bold text-slate-800 cursor-pointer" data-i18n="nav_home">Home</button>
+				<button data-nosnippet onclick="scrollToSection('features')" class="block w-full text-left text-lg font-bold text-slate-800 cursor-pointer" data-i18n="nav_why">Why Us</button>
+				<button data-nosnippet onclick="scrollToSection('prep')" class="block w-full text-left text-lg font-bold text-slate-800 cursor-pointer" data-i18n="nav_prep">ICBC Prep</button>
+				<button data-nosnippet onclick="scrollToSection('process')" class="block w-full text-left text-lg font-bold text-slate-800 cursor-pointer" data-i18n="nav_process">Process</button>
 				<div class="grid grid-cols-3 gap-2 py-2">
-					<button data-nosnippet onclick="setLanguage('en')" class="text-xs font-bold p-2 bg-slate-50 rounded-lg">EN</button>
-					<button data-nosnippet onclick="setLanguage('zh-TW')" class="text-xs font-bold p-2 bg-slate-50 rounded-lg">繁中</button>
-					<button data-nosnippet onclick="setLanguage('zh-CN')" class="text-xs font-bold p-2 bg-slate-50 rounded-lg">简中</button>
+					<button data-nosnippet onclick="setLanguage('en')" class="text-xs font-bold p-2 bg-slate-50 rounded-lg cursor-pointer">EN</button>
+					<button data-nosnippet onclick="setLanguage('zh-TW')" class="text-xs font-bold p-2 bg-slate-50 rounded-lg cursor-pointer">繁中</button>
+					<button data-nosnippet onclick="setLanguage('zh-CN')" class="text-xs font-bold p-2 bg-slate-50 rounded-lg cursor-pointer">简中</button>
 				</div>
-				<button data-nosnippet onclick="scrollToSection('contact')" class="w-full bg-indigo-600 text-white py-4 rounded-xl font-bold" data-i18n="nav_book">Book Now</button>
+				<button data-nosnippet onclick="scrollToSection('contact')" class="w-full bg-indigo-600 text-white py-4 rounded-xl font-bold cursor-pointer" data-i18n="nav_book">Book Now</button>
 			</div>
 		</nav>
 		
 		<!-- ADD THIS LINE RIGHT HERE -->
 		<main>
-			
 			
 			<!-- Hero Section -->
 			<section id="home" class="relative bg-white overflow-hidden">
@@ -195,11 +194,11 @@
 							<span data-i18n="hero_subtitle_pre">Expert driving instruction from</span> <span class="font-bold text-slate-900">Evergreen Driving School</span>. <span data-i18n="hero_subtitle_post">Get your N or Class 5 license on the first try with our proven methodology.</span>
 						</p>
 						<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-							<button data-nosnippet onclick="scrollToSection('contact')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-10 py-4 rounded-full font-bold text-lg transition-all shadow-xl shadow-indigo-200 flex items-center justify-center gap-2 hover:-translate-y-1">
+							<button data-nosnippet onclick="scrollToSection('contact')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-10 py-4 rounded-full font-bold text-lg transition-all shadow-xl shadow-indigo-200 flex items-center justify-center gap-2 hover:-translate-y-1 cursor-pointer">
 								<span data-i18n="hero_btn1">Start Learning</span> 
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
 							</button>
-							<button data-nosnippet onclick="scrollToSection('prep')" class="bg-white hover:bg-slate-50 border-2 border-slate-200 text-slate-700 px-10 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2">
+							<button data-nosnippet onclick="scrollToSection('prep')" class="bg-white hover:bg-slate-50 border-2 border-slate-200 text-slate-700 px-10 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2 cursor-pointer">
 								<span data-i18n="nav_prep">ICBC Prep</span>
 							</button>
 						</div>
@@ -406,220 +405,308 @@
 			</section>
 			
 			<!-- Contact Section -->
-			<section id="contact" class="py-24 bg-indigo-600 text-white scroll-mt-20">
-				<div class="max-w-4xl mx-auto px-6 text-center">
+			<section id="contact" class="py-24 bg-slate-900 text-white scroll-mt-20">
+				<div class="max-w-5xl mx-auto px-6 text-center">
 					<h2 class="text-4xl md:text-6xl font-black mb-6 font-outfit uppercase" data-i18n="contact_title">Ready to Start?</h2>
-					<p class="text-indigo-100 text-xl mb-12" data-i18n="contact_desc">Contact Evergreen today to book your evaluation or lesson package.</p>
+					<p class="text-slate-400 text-xl mb-12" data-i18n="contact_desc">Contact Evergreen today to book your evaluation or lesson package.</p>
 					
-					<div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-						<a href="https://wa.me/+17783886129" target="_blank" class="flex flex-col items-center justify-center gap-3 bg-white text-slate-900 hover:bg-slate-50 hover:-translate-y-2 transition-all p-8 rounded-[2rem] font-bold shadow-2xl group">
-							<div class="bg-[#25D366] p-4 rounded-2xl text-white group-hover:scale-110 transition-transform">
-								<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.29-4.464c1.53.914 3.041 1.382 4.617 1.383 5.313 0 9.636-4.32 9.639-9.633.002-2.573-1.002-4.991-2.826-6.815-1.824-1.824-4.241-2.83-6.814-2.831-5.315 0-9.638 4.321-9.641 9.634-.001 1.652.421 3.267 1.221 4.685l-1.082 3.951 4.086-1.074zm11.303-7.464c-.088-.146-.324-.235-.676-.412s-2.081-1.026-2.404-1.144-.558-.176-.793.177c-.235.353-.911 1.144-1.116 1.379-.205.235-.412.265-.764.088s-1.486-.547-2.83-1.748c-1.046-.933-1.752-2.085-1.957-2.438-.205-.353-.022-.544.153-.72s.353-.412.529-.617c.176-.205.235-.353.353-.588.118-.235.059-.441-.029-.617s-.793-1.912-1.087-2.617c-.287-.688-.578-.596-.793-.606-.205-.01-.441-.012-.676-.012s-.617.088-.941.441c-.324.353-1.234 1.205-1.234 2.94s1.264 3.41 1.44 3.645c.176.235 2.487 3.8 6.026 5.333.842.364 1.5.582 2.012.744.846.269 1.616.231 2.224.14.679-.101 2.081-.852 2.375-1.676.294-.823.294-1.529.206-1.676z"/></svg>
+					<!-- 4 COLUMN GRID (Centered & Square) -->
+					<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto w-full">
+						
+						<!-- WhatsApp (Solid Green) -->
+						<a href="https://wa.me/+16725141176" target="_blank" class="aspect-square flex flex-col items-center justify-center gap-3 bg-[#25D366] text-white hover:-translate-y-2 transition-all p-4 rounded-[2rem] font-bold shadow-2xl shadow-[#25D366]/40 group cursor-pointer border border-white/10">
+							<div class="bg-white/20 p-4 md:p-5 rounded-2xl text-white group-hover:scale-110 transition-transform">
+								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.29-4.464c1.53.914 3.041 1.382 4.617 1.383 5.313 0 9.636-4.32 9.639-9.633.002-2.573-1.002-4.991-2.826-6.815-1.824-1.824-4.241-2.83-6.814-2.831-5.315 0-9.638 4.321-9.641 9.634-.001 1.652.421 3.267 1.221 4.685l-1.082 3.951 4.086-1.074zm11.303-7.464c-.088-.146-.324-.235-.676-.412s-2.081-1.026-2.404-1.144-.558-.176-.793.177c-.235.353-.911 1.144-1.116 1.379-.205.235-.412.265-.764.088s-1.486-.547-2.83-1.748c-1.046-.933-1.752-2.085-1.957-2.438-.205-.353-.022-.544.153-.72s.353-.412.529-.617c.176-.205.235-.353.353-.588.118-.235.059-.441-.029-.617s-.793-1.912-1.087-2.617c-.287-.688-.578-.596-.793-.606-.205-.01-.441-.012-.676-.012s-.617.088-.941.441c-.324.353-1.234 1.205-1.234 2.94s1.264 3.41 1.44 3.645c.176.235 2.487 3.8 6.026 5.333.842.364 1.5.582 2.012.744.846.269 1.616.231 2.224.14.679-.101 2.081-.852 2.375-1.676.294-.823.294-1.529.206-1.676z"/></svg>
 							</div>
-							<span class="text-xl">WhatsApp</span>
+							<span class="text-lg md:text-xl">WhatsApp</span>
 						</a>
-						<a href="sms:+17783886129?body=Hello%21%20I%27m%20interested%20in%20booking%20driving%20lessons." target="_blank" class="flex flex-col items-center justify-center gap-3 bg-white text-slate-900 hover:bg-slate-50 hover:-translate-y-2 transition-all p-8 rounded-[2rem] font-bold shadow-2xl group">
-							<div class="bg-[#007AFF] p-4 rounded-2xl text-white group-hover:scale-110 transition-transform">
-								<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+						
+						<!-- WeChat (Solid Green with Official Logo) -->
+						<button onclick="openWechatModal()" class="aspect-square flex flex-col items-center justify-center gap-3 bg-[#07C160] text-white hover:-translate-y-2 transition-all p-4 rounded-[2rem] font-bold shadow-2xl shadow-[#07C160]/40 group cursor-pointer w-full border border-white/10">
+							<!-- White background icon wrapper for contrast -->
+							<div class="bg-white p-4 md:p-5 rounded-2xl text-[#07C160] group-hover:scale-110 transition-transform">
+								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+									<path d="M8.5,14.31C4.05,14.31 0.44,11.23 0.44,7.43C0.44,3.63 4.05,0.55 8.5,0.55C12.95,0.55 16.56,3.63 16.56,7.43C16.56,11.23 12.95,14.31 8.5,14.31ZM6.28,5.13C5.66,5.13 5.16,5.63 5.16,6.25C5.16,6.87 5.66,7.37 6.28,7.37C6.9,7.37 7.4,6.87 7.4,6.25C7.4,5.63 6.9,5.13 6.28,5.13ZM11.16,5.13C10.54,5.13 10.04,5.63 10.04,6.25C10.04,6.87 10.54,7.37 11.16,7.37C11.78,7.37 12.28,6.87 12.28,6.25C12.28,5.63 11.78,5.13 11.16,5.13ZM23.56,14.41C23.56,11.21 20.58,8.62 16.91,8.62C16.63,8.62 16.36,8.65 16.09,8.71C16.4,9.15 16.56,9.63 16.56,10.14C16.56,14.28 12.94,17.65 8.49,17.65C7.88,17.65 7.29,17.58 6.72,17.43C7.42,19.34 9.9,20.85 12.91,20.85C13.84,20.85 14.71,20.66 15.48,20.32L18.4,21.54L17.72,18.91C19.98,17.82 21.46,15.79 21.46,13.41C21.46,12.79 21.28,12.21 20.95,11.68C22.56,12.08 23.56,13.17 23.56,14.41ZM13.88,12.63C13.39,12.63 13,13.02 13,13.51C13,14 13.39,14.39 13.88,14.39C14.37,14.39 14.76,14 14.76,13.51C14.76,13.02 14.37,12.63 13.88,12.63ZM18.5,12.63C18.01,12.63 17.62,13.02 17.62,13.51C17.62,14 18.01,14.39 18.5,14.39C18.99,14.39 19.38,14 19.38,13.51C19.38,13.02 18.99,12.63 18.5,12.63Z" />
+								</svg>
 							</div>
-							<span class="text-xl">SMS Text</span>
-						</a>
-						<a href="mailto:info@evergreendrivingschool.ca" target="_blank" class="flex flex-col items-center justify-center gap-3 bg-slate-900 text-white hover:bg-slate-800 hover:-translate-y-2 transition-all p-8 rounded-[2rem] font-bold shadow-2xl group border border-slate-700">
-							<div class="bg-indigo-500 p-4 rounded-2xl text-white group-hover:scale-110 transition-transform">
-								<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+							<span class="text-lg md:text-xl" data-i18n="contact_wechat">WeChat</span>
+						</button>
+						
+						<!-- SMS Text (Solid Blue) -->
+						<a href="sms:+16725141176?body=Hello%21%20I%27m%20interested%20in%20booking%20driving%20lessons." target="_blank" class="aspect-square flex flex-col items-center justify-center gap-3 bg-[#007AFF] text-white hover:-translate-y-2 transition-all p-4 rounded-[2rem] font-bold shadow-2xl shadow-[#007AFF]/40 group border border-white/10 cursor-pointer">
+							<div class="bg-white/20 p-4 md:p-5 rounded-2xl text-white group-hover:scale-110 transition-transform">
+								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
 							</div>
-							<span class="text-xl">Email Us</span>
+							<span class="text-lg md:text-xl">SMS Text</span>
 						</a>
+						
+						<!-- Email (Solid Indigo) -->
+						<a href="mailto:info@evergreendrivingschool.ca" target="_blank" class="aspect-square flex flex-col items-center justify-center gap-3 bg-indigo-600 text-white hover:-translate-y-2 transition-all p-4 rounded-[2rem] font-bold shadow-2xl shadow-indigo-600/40 group border border-white/10 cursor-pointer">
+							<div class="bg-white/20 p-4 md:p-5 rounded-2xl text-white group-hover:scale-110 transition-transform">
+								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+							</div>
+							<span class="text-lg md:text-xl">Email Us</span>
+						</a>
+						
 					</div>
 				</div>
 			</section>
 			
-			<!-- ADD THIS LINE RIGHT HERE -->
-		</main>
-		
-		<!-- SAFELIST FOR TAILWIND COMPILER (Hidden) -->
-		<div class="hidden">
-			<div class="review-card group">
-				<div class="flex text-yellow-400 mb-4 group-hover:scale-105 transition-transform origin-left">
-					<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-				</div>
-				<p class="text-slate-600 text-[15px] italic leading-relaxed">Test</p>
-				<div class="mt-auto pt-6 flex items-center gap-3">
-					<div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-black text-sm">A</div>
-					<p class="font-bold text-slate-900">Name</p>
+			<!-- WECHAT QR CODE MODAL -->
+			<div id="wechat-modal" class="fixed inset-0 z-[100] bg-slate-900/80 backdrop-blur-sm hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
+				<div class="bg-white p-8 rounded-[2rem] max-w-sm w-full mx-4 shadow-2xl transform scale-95 transition-transform duration-300" id="wechat-modal-content">
+					<div class="flex justify-between items-center mb-6">
+						<h3 class="text-2xl font-bold text-slate-900" data-i18n="wechat_modal_title">Add on WeChat</h3>
+						<button onclick="closeWechatModal()" class="text-slate-400 hover:text-slate-900 cursor-pointer p-2 rounded-full bg-slate-50 hover:bg-slate-100">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+						</button>
+					</div>
+					
+					<!-- QR CODE FIX: Border added to ensure visibility if image is missing -->
+					<div class="bg-slate-50 p-4 rounded-2xl mb-6 flex justify-center border border-slate-100">
+						<!-- Ensure your image on GitHub is named EXACTLY wechat-qr.png (all lowercase) -->
+						<img src="wechat-qr.png" alt="WeChat QR Code" class="w-full max-w-[200px] aspect-square object-contain rounded-xl">
+					</div>
+					
+					<p class="text-center text-slate-600 text-sm mb-6" data-i18n="wechat_modal_desc">Scan the QR code to add Evergreen Driving School on WeChat.</p>
+					<a href="weixin://" class="block w-full bg-[#07C160] hover:bg-[#06ad56] text-white text-center py-4 rounded-xl font-bold transition-all shadow-lg shadow-green-200 cursor-pointer text-lg" data-i18n="wechat_open_app">
+						Open WeChat App
+					</a>
 				</div>
 			</div>
-		</div>
-		
-		<footer class="bg-slate-950 py-10 text-center border-t border-white/5">
-			<p class="text-slate-500 text-xs font-bold uppercase tracking-widest">© <span id="year"></span> Evergreen Driving School. All Rights Reserved.</p>
-		</footer>
-		
-		<script>
-			const translations = {
-				"en": {
-					"nav_home": "Home", "nav_why": "Why Us", "nav_prep": "ICBC Prep", "nav_process": "Process", "nav_book": "Book Now",
-					"hero_badge": "ICBC Approved Professional Training",
-					"hero_title_part1": "Master the Road with", "hero_title_part2": "Confidence.",
-					"hero_subtitle_pre": "Expert driving instruction from",
-					"hero_subtitle_post": "Get your N or Class 5 license on the first try with our proven methodology.",
-					"hero_btn1": "Start Learning", "hero_stat_title": "98% Pass Rate", "hero_stat_sub": "On First Attempt",
-					"feat_header_pre": "Why Students Choose",
-					"feat1_title": "Dual-Control Safety", "feat1_desc": "Safety is our priority. All vehicles are ICBC certified and equipped with instructor dual-brakes.",
-					"feat2_title": "Flexible Pick-up", "feat2_desc": "We come to you. Door-to-door service from your home or school in Richmond and Vancouver.",
-					"feat3_title": "Comprehensive Mock Tests", "feat3_desc": "Experience simulated ICBC exam routes to eliminate surprises and build test-day confidence.",
-					"prep_title": "Master Essential Driving Skills", "prep_desc": "We focus on the exact criteria ICBC examiners use to evaluate your driving. No surprises on test day.",
-					"skill_1": "Perfect Parallel Parking", "skill_2": "360° Observation", "skill_3": "Shoulder Checks", "skill_4": "Speed Control & Zones",
-					"reviews_title": "Evergreen Success Stories",
-					"rev1": "Best instructor ever! Very patient and knowledgeable. Corrected my bad habits in just a few sessions.",
-					"rev2": "Passed Class 5 road test on the first try! The tips on Richmond test routes were a lifesaver.",
-					"rev3": "Highly recommend Evergreen. Parallel parking and shoulder checks are easy to understand now.",
-					"rev4": "Very professional and punctual. Great for nervous beginners.",
-					"rev5": "They helped me clear my anxiety before the road test. Best in Richmond.",
-					"rev6": "Calm instructors and clear directions. Five stars!",
-					"step1_title": "Evaluation", "step1_desc": "Assessment of current skills and identification of habits to improve.",
-					"step2_title": "Practice", "step2_desc": "Structured lessons focusing on ICBC safety standards and road rules.",
-					"step3_title": "Mock Test", "step3_desc": "Simulated road tests conducted on actual ICBC exam routes.",
-					"step4_title": "Success", "step4_desc": "Pass your test with confidence and receive your BC driver's license.",
-					"contact_title": "Ready to Start?", "contact_desc": "Contact Evergreen today to book your evaluation or lesson package.",
-					"hero_h1_seo": "PREMIER DRIVING SCHOOL IN RICHMOND & VANCOUVER"
-				},
-				"zh-TW": {
-					"nav_home": "首頁", "nav_why": "優勢", "nav_prep": "ICBC 備考", "nav_process": "流程", "nav_book": "預約",
-					"hero_badge": "ICBC 認證專業培訓",
-					"hero_title_part1": "自信掌握路況", "hero_title_part2": "順利取得駕照",
-					"hero_subtitle_pre": "來自", "hero_subtitle_post": "的專業指導。助您一次通過考試拿取 N 或 Class 5 牌照。",
-					"hero_btn1": "開始學習", "hero_stat_title": "98% 及格率", "hero_stat_sub": "首次考試通過率",
-					"feat_header_pre": "學生為什麼選擇",
-					"feat1_title": "雙控安全系統", "feat1_desc": "安全第一。所有教練車均經 ICBC 認證並配備教練副剎車。",
-					"feat2_title": "彈性接送服務", "feat2_desc": "專車接送。我們在列治文和溫哥華提供上門接送服務。",
-					"feat3_title": "模擬真實路考", "feat3_desc": "在真實的 ICBC 考試路線上進行模擬測試，幫助您克服緊張，建立滿分自信。",
-					"prep_title": "掌握核心駕駛技巧", "prep_desc": "我們專注於 ICBC 考官評估的具體標準，讓您在考試當天成竹在胸。",
-					"skill_1": "完美平行泊車", "skill_2": "360度觀察與危險感知", "skill_3": "盲點檢查 (Shoulder Checks)", "skill_4": "學校與遊樂場區域限速駕駛",
-					"reviews_title": "Evergreen 成功案例",
-					"rev1": "最好的教練！非常有耐心且專業。糾正了我的所有壞習慣。",
-					"rev2": "第一次路考就通過了！關於列治文考場路線的建議非常有幫助。",
-					"rev3": "強烈推薦 Evergreen，讓平行泊車變得非常容易理解。",
-					"rev4": "非常專業且準時，對新手非常有幫助。",
-					"rev5": "他們幫我消除了考試前的焦慮，絕對是列治文的首選。",
-					"rev6": "教練很冷靜，指示非常明確。五星好評！",
-					"step1_title": "技能評估", "step1_desc": "評估您目前的駕駛水平和習慣。",
-					"step2_title": "練習培訓", "step2_desc": "專注於 ICBC 標準的結構化課程。",
-					"step3_title": "模擬路考", "step3_desc": "在實際考試路線上進行模擬測試。",
-					"step4_title": "考取證照", "step4_desc": "充滿自信地通過測試並獲得駕照。",
-					"contact_title": "準備好了嗎？", "contact_desc": "聯繫 Evergreen 預約您的第一堂課。",
-					"hero_h1_seo": "列治文與溫哥華首選駕訓班"
-				},
-				"zh-CN": {
-					"nav_home": "首页", "nav_why": "优势", "nav_prep": "ICBC 备考", "nav_process": "流程", "nav_book": "预约",
-					"hero_badge": "ICBC 认证专业培训",
-					"hero_title_part1": "自信掌握路况", "hero_title_part2": "顺利取得驾照",
-					"hero_subtitle_pre": "来自", "hero_subtitle_post": "的专业指导。助您一次通过考试拿取 N 或 Class 5 牌照。",
-					"hero_btn1": "开始学习", "hero_stat_title": "98% 及格率", "hero_stat_sub": "首次考试率",
-					"feat_header_pre": "学生为什么选择",
-					"feat1_title": "双控安全系统", "feat1_desc": "安全第一。所有教练车均经 ICBC 认证并配备教练副刹车。",
-					"feat2_title": "弹性接送服务", "feat2_desc": "专车接送。我们在列治文和温哥华提供上门接送服务。",
-					"feat3_title": "模拟真实路考", "feat3_desc": "在真实的 ICBC 考试路线上进行模拟测试，帮助您克服紧张，建立满分自信。",
-					"prep_title": "掌握核心驾驶技巧", "prep_desc": "我们专注于 ICBC 考官评估的具体标准，让您在考试当天成竹在胸。",
-					"skill_1": "完美平行泊车", "skill_2": "360度观察与危险感知", "skill_3": "盲点检查 (Shoulder Checks)", "skill_4": "学校与游乐场区域限速驾驶",
-					"reviews_title": "Evergreen 成功案例",
-					"rev1": "最好的教练！非常有耐心且专业。纠正了我的所有坏习惯。",
-					"rev2": "第一次路考就通过了！关于列治文考场路线的建议非常有帮助。",
-					"rev3": "强烈推荐 Evergreen，让平行泊车变得非常容易理解。",
-					"rev4": "非常专业且准时，对新手非常有帮助。",
-					"rev5": "他们帮我消除了考试前的焦虑，绝对是列治文的首选。",
-					"rev6": "教练很冷静，指示非常明确。五星好评！",
-					"step1_title": "技能评估", "step1_desc": "评估您目前的驾驶水平和习惯。",
-					"step2_title": "练习培训", "step2_desc": "专注于 ICBC 标准的结构化课程。",
-					"step3_title": "模拟路考", "step3_desc": "在实际考试路线上进行模拟测试。",
-					"step4_title": "考取证照", "step4_desc": "充满自信地通过测试并获得驾照。",
-					"contact_title": "准备好了吗？", "contact_desc": "联系 Evergreen 预约您的第一堂课。",
-					"hero_h1_seo": "列治文与温哥华首选驾训班"
-				}
-			};
 			
-			const reviewsData = [
-			{ id: 'rev1', author: 'Raman K.' },
-			{ id: 'rev2', author: 'Sarah C.' },
-			{ id: 'rev3', author: 'Jason W.' },
-			{ id: 'rev4', author: 'Linda G.' },
-			{ id: 'rev5', author: 'Kevin M.' },
-			{ id: 'rev6', author: 'Emily Z.' }
-			];
-			
-			let currentLang = "en";
-			
-			function scrollToSection(id) {
-				const el = document.getElementById(id);
-				if (el) {
-					const offset = 80;
-					const bodyRect = document.body.getBoundingClientRect().top;
-					const elementRect = el.getBoundingClientRect().top;
-					const elementPosition = elementRect - bodyRect;
-					const offsetPosition = elementPosition - offset;
-					window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-				}
-				closeMobileMenu();
-			}
-			
-			function setLanguage(lang) {
-				currentLang = lang;
-				applyLanguage();
-				closeMobileMenu();
-			}
-			
-			function applyLanguage() {
-				document.querySelectorAll('[data-i18n]').forEach(el => {
-					const key = el.getAttribute('data-i18n');
-					if (translations[currentLang] && translations[currentLang][key]) {
-						el.innerText = translations[currentLang][key];
-					}
-				});
-				const langLabels = { "en": "English", "zh-TW": "繁體中文", "zh-CN": "简体中文" };
-				const indicator = document.getElementById('lang-indicator');
-				if (indicator) indicator.innerText = langLabels[currentLang] || langLabels["en"];
-				renderReviews();
-			}
-			
-			function renderReviews() {
-				const container = document.getElementById('reviews-marquee');
-				if (!container) return;
-				const content = reviewsData.map(rev => `
+			<!-- SAFELIST FOR TAILWIND COMPILER (Hidden) -->
+			<div class="hidden">
 				<div class="review-card group">
-				<div class="flex text-yellow-400 mb-4 group-hover:scale-105 transition-transform origin-left">
-				${Array(5).fill('<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>').join('')}
+					<div class="flex text-yellow-400 mb-4 group-hover:scale-105 transition-transform origin-left">
+						<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+					</div>
+					<p class="text-slate-600 text-[15px] italic leading-relaxed">Test</p>
+					<div class="mt-auto pt-6 flex items-center gap-3">
+						<div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-black text-sm">A</div>
+						<p class="font-bold text-slate-900">Name</p>
+					</div>
 				</div>
-				<p class="text-slate-600 text-[15px] italic leading-relaxed">"${translations[currentLang][rev.id] || translations["en"][rev.id]}"</p>
-				<!-- Added mt-auto right here to push the name to the bottom -->
-				<div class="mt-auto pt-6 flex items-center gap-3">
-				<div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-black text-sm">
-				${rev.author.charAt(0)}
-				</div>
-				<p class="font-bold text-slate-900">${rev.author}</p>
-				</div>
-				</div>
-				`).join('');
-				container.innerHTML = content + content;
-			}
+			</div>
 			
-			const menuBtn = document.getElementById('mobile-menu-btn');
-			const menu = document.getElementById('mobile-menu');
+			<footer class="bg-slate-950 py-10 text-center border-t border-white/5">
+				<p class="text-slate-500 text-xs font-bold uppercase tracking-widest">© <span id="year"></span> Evergreen Driving School. All Rights Reserved.</p>
+			</footer>
 			
-			if(menuBtn && menu) {
-				menuBtn.addEventListener('click', (e) => {
-					e.stopPropagation();
-					menu.classList.toggle('hidden');
+			<script>
+				const translations = {
+					"en": {
+						"nav_home": "Home", "nav_why": "Why Us", "nav_prep": "ICBC Prep", "nav_process": "Process", "nav_book": "Book Now",
+						"hero_badge": "ICBC Approved Professional Training",
+						"hero_title_part1": "Master the Road with", "hero_title_part2": "Confidence.",
+						"hero_subtitle_pre": "Expert driving instruction from",
+						"hero_subtitle_post": "Get your N or Class 5 license on the first try with our proven methodology.",
+						"hero_btn1": "Start Learning", "hero_stat_title": "98% Pass Rate", "hero_stat_sub": "On First Attempt",
+						"feat_header_pre": "Why Students Choose",
+						"feat1_title": "Dual-Control Safety", "feat1_desc": "Safety is our priority. All vehicles are ICBC certified and equipped with instructor dual-brakes.",
+						"feat2_title": "Flexible Pick-up", "feat2_desc": "We come to you. Door-to-door service from your home or school in Richmond and Vancouver.",
+						"feat3_title": "Comprehensive Mock Tests", "feat3_desc": "Experience simulated ICBC exam routes to eliminate surprises and build test-day confidence.",
+						"prep_title": "Master Essential Driving Skills", "prep_desc": "We focus on the exact criteria ICBC examiners use to evaluate your driving. No surprises on test day.",
+						"skill_1": "Perfect Parallel Parking", "skill_2": "360° Observation", "skill_3": "Shoulder Checks", "skill_4": "Speed Control & Zones",
+						"reviews_title": "Evergreen Success Stories",
+						"rev1": "Best instructor ever! Very patient and knowledgeable. Corrected my bad habits in just a few sessions.",
+						"rev2": "Passed Class 5 road test on the first try! The tips on Richmond test routes were a lifesaver.",
+						"rev3": "Highly recommend Evergreen. Parallel parking and shoulder checks are easy to understand now.",
+						"rev4": "Very professional and punctual. Great for nervous beginners.",
+						"rev5": "They helped me clear my anxiety before the road test. Best in Richmond.",
+						"rev6": "Calm instructors and clear directions. Five stars!",
+						"step1_title": "Evaluation", "step1_desc": "Assessment of current skills and identification of habits to improve.",
+						"step2_title": "Practice", "step2_desc": "Structured lessons focusing on ICBC safety standards and road rules.",
+						"step3_title": "Mock Test", "step3_desc": "Simulated road tests conducted on actual ICBC exam routes.",
+						"step4_title": "Success", "step4_desc": "Pass your test with confidence and receive your BC driver's license.",
+						"contact_title": "Ready to Start?", "contact_desc": "Contact Evergreen today to book your evaluation or lesson package.",
+						"hero_h1_seo": "PREMIER DRIVING SCHOOL IN RICHMOND & VANCOUVER",
+						"contact_wechat": "WeChat",
+						"wechat_modal_title": "Add on WeChat",
+						"wechat_modal_desc": "Scan the QR code to add Evergreen Driving School on WeChat.",
+						"wechat_open_app": "Open WeChat App"
+					},
+					"zh-TW": {
+						"nav_home": "首頁", "nav_why": "優勢", "nav_prep": "ICBC 備考", "nav_process": "流程", "nav_book": "預約",
+						"hero_badge": "ICBC 認證專業培訓",
+						"hero_title_part1": "自信掌握路況", "hero_title_part2": "順利取得駕照",
+						"hero_subtitle_pre": "來自", "hero_subtitle_post": "的專業指導。助您一次通過考試拿取 N 或 Class 5 牌照。",
+						"hero_btn1": "開始學習", "hero_stat_title": "98% 及格率", "hero_stat_sub": "首次考試通過率",
+						"feat_header_pre": "學生為什麼選擇",
+						"feat1_title": "雙控安全系統", "feat1_desc": "安全第一。所有教練車均經 ICBC 認證並配備教練副剎車。",
+						"feat2_title": "彈性接送服務", "feat2_desc": "專車接送。我們在列治文和溫哥華提供上門接送服務。",
+						"feat3_title": "模擬真實路考", "feat3_desc": "在真實的 ICBC 考試路線上進行模擬測試，幫助您克服緊張，建立滿分自信。",
+						"prep_title": "掌握核心駕駛技巧", "prep_desc": "我們專注於 ICBC 考官評估的具體標準，讓您在考試當天成竹在胸。",
+						"skill_1": "完美平行泊車", "skill_2": "360度觀察與危險感知", "skill_3": "盲點檢查 (Shoulder Checks)", "skill_4": "學校與遊樂場區域限速駕駛",
+						"reviews_title": "Evergreen 成功案例",
+						"rev1": "最好的教練！非常有耐心且專業。糾正了我的所有壞習慣。",
+						"rev2": "第一次路考就通過了！關於列治文考場路線的建議非常有幫助。",
+						"rev3": "強烈推薦 Evergreen，讓平行泊車變得非常容易理解。",
+						"rev4": "非常專業且準時，對新手非常有幫助。",
+						"rev5": "他們幫我消除了考試前的焦慮，絕對是列治文的首選。",
+						"rev6": "教練很冷靜，指示非常明確。五星好評！",
+						"step1_title": "技能評估", "step1_desc": "評估您目前的駕駛水平和習慣。",
+						"step2_title": "練習培訓", "step2_desc": "專注於 ICBC 標準的結構化課程。",
+						"step3_title": "模擬路考", "step3_desc": "在實際考試路線上進行模擬測試。",
+						"step4_title": "考取證照", "step4_desc": "充滿自信地通過測試並獲得駕照。",
+						"contact_title": "準備好了嗎？", "contact_desc": "聯繫 Evergreen 預約您的第一堂課。",
+						"hero_h1_seo": "列治文與溫哥華首選駕訓班",
+						"contact_wechat": "微信",
+						"wechat_modal_title": "添加微信",
+						"wechat_modal_desc": "掃描二維碼添加 Evergreen Driving School 微信。",
+						"wechat_open_app": "打開微信 App"
+					},
+					"zh-CN": {
+						"nav_home": "首页", "nav_why": "优势", "nav_prep": "ICBC 备考", "nav_process": "流程", "nav_book": "预约",
+						"hero_badge": "ICBC 认证专业培训",
+						"hero_title_part1": "自信掌握路况", "hero_title_part2": "顺利取得驾照",
+						"hero_subtitle_pre": "来自", "hero_subtitle_post": "的专业指导。助您一次通过考试拿取 N 或 Class 5 牌照。",
+						"hero_btn1": "开始学习", "hero_stat_title": "98% 及格率", "hero_stat_sub": "首次考试率",
+						"feat_header_pre": "学生为什么选择",
+						"feat1_title": "双控安全系统", "feat1_desc": "安全第一。所有教练车均经 ICBC 认证并配备教练副刹车。",
+						"feat2_title": "弹性接送服务", "feat2_desc": "专车接送。我们在列治文和温哥华提供上门接送服务。",
+						"feat3_title": "模拟真实路考", "feat3_desc": "在真实的 ICBC 考试路线上进行模拟测试，帮助您克服紧张，建立满分自信。",
+						"prep_title": "掌握核心驾驶技巧", "prep_desc": "我们专注于 ICBC 考官评估的具体标准，让您在考试当天成竹在胸。",
+						"skill_1": "完美平行泊车", "skill_2": "360度观察与危险感知", "skill_3": "盲点检查 (Shoulder Checks)", "skill_4": "学校与游乐场区域限速驾驶",
+						"reviews_title": "Evergreen 成功案例",
+						"rev1": "最好的教练！非常有耐心且专业。纠正了我的所有坏习惯。",
+						"rev2": "第一次路考就通过了！关于列治文考场路线的建议非常有帮助。",
+						"rev3": "强烈推荐 Evergreen，让平行泊车变得非常容易理解。",
+						"rev4": "非常专业且准时，对新手非常有帮助。",
+						"rev5": "他们帮我消除了考试前的焦虑，绝对是列治文的首选。",
+						"rev6": "教练很冷静，指示非常明确。五星好评！",
+						"step1_title": "技能评估", "step1_desc": "评估您目前的驾驶水平和习惯。",
+						"step2_title": "练习培训", "step2_desc": "专注于 ICBC 标准的结构化课程。",
+						"step3_title": "模拟路考", "step3_desc": "在实际考试路线上进行模拟测试。",
+						"step4_title": "考取证照", "step4_desc": "充满自信地通过测试并获得驾照。",
+						"contact_title": "准备好了吗？", "contact_desc": "联系 Evergreen 预约您的第一堂课。",
+						"hero_h1_seo": "列治文与温哥华首选驾训班",
+						"contact_wechat": "微信",
+						"wechat_modal_title": "添加微信",
+						"wechat_modal_desc": "扫描二维码添加 Evergreen Driving School 微信。",
+						"wechat_open_app": "打开微信 App"
+					}
+				};
+				
+				const reviewsData = [
+				{ id: 'rev1', author: 'Raman K.' },
+				{ id: 'rev2', author: 'Sarah C.' },
+				{ id: 'rev3', author: 'Jason W.' },
+				{ id: 'rev4', author: 'Linda G.' },
+				{ id: 'rev5', author: 'Kevin M.' },
+				{ id: 'rev6', author: 'Emily Z.' }
+				];
+				
+				let currentLang = "en";
+				
+				// NEW: Function to auto-detect the user's device language
+				function detectDeviceLanguage() {
+					const browserLang = navigator.language || navigator.userLanguage;
+					if (browserLang.includes('zh-TW') || browserLang.includes('zh-HK') || browserLang.includes('zh-MO')) {
+						currentLang = "zh-TW";
+						} else if (browserLang.includes('zh')) {
+						currentLang = "zh-CN";
+						} else {
+						currentLang = "en";
+					}
+				}
+				
+				function scrollToSection(id) {
+					const el = document.getElementById(id);
+					if (el) {
+						const offset = 80;
+						const bodyRect = document.body.getBoundingClientRect().top;
+						const elementRect = el.getBoundingClientRect().top;
+						const elementPosition = elementRect - bodyRect;
+						const offsetPosition = elementPosition - offset;
+						window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+					}
+					closeMobileMenu();
+				}
+				
+				function setLanguage(lang) {
+					currentLang = lang;
+					applyLanguage();
+					closeMobileMenu();
+				}
+				
+				function applyLanguage() {
+					document.querySelectorAll('[data-i18n]').forEach(el => {
+						const key = el.getAttribute('data-i18n');
+						if (translations[currentLang] && translations[currentLang][key]) {
+							el.innerText = translations[currentLang][key];
+						}
+					});
+					const langLabels = { "en": "English", "zh-TW": "繁體中文", "zh-CN": "简体中文" };
+					const indicator = document.getElementById('lang-indicator');
+					if (indicator) indicator.innerText = langLabels[currentLang] || langLabels["en"];
+					renderReviews();
+				}
+				
+				function renderReviews() {
+					const container = document.getElementById('reviews-marquee');
+					if (!container) return;
+					const content = reviewsData.map(rev => `
+					<div class="review-card group">
+					<div class="flex text-yellow-400 mb-4 group-hover:scale-105 transition-transform origin-left">
+					${Array(5).fill('<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>').join('')}
+					</div>
+					<p class="text-slate-600 text-[15px] italic leading-relaxed">"${translations[currentLang][rev.id] || translations["en"][rev.id]}"</p>
+					<div class="mt-auto pt-6 flex items-center gap-3">
+					<div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-black text-sm">
+					${rev.author.charAt(0)}
+					</div>
+					<p class="font-bold text-slate-900">${rev.author}</p>
+					</div>
+					</div>
+					`).join('');
+					container.innerHTML = content + content;
+				}
+				
+				// NEW WECHAT MODAL FUNCTIONS
+				function openWechatModal() {
+					const modal = document.getElementById('wechat-modal');
+					const content = document.getElementById('wechat-modal-content');
+					modal.classList.remove('hidden');
+					setTimeout(() => {
+						modal.classList.remove('opacity-0');
+						content.classList.remove('scale-95');
+					}, 10);
+				}
+				
+				function closeWechatModal() {
+					const modal = document.getElementById('wechat-modal');
+					const content = document.getElementById('wechat-modal-content');
+					modal.classList.add('opacity-0');
+					content.classList.add('scale-95');
+					setTimeout(() => {
+						modal.classList.add('hidden');
+					}, 300);
+				}
+				
+				const menuBtn = document.getElementById('mobile-menu-btn');
+				const menu = document.getElementById('mobile-menu');
+				
+				if(menuBtn && menu) {
+					menuBtn.addEventListener('click', (e) => {
+						e.stopPropagation();
+						menu.classList.toggle('hidden');
+					});
+				}
+				
+				function closeMobileMenu() { if(menu) menu.classList.add('hidden'); }
+				
+				document.addEventListener('click', (e) => {
+					if (menu && !menu.contains(e.target) && menuBtn && !menuBtn.contains(e.target)) closeMobileMenu();
 				});
-			}
-			
-			function closeMobileMenu() { if(menu) menu.classList.add('hidden'); }
-			
-			document.addEventListener('click', (e) => {
-				if (menu && !menu.contains(e.target) && menuBtn && !menuBtn.contains(e.target)) closeMobileMenu();
-			});
-			
-			document.getElementById('year').innerText = "2019 - " + new Date().getFullYear();
-			window.onload = applyLanguage;
-		</script>
-	</body>
-</html>	
+				
+				document.getElementById('year').innerText = "2019 - " + new Date().getFullYear();
+				
+				// NEW: Auto-detect language on page load
+				window.onload = function() {
+					detectDeviceLanguage();
+					applyLanguage();
+				};
+			</script>
+		</body>
+	</html>	
