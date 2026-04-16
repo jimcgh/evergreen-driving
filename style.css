@@ -297,8 +297,14 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
 	.mt-2 {
 		margin-top: calc(var(--spacing) * 2);
 	}
+	.mt-8 {
+		margin-top: calc(var(--spacing) * 8);
+	}
 	.mt-auto {
 		margin-top: auto;
+	}
+	.mb-2 {
+		margin-bottom: calc(var(--spacing) * 2);
 	}
 	.mb-3 {
 		margin-bottom: calc(var(--spacing) * 3);
@@ -515,13 +521,6 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
 	margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
 }
 }
-.space-x-8 {
-    :where(& > :not(:last-child)) {
-	--tw-space-x-reverse: 0;
-	margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
-	margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse)));
-}
-}
 .overflow-hidden {
     overflow: hidden;
 }
@@ -594,6 +593,12 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
 }
 .border-slate-800 {
     border-color: var(--color-slate-800);
+}
+.border-slate-800\/50 {
+    border-color: color-mix(in srgb, oklch(27.9% 0.041 260.031) 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+	border-color: color-mix(in oklab, var(--color-slate-800) 50%, transparent);
+}
 }
 .border-slate-900 {
     border-color: var(--color-slate-900);
@@ -754,17 +759,23 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
 .py-8 {
     padding-block: calc(var(--spacing) * 8);
 }
-.py-10 {
-    padding-block: calc(var(--spacing) * 10);
-}
 .py-24 {
     padding-block: calc(var(--spacing) * 24);
 }
 .pt-6 {
     padding-top: calc(var(--spacing) * 6);
 }
+.pt-8 {
+    padding-top: calc(var(--spacing) * 8);
+}
 .pt-12 {
     padding-top: calc(var(--spacing) * 12);
+}
+.pt-16 {
+    padding-top: calc(var(--spacing) * 16);
+}
+.pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
 }
 .pb-24 {
     padding-bottom: calc(var(--spacing) * 24);
@@ -1137,6 +1148,13 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
 }
 }
 }
+.hover\:text-white {
+    &:hover {
+	@media (hover: hover) {
+	color: var(--color-white);
+}
+}
+}
 .hover\:shadow-xl {
     &:hover {
 	@media (hover: hover) {
@@ -1353,11 +1371,6 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
 	inherits: false;
 	initial-value: 0;
 }
-@property --tw-space-x-reverse {
-	syntax: "*";
-	inherits: false;
-	initial-value: 0;
-}
 @property --tw-border-style {
 	syntax: "*";
 	inherits: false;
@@ -1549,7 +1562,6 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
 	--tw-skew-x: initial;
 	--tw-skew-y: initial;
 	--tw-space-y-reverse: 0;
-	--tw-space-x-reverse: 0;
 	--tw-border-style: solid;
 	--tw-gradient-position: initial;
 	--tw-gradient-from: #0000;
