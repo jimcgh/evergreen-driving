@@ -8,17 +8,43 @@
 		
 		<title>Evergreen Driving School | ICBC Approved Lessons Richmond & Vancouver</title>
 		
-		<!-- Favicon Links -->
 		<link rel="icon" type="image/png" href="favicon.png">
 		<link rel="apple-touch-icon" href="favicon.png">
 		
-		<!-- SEO OPTIMIZATION: Shortened to < 160 characters for better click-through-rate -->
 		<meta name="description" content="Affordable ICBC Class 5/7 lessons in Richmond, Vancouver & Burnaby. Evergreen Driving School offers high pass rates & Cantonese instructors! 高通過粵語駕駛教練">
 		
-		<!-- Preload Hero Image for faster LCP -->
-		<link rel="preload" as="image" href="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=80">
+		<!-- ========================================== -->
+		<!-- SUPERCHARGED PRELOADING & PRECONNECTS      -->
+		<!-- ========================================== -->
+		<!-- 1. Preconnect to external domains -->
+		<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		
-		<!-- SEO OPTIMIZATION: Enhanced Local Business Schema with priceRange and sameAs (Authority building) -->
+		<!-- 2. Preload Fonts for instantaneous text rendering -->
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+		<noscript>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+		</noscript>
+
+		<!-- 3. Preload ALL SPA Images for Zero-Delay Tab Switching (PERFECTLY SYNCED) -->
+		<!-- Home Hero (Highest Priority LCP) -->
+		<link rel="preload" as="image" href="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=80" fetchpriority="high">
+		<!-- Prep Section -->
+		<link rel="preload" as="image" href="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80">
+		<!-- Class 5 -->
+		<link rel="preload" as="image" href="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80">
+		<!-- Class 7 -->
+		<link rel="preload" as="image" href="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80">
+		<!-- Richmond -->
+		<link rel="preload" as="image" href="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1200&q=80">
+		<!-- Vancouver -->
+		<link rel="preload" as="image" href="https://images.unsplash.com/photo-1559511260-66a654ae982a?auto=format&fit=crop&w=1200&q=80">
+		<!-- Burnaby -->
+		<link rel="preload" as="image" href="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1200&q=80">
+		<!-- ========================================== -->
+		
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
@@ -28,40 +54,29 @@
 				"url": "https://evergreendrivingschool.ca",
 				"telephone": "+16725141176",
 				"priceRange": "$$",
-				"areaServed": ["Richmond", "Vancouver", "Burnaby"],
+				"areaServed":["Richmond", "Vancouver", "Burnaby"],
 				"address": {
 					"@type": "PostalAddress",
 					"addressLocality": "Richmond",
 					"addressRegion": "BC",
 					"addressCountry": "CA"
 				},
-				"sameAs": [
+				"sameAs":[
 					"https://www.facebook.com/EvergreenDrivingSchool.bc",
 					"https://www.instagram.com/evergreen_driving_school_bc"
 				]
 			}
 		</script>
 		
-		<!-- Optimized Google Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
-		<noscript>
-			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-		</noscript>
-		
 		<style>
-			/* --- TAILWIND CSS EMBEDDED FOR SINGLE-FILE ARCHITECTURE --- */
+			/* --- TAILWIND CSS EMBEDDED --- */
 			/*! tailwindcss v4.2.2 | MIT License | https://tailwindcss.com */
 			@layer properties;
 			@layer theme, base, components, utilities;
 			@layer theme {
 				:root, :host {
-				--font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-				'Noto Color Emoji';
-				--font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
-				monospace;
+				--font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+				--font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 				--color-yellow-400: oklch(85.2% 0.199 91.936);
 				--color-green-200: oklch(92.5% 0.084 155.995);
 				--color-emerald-100: oklch(95% 0.052 163.051);
@@ -87,547 +102,144 @@
 				--color-slate-800: oklch(27.9% 0.041 260.031);
 				--color-slate-900: oklch(20.8% 0.042 265.755);
 				--color-slate-950: oklch(12.9% 0.042 264.695);
-				--color-black: #000;
-				--color-white: #fff;
+				--color-black: #000; --color-white: #fff;
 				--spacing: 0.25rem;
-				--container-sm: 24rem;
-				--container-lg: 32rem;
-				--container-4xl: 56rem;
-				--container-5xl: 64rem;
-				--container-7xl: 80rem;
-				--text-xs: 0.75rem;
-				--text-xs--line-height: calc(1 / 0.75);
-				--text-sm: 0.875rem;
-				--text-sm--line-height: calc(1.25 / 0.875);
-				--text-lg: 1.125rem;
-				--text-lg--line-height: calc(1.75 / 1.125);
-				--text-xl: 1.25rem;
-				--text-xl--line-height: calc(1.75 / 1.25);
-				--text-2xl: 1.5rem;
-				--text-2xl--line-height: calc(2 / 1.5);
-				--text-3xl: 1.875rem;
-				--text-3xl--line-height: calc(2.25 / 1.875);
-				--text-4xl: 2.25rem;
-				--text-4xl--line-height: calc(2.5 / 2.25);
-				--text-5xl: 3rem;
-				--text-5xl--line-height: 1;
-				--text-6xl: 3.75rem;
-				--text-6xl--line-height: 1;
-				--text-7xl: 4.5rem;
-				--text-7xl--line-height: 1;
-				--font-weight-semibold: 600;
-				--font-weight-bold: 700;
-				--font-weight-extrabold: 800;
-				--font-weight-black: 900;
-				--tracking-tight: -0.025em;
-				--tracking-wide: 0.025em;
-				--tracking-wider: 0.05em;
-				--tracking-widest: 0.1em;
-				--leading-tight: 1.25;
-				--leading-relaxed: 1.625;
-				--radius-lg: 0.5rem;
-				--radius-xl: 0.75rem;
-				--radius-2xl: 1rem;
-				--radius-3xl: 1.5rem;
-				--blur-sm: 8px;
-				--blur-md: 12px;
-				--default-transition-duration: 150ms;
-				--default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-				--default-font-family: var(--font-sans);
-				--default-mono-font-family: var(--font-mono);
+				--container-sm: 24rem; --container-lg: 32rem; --container-4xl: 56rem; --container-5xl: 64rem; --container-7xl: 80rem;
+				--text-xs: 0.75rem; --text-xs--line-height: calc(1 / 0.75);
+				--text-sm: 0.875rem; --text-sm--line-height: calc(1.25 / 0.875);
+				--text-lg: 1.125rem; --text-lg--line-height: calc(1.75 / 1.125);
+				--text-xl: 1.25rem; --text-xl--line-height: calc(1.75 / 1.25);
+				--text-2xl: 1.5rem; --text-2xl--line-height: calc(2 / 1.5);
+				--text-3xl: 1.875rem; --text-3xl--line-height: calc(2.25 / 1.875);
+				--text-4xl: 2.25rem; --text-4xl--line-height: calc(2.5 / 2.25);
+				--text-5xl: 3rem; --text-5xl--line-height: 1;
+				--text-6xl: 3.75rem; --text-6xl--line-height: 1;
+				--text-7xl: 4.5rem; --text-7xl--line-height: 1;
+				--font-weight-semibold: 600; --font-weight-bold: 700; --font-weight-extrabold: 800; --font-weight-black: 900;
+				--tracking-tight: -0.025em; --tracking-wide: 0.025em; --tracking-wider: 0.05em; --tracking-widest: 0.1em;
+				--leading-tight: 1.25; --leading-relaxed: 1.625;
+				--radius-lg: 0.5rem; --radius-xl: 0.75rem; --radius-2xl: 1rem; --radius-3xl: 1.5rem;
+				--blur-sm: 8px; --blur-md: 12px;
+				--default-transition-duration: 150ms; --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+				--default-font-family: var(--font-sans); --default-mono-font-family: var(--font-mono);
 			}
 			}
 			@layer base {
-				*, ::after, ::before, ::backdrop, ::file-selector-button {
-				box-sizing: border-box;
-				margin: 0;
-				padding: 0;
-				border: 0 solid;
-			}
-			html, :host {
-				line-height: 1.5;
-				-webkit-text-size-adjust: 100%;
-				tab-size: 4;
-				font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji');
-				font-feature-settings: var(--default-font-feature-settings, normal);
-				font-variation-settings: var(--default-font-variation-settings, normal);
-				-webkit-tap-highlight-color: transparent;
-			}
-			hr {
-				height: 0;
-				color: inherit;
-				border-top-width: 1px;
-			}
-			abbr:where([title]) {
-				-webkit-text-decoration: underline dotted;
-				text-decoration: underline dotted;
-			}
-			h1, h2, h3, h4, h5, h6 {
-				font-size: inherit;
-				font-weight: inherit;
-			}
-			a {
-				color: inherit;
-				-webkit-text-decoration: inherit;
-				text-decoration: inherit;
-			}
-			b, strong {
-				font-weight: bolder;
-			}
-			code, kbd, samp, pre {
-				font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace);
-				font-feature-settings: var(--default-mono-font-feature-settings, normal);
-				font-variation-settings: var(--default-mono-font-variation-settings, normal);
-				font-size: 1em;
-			}
-			small {
-				font-size: 80%;
-			}
-			sub, sup {
-				font-size: 75%;
-				line-height: 0;
-				position: relative;
-				vertical-align: baseline;
-			}
-			sub {
-				bottom: -0.25em;
-			}
-			sup {
-				top: -0.5em;
-			}
-			table {
-				text-indent: 0;
-				border-color: inherit;
-				border-collapse: collapse;
-			}
-			:-moz-focusring {
-				outline: auto;
-			}
-			progress {
-				vertical-align: baseline;
-			}
-			summary {
-				display: list-item;
-			}
-			ol, ul, menu {
-				list-style: none;
-			}
-			img, svg, video, canvas, audio, iframe, embed, object {
-				display: block;
-				vertical-align: middle;
-			}
-			img, video {
-				max-width: 100%;
-				height: auto;
-			}
-			button, input, select, optgroup, textarea, ::file-selector-button {
-				font: inherit;
-				font-feature-settings: inherit;
-				font-variation-settings: inherit;
-				letter-spacing: inherit;
-				color: inherit;
-				border-radius: 0;
-				background-color: transparent;
-				opacity: 1;
-			}
-			:where(select:is([multiple], [size])) optgroup {
-				font-weight: bolder;
-			}
-			:where(select:is([multiple], [size])) optgroup option {
-				padding-inline-start: 20px;
-			}
-			::file-selector-button {
-				margin-inline-end: 4px;
-			}
-			::placeholder {
-				opacity: 1;
-			}
-			@supports (not (-webkit-appearance: -apple-pay-button)) or (contain-intrinsic-size: 1px) {
-				::placeholder {
-					color: currentcolor;
-					@supports (color: color-mix(in lab, red, red)) {
-					color: color-mix(in oklab, currentcolor 50%, transparent);
-				}
-			}
-			}
-			textarea {
-				resize: vertical;
-			}
-			::-webkit-search-decoration {
-				-webkit-appearance: none;
-			}
-			::-webkit-date-and-time-value {
-				min-height: 1lh;
-				text-align: inherit;
-			}
-			::-webkit-datetime-edit {
-				display: inline-flex;
-			}
-			::-webkit-datetime-edit-fields-wrapper {
-				padding: 0;
-			}
-			::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
-				padding-block: 0;
-			}
-			::-webkit-calendar-picker-indicator {
-				line-height: 1;
-			}
-			:-moz-ui-invalid {
-				box-shadow: none;
-			}
-			button, input:where([type='button'], [type='reset'], [type='submit']), ::file-selector-button {
-				appearance: button;
-			}
-			::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
-				height: auto;
-			}
-			[hidden]:where(:not([hidden='until-found'])) {
-				display: none!important;
-			}
+				*, ::after, ::before, ::backdrop, ::file-selector-button { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid; }
+				html, :host { line-height: 1.5; -webkit-text-size-adjust: 100%; tab-size: 4; font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'); }
+				a { color: inherit; -webkit-text-decoration: inherit; text-decoration: inherit; }
+				b, strong { font-weight: bolder; }
+				img, svg, video, canvas, audio, iframe, embed, object { display: block; vertical-align: middle; max-width: 100%; height: auto; }
+				button { font: inherit; background-color: transparent; appearance: button; cursor: pointer; }
+				[hidden] { display: none!important; }
 			}
 			@layer utilities {
-				.pointer-events-none { pointer-events: none; }
-				.absolute { position: absolute; }
-				.fixed { position: fixed; }
-				.relative { position: relative; }
-				.sticky { position: sticky; }
-				.inset-0 { inset: calc(var(--spacing) * 0); }
-				.inset-y-0 { inset-block: calc(var(--spacing) * 0); }
-				.top-0 { top: calc(var(--spacing) * 0); }
-				.top-10 { top: calc(var(--spacing) * 10); }
-				.-right-4 { right: calc(var(--spacing) * -4); }
-				.right-0 { right: calc(var(--spacing) * 0); }
-				.bottom-10 { bottom: calc(var(--spacing) * 10); }
-				.left-0 { left: calc(var(--spacing) * 0); }
-				.-z-10 { z-index: calc(10 * -1); }
-				.z-10 { z-index: 10; }
-				.z-20 { z-index: 20; }
-				.z-50 { z-index: 50; }
-				.z-\[100\] { z-index: 100; }
-				.mx-4 { margin-inline: calc(var(--spacing) * 4); }
-				.mx-auto { margin-inline: auto; }
-				.mt-1 { margin-top: calc(var(--spacing) * 1); }
-				.mt-2 { margin-top: calc(var(--spacing) * 2); }
-				.mt-auto { margin-top: auto; }
-				.mb-3 { margin-bottom: calc(var(--spacing) * 3); }
-				.mb-4 { margin-bottom: calc(var(--spacing) * 4); }
-				.mb-6 { margin-bottom: calc(var(--spacing) * 6); }
-				.mb-8 { margin-bottom: calc(var(--spacing) * 8); }
-				.mb-10 { margin-bottom: calc(var(--spacing) * 10); }
-				.mb-12 { margin-bottom: calc(var(--spacing) * 12); }
-				.mb-16 { margin-bottom: calc(var(--spacing) * 16); }
-				.mb-20 { margin-bottom: calc(var(--spacing) * 20); }
-				.block { display: block; }
-				.flex { display: flex; }
-				.grid { display: grid; }
-				.hidden { display: none; }
-				.inline-flex { display: inline-flex; }
+				.absolute { position: absolute; } .fixed { position: fixed; } .relative { position: relative; } .sticky { position: sticky; }
+				.inset-0 { inset: 0; } .inset-y-0 { inset-block: 0; }
+				.top-0 { top: 0; } .top-10 { top: 2.5rem; } .-right-4 { right: -1rem; } .right-0 { right: 0; } .bottom-6 { bottom: 1.5rem; } .bottom-10 { bottom: 2.5rem; } .left-0 { left: 0; }
+				.-z-10 { z-index: -10; } .z-10 { z-index: 10; } .z-20 { z-index: 20; } .z-50 { z-index: 50; } .z-\[100\] { z-index: 100; }
+				.mx-4 { margin-inline: 1rem; } .mx-auto { margin-inline: auto; }
+				.mt-1 { margin-top: 0.25rem; } .mt-1\.5 { margin-top: 0.375rem; } .mt-2 { margin-top: 0.5rem; } .mt-6 { margin-top: 1.5rem; } .mt-8 { margin-top: 2rem; } .mt-12 { margin-top: 3rem; } .mt-auto { margin-top: auto; }
+				.mb-1 { margin-bottom: 0.25rem; } .mb-2 { margin-bottom: 0.5rem; } .mb-3 { margin-bottom: 0.75rem; } .mb-4 { margin-bottom: 1rem; } .mb-6 { margin-bottom: 1.5rem; } .mb-8 { margin-bottom: 2rem; } .mb-10 { margin-bottom: 2.5rem; } .mb-12 { margin-bottom: 3rem; } .mb-16 { margin-bottom: 4rem; } .mb-20 { margin-bottom: 5rem; }
+				.my-2 { margin-top: 0.5rem; margin-bottom: 0.5rem; } .my-4 { margin-top: 1rem; margin-bottom: 1rem; }
+				.block { display: block; } .flex { display: flex; } .grid { display: grid; } .hidden { display: none; } .inline-flex { display: inline-flex; }
 				.aspect-square { aspect-ratio: 1 / 1; }
-				.h-4 { height: calc(var(--spacing) * 4); }
-				.h-5 { height: calc(var(--spacing) * 5); }
-				.h-10 { height: calc(var(--spacing) * 10); }
-				.h-16 { height: calc(var(--spacing) * 16); }
-				.h-20 { height: calc(var(--spacing) * 20); }
-				.h-\[400px\] { height: 400px; }
-				.h-\[500px\] { height: 500px; }
-				.h-full { height: 100%; }
-				.min-h-screen { min-height: 100vh; }
-				.w-4 { width: calc(var(--spacing) * 4); }
-				.w-5 { width: calc(var(--spacing) * 5); }
-				.w-10 { width: calc(var(--spacing) * 10); }
-				.w-16 { width: calc(var(--spacing) * 16); }
-				.w-24 { width: calc(var(--spacing) * 24); }
-				.w-40 { width: calc(var(--spacing) * 40); }
-				.w-\[50vw\] { width: 50vw; }
-				.w-auto { width: auto; }
-				.w-full { width: 100%; }
-				.max-w-4xl { max-width: var(--container-4xl); }
-				.max-w-5xl { max-width: var(--container-5xl); }
-				.max-w-7xl { max-width: var(--container-7xl); }
-				.max-w-\[200px\] { max-width: 200px; }
-				.max-w-lg { max-width: var(--container-lg); }
-				.max-w-sm { max-width: var(--container-sm); }
-				.flex-1 { flex: 1; }
+				.h-px { height: 1px; } .h-4 { height: 1rem; } .h-5 { height: 1.25rem; } .h-10 { height: 2.5rem; } .h-14 { height: 3.5rem; } .h-16 { height: 4rem; } .h-20 { height: 5rem; }
+				.h-\[350px\] { height: 350px; } .h-\[400px\] { height: 400px; } .h-\[500px\] { height: 500px; } .h-full { height: 100%; } .min-h-screen { min-height: 100vh; }
+				.w-full { width: 100%; } .w-px { width: 1px; } .w-4 { width: 1rem; } .w-5 { width: 1.25rem; } .w-10 { width: 2.5rem; } .w-14 { width: 3.5rem; } .w-16 { width: 4rem; } .w-24 { width: 6rem; } .w-40 { width: 10rem; } .w-56 { width: 14rem; } .w-64 { width: 16rem; }
+				.w-\[50vw\] { width: 50vw; } .w-auto { width: auto; }
+				.w-\[120\%\] { width: 120%; } .h-\[120\%\] { height: 120%; }
+				.max-w-4xl { max-width: 56rem; } .max-w-5xl { max-width: 64rem; } .max-w-7xl { max-width: 80rem; } .max-w-\[200px\] { max-width: 200px; } .max-w-lg { max-width: 32rem; } .max-w-sm { max-width: 24rem; }
+				.flex-1 { flex: 1; } .flex-col { flex-direction: column; } .flex-wrap { flex-wrap: wrap; }
 				.origin-left { transform-origin: 0; }
-				.scale-95 { --tw-scale-x: 95%; --tw-scale-y: 95%; --tw-scale-z: 95%; scale: var(--tw-scale-x) var(--tw-scale-y); }
-				.scale-105 { --tw-scale-x: 105%; --tw-scale-y: 105%; --tw-scale-z: 105%; scale: var(--tw-scale-x) var(--tw-scale-y); }
-				.-rotate-6 { rotate: calc(6deg * -1); }
-				.rotate-3 { rotate: 3deg; }
-				.transform { transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,); }
-				.cursor-pointer { cursor: pointer; }
-				.scroll-mt-20 { scroll-margin-top: calc(var(--spacing) * 20); }
-				.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
-				.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-				.grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-				.flex-col { flex-direction: column; }
-				.flex-wrap { flex-wrap: wrap; }
-				.items-center { align-items: center; }
-				.items-start { align-items: flex-start; }
-				.justify-between { justify-content: space-between; }
-				.justify-center { justify-content: center; }
-				.justify-end { justify-content: flex-end; }
-				.gap-2 { gap: calc(var(--spacing) * 2); }
-				.gap-3 { gap: calc(var(--spacing) * 3); }
-				.gap-4 { gap: calc(var(--spacing) * 4); }
-				.gap-5 { gap: calc(var(--spacing) * 5); }
-				.gap-6 { gap: calc(var(--spacing) * 6); }
-				.gap-8 { gap: calc(var(--spacing) * 8); }
-				.gap-12 { gap: calc(var(--spacing) * 12); }
-				.gap-16 { gap: calc(var(--spacing) * 16); }
-				.space-y-4 :where(> :not(:last-child)) { --tw-space-y-reverse: 0; margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse)); margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse))); }
-				.space-y-6 :where(> :not(:last-child)) { --tw-space-y-reverse: 0; margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse)); margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse))); }
-				.space-x-8 :where(> :not(:last-child)) { --tw-space-x-reverse: 0; margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse)); margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse))); }
-				.overflow-hidden { overflow: hidden; }
-				.overflow-x-hidden { overflow-x: hidden; }
-				.scroll-smooth { scroll-behavior: smooth; }
-				.rounded-2xl { border-radius: var(--radius-2xl); }
-				.rounded-3xl { border-radius: var(--radius-3xl); }
-				.rounded-\[2rem\] { border-radius: 2rem; }
-				.rounded-\[3rem\] { border-radius: 3rem; }
-				.rounded-full { border-radius: calc(infinity * 1px); }
-				.rounded-lg { border-radius: var(--radius-lg); }
-				.rounded-xl { border-radius: var(--radius-xl); }
-				.rounded-bl-\[100px\] { border-bottom-left-radius: 100px; }
-				.border { border-style: var(--tw-border-style); border-width: 1px; }
-				.border-2 { border-style: var(--tw-border-style); border-width: 2px; }
-				.border-4 { border-style: var(--tw-border-style); border-width: 4px; }
-				.border-y { border-block-style: var(--tw-border-style); border-block-width: 1px; }
-				.border-t { border-top-style: var(--tw-border-style); border-top-width: 1px; }
-				.border-b { border-bottom-style: var(--tw-border-style); border-bottom-width: 1px; }
-				.border-none { --tw-border-style: none; border-style: none; }
-				.border-indigo-100 { border-color: var(--color-indigo-100); }
-				.border-slate-100 { border-color: var(--color-slate-100); }
-				.border-slate-200 { border-color: var(--color-slate-200); }
-				.border-slate-800 { border-color: var(--color-slate-800); }
-				.border-slate-900 { border-color: var(--color-slate-900); }
-				.border-white { border-color: var(--color-white); }
-				.border-white\/5 { border-color: color-mix(in srgb, #fff 5%, transparent); }
-				.bg-\[\#007AFF\] { background-color: #007AFF; }
-				.bg-\[\#07C160\] { background-color: #07C160; }
-				.bg-\[\#25D366\] { background-color: #25D366; }
-				.bg-emerald-100 { background-color: var(--color-emerald-100); }
-				.bg-indigo-50 { background-color: var(--color-indigo-50); }
-				.bg-indigo-50\/50 { background-color: color-mix(in srgb, oklch(96.2% 0.018 272.314) 50%, transparent); }
-				.bg-indigo-100 { background-color: var(--color-indigo-100); }
-				.bg-indigo-500 { background-color: var(--color-indigo-500); }
-				.bg-indigo-600 { background-color: var(--color-indigo-600); }
-				.bg-slate-50 { background-color: var(--color-slate-50); }
-				.bg-slate-100 { background-color: var(--color-slate-100); }
-				.bg-slate-800 { background-color: var(--color-slate-800); }
-				.bg-slate-900 { background-color: var(--color-slate-900); }
-				.bg-slate-900\/80 { background-color: color-mix(in srgb, oklch(20.8% 0.042 265.755) 80%, transparent); }
-				.bg-slate-950 { background-color: var(--color-slate-950); }
-				.bg-white { background-color: var(--color-white); }
-				.bg-white\/95 { background-color: color-mix(in srgb, #fff 95%, transparent); }
-				.bg-gradient-to-l { --tw-gradient-position: to left in oklab; background-image: linear-gradient(var(--tw-gradient-stops)); }
-				.bg-gradient-to-r { --tw-gradient-position: to right in oklab; background-image: linear-gradient(var(--tw-gradient-stops)); }
-				.from-indigo-600 { --tw-gradient-from: var(--color-indigo-600); --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position)); }
-				.from-white { --tw-gradient-from: var(--color-white); --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position)); }
-				.to-blue-500 { --tw-gradient-to: var(--color-blue-500); --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position)); }
-				.to-transparent { --tw-gradient-to: transparent; --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position)); }
-				.bg-clip-text { background-clip: text; }
-				.fill-current { fill: currentcolor; }
-				.object-contain { object-fit: contain; }
-				.object-cover { object-fit: cover; }
-				.p-1 { padding: calc(var(--spacing) * 1); }
-				.p-1\.5 { padding: calc(var(--spacing) * 1.5); }
-				.p-2 { padding: calc(var(--spacing) * 2); }
-				.p-4 { padding: calc(var(--spacing) * 4); }
-				.p-5 { padding: calc(var(--spacing) * 5); }
-				.p-6 { padding: calc(var(--spacing) * 6); }
-				.p-8 { padding: calc(var(--spacing) * 8); }
-				.p-10 { padding: calc(var(--spacing) * 10); }
-				.px-4 { padding-inline: calc(var(--spacing) * 4); }
-				.px-6 { padding-inline: calc(var(--spacing) * 6); }
-				.px-7 { padding-inline: calc(var(--spacing) * 7); }
-				.px-10 { padding-inline: calc(var(--spacing) * 10); }
-				.py-2 { padding-block: calc(var(--spacing) * 2); }
-				.py-3 { padding-block: calc(var(--spacing) * 3); }
-				.py-4 { padding-block: calc(var(--spacing) * 4); }
-				.py-5 { padding-block: calc(var(--spacing) * 5); }
-				.py-8 { padding-block: calc(var(--spacing) * 8); }
-				.py-10 { padding-block: calc(var(--spacing) * 10); }
-				.py-24 { padding-block: calc(var(--spacing) * 24); }
-				.pt-6 { padding-top: calc(var(--spacing) * 6); }
-				.pt-12 { padding-top: calc(var(--spacing) * 12); }
-				.pb-24 { padding-bottom: calc(var(--spacing) * 24); }
-				.text-center { text-align: center; }
-				.text-left { text-align: left; }
-				.text-2xl { font-size: var(--text-2xl); line-height: var(--tw-leading, var(--text-2xl--line-height)); }
-				.text-3xl { font-size: var(--text-3xl); line-height: var(--tw-leading, var(--text-3xl--line-height)); }
-				.text-4xl { font-size: var(--text-4xl); line-height: var(--tw-leading, var(--text-4xl--line-height)); }
-				.text-5xl { font-size: var(--text-5xl); line-height: var(--tw-leading, var(--text-5xl--line-height)); }
-				.text-lg { font-size: var(--text-lg); line-height: var(--tw-leading, var(--text-lg--line-height)); }
-				.text-sm { font-size: var(--text-sm); line-height: var(--tw-leading, var(--text-sm--line-height)); }
-				.text-xl { font-size: var(--text-xl); line-height: var(--tw-leading, var(--text-xl--line-height)); }
-				.text-xs { font-size: var(--text-xs); line-height: var(--tw-leading, var(--text-xs--line-height)); }
-				.text-\[9px\] { font-size: 9px; }
-				.text-\[15px\] { font-size: 15px; }
-				.leading-\[1\.05\] { --tw-leading: 1.05; line-height: 1.05; }
-				.leading-none { --tw-leading: 1; line-height: 1; }
-				.leading-relaxed { --tw-leading: var(--leading-relaxed); line-height: var(--leading-relaxed); }
-				.leading-tight { --tw-leading: var(--leading-tight); line-height: var(--leading-tight); }
-				.font-black { --tw-font-weight: var(--font-weight-black); font-weight: var(--font-weight-black); }
-				.font-bold { --tw-font-weight: var(--font-weight-bold); font-weight: var(--font-weight-bold); }
-				.font-extrabold { --tw-font-weight: var(--font-weight-extrabold); font-weight: var(--font-weight-extrabold); }
-				.font-semibold { --tw-font-weight: var(--font-weight-semibold); font-weight: var(--font-weight-semibold); }
-				.tracking-\[0\.2em\] { --tw-tracking: 0.2em; letter-spacing: 0.2em; }
-				.tracking-tight { --tw-tracking: var(--tracking-tight); letter-spacing: var(--tracking-tight); }
-				.tracking-wide { --tw-tracking: var(--tracking-wide); letter-spacing: var(--tracking-wide); }
-				.tracking-wider { --tw-tracking: var(--tracking-wider); letter-spacing: var(--tracking-wider); }
-				.tracking-widest { --tw-tracking: var(--tracking-widest); letter-spacing: var(--tracking-widest); }
-				.text-emerald-400 { color: var(--color-emerald-400); }
-				.text-emerald-600 { color: var(--color-emerald-600); }
-				.text-indigo-400 { color: var(--color-indigo-400); }
-				.text-indigo-500 { color: var(--color-indigo-500); }
-				.text-indigo-600 { color: var(--color-indigo-600); }
-				.text-indigo-700 { color: var(--color-indigo-700); }
-				.text-slate-300 { color: var(--color-slate-300); }
-				.text-slate-400 { color: var(--color-slate-400); }
-				.text-slate-500 { color: var(--color-slate-500); }
-				.text-slate-600 { color: var(--color-slate-600); }
-				.text-slate-700 { color: var(--color-slate-700); }
-				.text-slate-800 { color: var(--color-slate-800); }
-				.text-slate-900 { color: var(--color-slate-900); }
-				.text-transparent { color: transparent; }
-				.text-white { color: var(--color-white); }
-				.text-yellow-400 { color: var(--color-yellow-400); }
-				.uppercase { text-transform: uppercase; }
-				.italic { font-style: italic; }
-				.opacity-0 { opacity: 0%; }
-				.opacity-10 { opacity: 10%; }
-				.shadow-2xl { --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25)); box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow); }
-				.shadow-\[0_0_0_8px_rgba\(15\,23\,42\,1\)\] { --tw-shadow: 0 0 0 8px var(--tw-shadow-color, rgba(15,23,42,1)); box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow); }
-				.shadow-\[0_20px_50px_rgba\(0\,0\,0\,0\.1\)\] { --tw-shadow: 0 20px 50px var(--tw-shadow-color, rgba(0,0,0,0.1)); box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow); }
-				.shadow-lg { --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1)); box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow); }
-				.shadow-sm { --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)); box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow); }
-				.shadow-xl { --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1)); box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow); }
-				.shadow-\[\#007AFF\]\/40 { --tw-shadow-color: color-mix(in srgb, #007AFF 40%, transparent); }
-				.shadow-\[\#07C160\]\/40 { --tw-shadow-color: color-mix(in srgb, #07C160 40%, transparent); }
-				.shadow-\[\#25D366\]\/40 { --tw-shadow-color: color-mix(in srgb, #25D366 40%, transparent); }
-				.shadow-black\/40 { --tw-shadow-color: color-mix(in srgb, #000 40%, transparent); }
-				.shadow-green-200 { --tw-shadow-color: oklch(92.5% 0.084 155.995); }
-				.shadow-indigo-100 { --tw-shadow-color: oklch(93% 0.034 272.788); }
-				.shadow-indigo-200 { --tw-shadow-color: oklch(87% 0.065 274.039); }
-				.shadow-indigo-600\/40 { --tw-shadow-color: color-mix(in srgb, oklch(51.1% 0.262 276.966) 40%, transparent); }
-				.backdrop-blur-md { --tw-backdrop-blur: blur(var(--blur-md)); -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,); backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,); }
-				.backdrop-blur-sm { --tw-backdrop-blur: blur(var(--blur-sm)); -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,); backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,); }
-				.transition-all { transition-property: all; transition-timing-function: var(--tw-ease, var(--default-transition-timing-function)); transition-duration: var(--tw-duration, var(--default-transition-duration)); }
-				.transition-colors { transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to; transition-timing-function: var(--tw-ease, var(--default-transition-timing-function)); transition-duration: var(--tw-duration, var(--default-transition-duration)); }
-				.transition-opacity { transition-property: opacity; transition-timing-function: var(--tw-ease, var(--default-transition-timing-function)); transition-duration: var(--tw-duration, var(--default-transition-duration)); }
-				.transition-transform { transition-property: transform, translate, scale, rotate; transition-timing-function: var(--tw-ease, var(--default-transition-timing-function)); transition-duration: var(--tw-duration, var(--default-transition-duration)); }
-				.duration-300 { --tw-duration: 300ms; transition-duration: 300ms; }
-				.group-hover\:scale-105:is(:where(.group):hover *) { @media (hover: hover) { --tw-scale-x: 105%; --tw-scale-y: 105%; --tw-scale-z: 105%; scale: var(--tw-scale-x) var(--tw-scale-y); } }
-				.group-hover\:scale-110:is(:where(.group):hover *) { @media (hover: hover) { --tw-scale-x: 110%; --tw-scale-y: 110%; --tw-scale-z: 110%; scale: var(--tw-scale-x) var(--tw-scale-y); } }
-				.group-hover\:bg-emerald-500:is(:where(.group):hover *) { @media (hover: hover) { background-color: var(--color-emerald-500); } }
-				.group-hover\:bg-indigo-500:is(:where(.group):hover *) { @media (hover: hover) { background-color: var(--color-indigo-500); } }
-				.group-hover\:bg-indigo-600:is(:where(.group):hover *) { @media (hover: hover) { background-color: var(--color-indigo-600); } }
-				.group-hover\:text-white:is(:where(.group):hover *) { @media (hover: hover) { color: var(--color-white); } }
-				.hover\:-translate-y-1:hover { @media (hover: hover) { --tw-translate-y: calc(var(--spacing) * -1); translate: var(--tw-translate-x) var(--tw-translate-y); } }
-				.hover\:-translate-y-2:hover { @media (hover: hover) { --tw-translate-y: calc(var(--spacing) * -2); translate: var(--tw-translate-x) var(--tw-translate-y); } }
-				.hover\:bg-\[\#06ad56\]:hover { @media (hover: hover) { background-color: #06ad56; } }
-				.hover\:bg-indigo-700:hover { @media (hover: hover) { background-color: var(--color-indigo-700); } }
-				.hover\:bg-slate-50:hover { @media (hover: hover) { background-color: var(--color-slate-50); } }
-				.hover\:bg-slate-100:hover { @media (hover: hover) { background-color: var(--color-slate-100); } }
-				.hover\:text-indigo-600:hover { @media (hover: hover) { color: var(--color-indigo-600); } }
-				.hover\:text-slate-900:hover { @media (hover: hover) { color: var(--color-slate-900); } }
-				.hover\:shadow-xl:hover { @media (hover: hover) { --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1)); box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow); } }
-				.sm\:flex-row { @media (width >= 40rem) { flex-direction: row; } }
-				.sm\:px-6 { @media (width >= 40rem) { padding-inline: calc(var(--spacing) * 6); } }
-				.md\:-right-8 { @media (width >= 48rem) { right: calc(var(--spacing) * -8); } }
-				.md\:-left-12 { @media (width >= 48rem) { left: calc(var(--spacing) * -12); } }
-				.md\:mx-0 { @media (width >= 48rem) { margin-inline: calc(var(--spacing) * 0); } }
-				.md\:block { @media (width >= 48rem) { display: block; } }
-				.md\:flex { @media (width >= 48rem) { display: flex; } }
-				.md\:hidden { @media (width >= 48rem) { display: none; } }
-				.md\:h-12 { @media (width >= 48rem) { height: calc(var(--spacing) * 12); } }
-				.md\:h-\[600px\] { @media (width >= 48rem) { height: 600px; } }
-				.md\:w-1\/2 { @media (width >= 48rem) { width: calc(1 / 2 * 100%); } }
-				.md\:grid-cols-3 { @media (width >= 48rem) { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-				.md\:grid-cols-4 { @media (width >= 48rem) { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
-				.md\:flex-row { @media (width >= 48rem) { flex-direction: row; } }
-				.md\:justify-between { @media (width >= 48rem) { justify-content: space-between; } }
-				.md\:justify-start { @media (width >= 48rem) { justify-content: flex-start; } }
-				.md\:gap-6 { @media (width >= 48rem) { gap: calc(var(--spacing) * 6); } }
-				.md\:p-5 { @media (width >= 48rem) { padding: calc(var(--spacing) * 5); } }
-				.md\:px-0 { @media (width >= 48rem) { padding-inline: calc(var(--spacing) * 0); } }
-				.md\:pt-24 { @media (width >= 48rem) { padding-top: calc(var(--spacing) * 24); } }
-				.md\:pb-32 { @media (width >= 48rem) { padding-bottom: calc(var(--spacing) * 32); } }
-				.md\:text-left { @media (width >= 48rem) { text-align: left; } }
-				.md\:text-2xl { @media (width >= 48rem) { font-size: var(--text-2xl); line-height: var(--tw-leading, var(--text-2xl--line-height)); } }
-				.md\:text-3xl { @media (width >= 48rem) { font-size: var(--text-3xl); line-height: var(--tw-leading, var(--text-3xl--line-height)); } }
-				.md\:text-5xl { @media (width >= 48rem) { font-size: var(--text-5xl); line-height: var(--tw-leading, var(--text-5xl--line-height)); } }
-				.md\:text-6xl { @media (width >= 48rem) { font-size: var(--text-6xl); line-height: var(--tw-leading, var(--text-6xl--line-height)); } }
-				.md\:text-7xl { @media (width >= 48rem) { font-size: var(--text-7xl); line-height: var(--tw-leading, var(--text-7xl--line-height)); } }
-				.md\:text-sm { @media (width >= 48rem) { font-size: var(--text-sm); line-height: var(--tw-leading, var(--text-sm--line-height)); } }
-				.md\:text-xl { @media (width >= 48rem) { font-size: var(--text-xl); line-height: var(--tw-leading, var(--text-xl--line-height)); } }
-				.lg\:flex { @media (width >= 64rem) { display: flex; } }
-				.lg\:w-1\/2 { @media (width >= 64rem) { width: calc(1 / 2 * 100%); } }
-				.lg\:flex-row { @media (width >= 64rem) { flex-direction: row; } }
-			}
-			@property --tw-scale-x { syntax: "*"; inherits: false; initial-value: 1; }
-			@property --tw-scale-y { syntax: "*"; inherits: false; initial-value: 1; }
-			@property --tw-scale-z { syntax: "*"; inherits: false; initial-value: 1; }
-			@property --tw-rotate-x { syntax: "*"; inherits: false; }
-			@property --tw-rotate-y { syntax: "*"; inherits: false; }
-			@property --tw-rotate-z { syntax: "*"; inherits: false; }
-			@property --tw-skew-x { syntax: "*"; inherits: false; }
-			@property --tw-skew-y { syntax: "*"; inherits: false; }
-			@property --tw-space-y-reverse { syntax: "*"; inherits: false; initial-value: 0; }
-			@property --tw-space-x-reverse { syntax: "*"; inherits: false; initial-value: 0; }
-			@property --tw-border-style { syntax: "*"; inherits: false; initial-value: solid; }
-			@property --tw-gradient-position { syntax: "*"; inherits: false; }
-			@property --tw-gradient-from { syntax: "<color>"; inherits: false; initial-value: #0000; }
-			@property --tw-gradient-via { syntax: "<color>"; inherits: false; initial-value: #0000; }
-			@property --tw-gradient-to { syntax: "<color>"; inherits: false; initial-value: #0000; }
-			@property --tw-gradient-stops { syntax: "*"; inherits: false; }
-			@property --tw-gradient-via-stops { syntax: "*"; inherits: false; }
-			@property --tw-gradient-from-position { syntax: "<length-percentage>"; inherits: false; initial-value: 0%; }
-			@property --tw-gradient-via-position { syntax: "<length-percentage>"; inherits: false; initial-value: 50%; }
-			@property --tw-gradient-to-position { syntax: "<length-percentage>"; inherits: false; initial-value: 100%; }
-			@property --tw-leading { syntax: "*"; inherits: false; }
-			@property --tw-font-weight { syntax: "*"; inherits: false; }
-			@property --tw-tracking { syntax: "*"; inherits: false; }
-			@property --tw-shadow { syntax: "*"; inherits: false; initial-value: 0 0 #0000; }
-			@property --tw-shadow-color { syntax: "*"; inherits: false; }
-			@property --tw-shadow-alpha { syntax: "<percentage>"; inherits: false; initial-value: 100%; }
-			@property --tw-inset-shadow { syntax: "*"; inherits: false; initial-value: 0 0 #0000; }
-			@property --tw-inset-shadow-color { syntax: "*"; inherits: false; }
-			@property --tw-inset-shadow-alpha { syntax: "<percentage>"; inherits: false; initial-value: 100%; }
-			@property --tw-ring-color { syntax: "*"; inherits: false; }
-			@property --tw-ring-shadow { syntax: "*"; inherits: false; initial-value: 0 0 #0000; }
-			@property --tw-inset-ring-color { syntax: "*"; inherits: false; }
-			@property --tw-inset-ring-shadow { syntax: "*"; inherits: false; initial-value: 0 0 #0000; }
-			@property --tw-ring-inset { syntax: "*"; inherits: false; }
-			@property --tw-ring-offset-width { syntax: "<length>"; inherits: false; initial-value: 0px; }
-			@property --tw-ring-offset-color { syntax: "*"; inherits: false; initial-value: #fff; }
-			@property --tw-ring-offset-shadow { syntax: "*"; inherits: false; initial-value: 0 0 #0000; }
-			@property --tw-backdrop-blur { syntax: "*"; inherits: false; }
-			@property --tw-backdrop-brightness { syntax: "*"; inherits: false; }
-			@property --tw-backdrop-contrast { syntax: "*"; inherits: false; }
-			@property --tw-backdrop-grayscale { syntax: "*"; inherits: false; }
-			@property --tw-backdrop-hue-rotate { syntax: "*"; inherits: false; }
-			@property --tw-backdrop-invert { syntax: "*"; inherits: false; }
-			@property --tw-backdrop-opacity { syntax: "*"; inherits: false; }
-			@property --tw-backdrop-saturate { syntax: "*"; inherits: false; }
-			@property --tw-backdrop-sepia { syntax: "*"; inherits: false; }
-			@property --tw-duration { syntax: "*"; inherits: false; }
-			@property --tw-translate-x { syntax: "*"; inherits: false; initial-value: 0; }
-			@property --tw-translate-y { syntax: "*"; inherits: false; initial-value: 0; }
-			@property --tw-translate-z { syntax: "*"; inherits: false; initial-value: 0; }
-			@layer properties {
-				@supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
-				*, ::before, ::after, ::backdrop {
-				--tw-scale-x: 1; --tw-scale-y: 1; --tw-scale-z: 1; --tw-rotate-x: initial; --tw-rotate-y: initial; --tw-rotate-z: initial; --tw-skew-x: initial; --tw-skew-y: initial; --tw-space-y-reverse: 0; --tw-space-x-reverse: 0; --tw-border-style: solid; --tw-gradient-position: initial; --tw-gradient-from: #0000; --tw-gradient-via: #0000; --tw-gradient-to: #0000; --tw-gradient-stops: initial; --tw-gradient-via-stops: initial; --tw-gradient-from-position: 0%; --tw-gradient-via-position: 50%; --tw-gradient-to-position: 100%; --tw-leading: initial; --tw-font-weight: initial; --tw-tracking: initial; --tw-shadow: 0 0 #0000; --tw-shadow-color: initial; --tw-shadow-alpha: 100%; --tw-inset-shadow: 0 0 #0000; --tw-inset-shadow-color: initial; --tw-inset-shadow-alpha: 100%; --tw-ring-color: initial; --tw-ring-shadow: 0 0 #0000; --tw-inset-ring-color: initial; --tw-inset-ring-shadow: 0 0 #0000; --tw-ring-inset: initial; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-offset-shadow: 0 0 #0000; --tw-backdrop-blur: initial; --tw-backdrop-brightness: initial; --tw-backdrop-contrast: initial; --tw-backdrop-grayscale: initial; --tw-backdrop-hue-rotate: initial; --tw-backdrop-invert: initial; --tw-backdrop-opacity: initial; --tw-backdrop-saturate: initial; --tw-backdrop-sepia: initial; --tw-duration: initial; --tw-translate-x: 0; --tw-translate-y: 0; --tw-translate-z: 0;
-			}
-			}
+				.scale-95 { scale: 0.95; } .scale-105 { scale: 1.05; } .scale-110 { scale: 1.1; } .-rotate-6 { rotate: -6deg; } .rotate-3 { rotate: 3deg; } .rotate-180 { rotate: 180deg; }
+				.translate-y-0 { transform: translateY(0); } .translate-y-2 { transform: translateY(0.5rem); }
+				.cursor-pointer { cursor: pointer; } .scroll-mt-20 { scroll-margin-top: 5rem; }
+				.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); } .grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } .grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+				.items-center { align-items: center; } .items-start { align-items: flex-start; }
+				.justify-between { justify-content: space-between; } .justify-center { justify-content: center; } .justify-end { justify-content: flex-end; }
+				.gap-1 { gap: 0.25rem; } .gap-2 { gap: 0.5rem; } .gap-3 { gap: 0.75rem; } .gap-4 { gap: 1rem; } .gap-5 { gap: 1.25rem; } .gap-6 { gap: 1.5rem; } .gap-8 { gap: 2rem; } .gap-12 { gap: 3rem; } .gap-16 { gap: 4rem; }
+				.space-y-2 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.5rem; } .space-y-4 > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem; } .space-y-6 > :not([hidden]) ~ :not([hidden]) { margin-top: 1.5rem; }
+				.overflow-hidden { overflow: hidden; } .overflow-x-hidden { overflow-x: hidden; } .overflow-y-auto { overflow-y: auto; } .scroll-smooth { scroll-behavior: smooth; }
+				.rounded-xl { border-radius: 0.75rem; } .rounded-2xl { border-radius: 1rem; } .rounded-3xl { border-radius: 1.5rem; } .rounded-\[2rem\] { border-radius: 2rem; } .rounded-\[3rem\] { border-radius: 3rem; } .rounded-full { border-radius: 9999px; } .rounded-lg { border-radius: 0.5rem; } .rounded-bl-\[100px\] { border-bottom-left-radius: 100px; }
+				.border { border-width: 1px; } .border-2 { border-width: 2px; } .border-4 { border-width: 4px; } .border-y { border-top-width: 1px; border-bottom-width: 1px; } .border-t { border-top-width: 1px; } .border-b { border-bottom-width: 1px; } .border-none { border-style: none; }
+				.border-indigo-100 { border-color: var(--color-indigo-100); } .border-indigo-500 { border-color: var(--color-indigo-500); } .border-slate-50 { border-color: var(--color-slate-50); } .border-slate-100 { border-color: var(--color-slate-100); } .border-slate-200 { border-color: var(--color-slate-200); } .border-slate-800 { border-color: var(--color-slate-800); } .border-slate-900 { border-color: var(--color-slate-900); } .border-white { border-color: var(--color-white); }
+				.bg-\[\#007AFF\] { background-color: #007AFF; } .bg-\[\#07C160\] { background-color: #07C160; } .bg-\[\#25D366\] { background-color: #25D366; }
+				.bg-emerald-100 { background-color: var(--color-emerald-100); } .bg-indigo-50 { background-color: var(--color-indigo-50); } .bg-indigo-100 { background-color: var(--color-indigo-100); } .bg-indigo-500 { background-color: var(--color-indigo-500); } .bg-indigo-600 { background-color: var(--color-indigo-600); }
+				.bg-slate-50 { background-color: var(--color-slate-50); } .bg-slate-100 { background-color: var(--color-slate-100); } .bg-slate-200 { background-color: var(--color-slate-200); } .bg-slate-800 { background-color: var(--color-slate-800); } .bg-slate-900 { background-color: var(--color-slate-900); } .bg-slate-950 { background-color: var(--color-slate-950); } .bg-white { background-color: var(--color-white); } .bg-white\/95 { background-color: rgba(255,255,255,0.95); }
+				.bg-gradient-to-l { background-image: linear-gradient(to left, var(--tw-gradient-stops)); } .bg-gradient-to-r { background-image: linear-gradient(to right, var(--tw-gradient-stops)); }
+				.from-indigo-600 { --tw-gradient-from: var(--color-indigo-600); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(79, 70, 229, 0)); }
+				.from-white { --tw-gradient-from: var(--color-white); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0)); }
+				.to-blue-500 { --tw-gradient-to: var(--color-blue-500); } .to-transparent { --tw-gradient-to: transparent; }
+				.bg-clip-text { background-clip: text; } .fill-current { fill: currentcolor; } .object-contain { object-fit: contain; } .object-cover { object-fit: cover; } .object-center { object-position: center; }
+				.p-1 { padding: 0.25rem; } .p-1\.5 { padding: 0.375rem; } .p-2 { padding: 0.5rem; } .p-3 { padding: 0.75rem; } .p-4 { padding: 1rem; } .p-5 { padding: 1.25rem; } .p-6 { padding: 1.5rem; } .p-8 { padding: 2rem; } .p-10 { padding: 2.5rem; }
+				.px-4 { padding-left: 1rem; padding-right: 1rem; } .px-5 { padding-left: 1.25rem; padding-right: 1.25rem; } .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; } .px-7 { padding-left: 1.75rem; padding-right: 1.75rem; } .px-10 { padding-left: 2.5rem; padding-right: 2.5rem; }
+				.py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; } .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; } .py-2\.5 { padding-top: 0.625rem; padding-bottom: 0.625rem; } .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; } .py-4 { padding-top: 1rem; padding-bottom: 1rem; } .py-5 { padding-top: 1.25rem; padding-bottom: 1.25rem; } .py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; } .py-8 { padding-top: 2rem; padding-bottom: 2rem; } .py-10 { padding-top: 2.5rem; padding-bottom: 2.5rem; } .py-24 { padding-top: 6rem; padding-bottom: 6rem; }
+				.pt-2 { padding-top: 0.5rem; } .pt-4 { padding-top: 1rem; } .pt-6 { padding-top: 1.5rem; } .pt-8 { padding-top: 2rem; } .pt-10 { padding-top: 2.5rem; } .pt-12 { padding-top: 3rem; } .pt-16 { padding-top: 4rem; }
+				.pb-8 { padding-bottom: 2rem; } .pb-24 { padding-bottom: 6rem; } .pb-32 { padding-bottom: 8rem; }
+				.ml-4 { margin-left: 1rem; }
+				.text-center { text-align: center; } .text-left { text-align: left; }
+				.text-2xl { font-size: 1.5rem; line-height: 2rem; } .text-3xl { font-size: 1.875rem; line-height: 2.25rem; } .text-4xl { font-size: 2.25rem; line-height: 2.5rem; } .text-5xl { font-size: 3rem; line-height: 1; } .text-lg { font-size: 1.125rem; line-height: 1.75rem; } .text-sm { font-size: 0.875rem; line-height: 1.25rem; } .text-xl { font-size: 1.25rem; line-height: 1.75rem; } .text-xs { font-size: 0.75rem; line-height: 1rem; }
+				.text-\[9px\] { font-size: 9px; } .text-\[15px\] { font-size: 15px; }
+				.leading-\[1\.05\] { line-height: 1.05; } .leading-none { line-height: 1; } .leading-relaxed { line-height: 1.625; } .leading-tight { line-height: 1.25; }
+				.font-black { font-weight: 900; } .font-bold { font-weight: 700; } .font-extrabold { font-weight: 800; } .font-semibold { font-weight: 600; }
+				.tracking-\[0\.2em\] { letter-spacing: 0.2em; } .tracking-tight { letter-spacing: -0.025em; } .tracking-wide { letter-spacing: 0.025em; } .tracking-wider { letter-spacing: 0.05em; } .tracking-widest { letter-spacing: 0.1em; }
+				.text-emerald-400 { color: var(--color-emerald-400); } .text-emerald-600 { color: var(--color-emerald-600); } .text-indigo-200 { color: var(--color-indigo-200); } .text-indigo-400 { color: var(--color-indigo-400); } .text-indigo-500 { color: var(--color-indigo-500); } .text-indigo-600 { color: var(--color-indigo-600); } .text-indigo-700 { color: var(--color-indigo-700); } .text-slate-300 { color: var(--color-slate-300); } .text-slate-400 { color: var(--color-slate-400); } .text-slate-500 { color: var(--color-slate-500); } .text-slate-600 { color: var(--color-slate-600); } .text-slate-700 { color: var(--color-slate-700); } .text-slate-800 { color: var(--color-slate-800); } .text-slate-900 { color: var(--color-slate-900); } .text-transparent { color: transparent; } .text-white { color: var(--color-white); } .text-yellow-400 { color: var(--color-yellow-400); }
+				.uppercase { text-transform: uppercase; } .italic { font-style: italic; }
+				.opacity-0 { opacity: 0; } .opacity-10 { opacity: 0.1; } .opacity-100 { opacity: 1; }
+				.shadow-2xl { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); } .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); } .shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); } .shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); } .shadow-inner { box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06); }
+				.shadow-\[0_20px_50px_rgba\(0\,0\,0\,0\.1\)\] { box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
+				.shadow-\[0_0_0_8px_rgba\(15\,23\,42\,1\)\] { box-shadow: 0 0 0 8px rgba(15,23,42,1); }
+				.shadow-indigo-600\/40 { --tw-shadow-color: rgba(79, 70, 229, 0.4); box-shadow: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -2px var(--tw-shadow-color); }
+				.backdrop-blur-md { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); } .backdrop-blur-sm { backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+				.transition-all { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+				.transition-colors { transition-property: background-color, border-color, color, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+				.transition-opacity { transition-property: opacity; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+				.transition-transform { transition-property: transform; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+				.duration-200 { transition-duration: 200ms; } .duration-300 { transition-duration: 300ms; }
+				.invisible { visibility: hidden; }
+				
+				.group:hover .group-hover\:scale-105 { scale: 1.05; } .group:hover .group-hover\:scale-110 { scale: 1.1; }
+				.group:hover .group-hover\:bg-emerald-500 { background-color: var(--color-emerald-500); } .group:hover .group-hover\:bg-indigo-500 { background-color: var(--color-indigo-500); } .group:hover .group-hover\:bg-indigo-600 { background-color: var(--color-indigo-600); } .group:hover .group-hover\:bg-slate-200 { background-color: var(--color-slate-200); }
+				.group:hover .group-hover\:text-white { color: var(--color-white); } .group:hover .group-hover\:text-indigo-600 { color: var(--color-indigo-600); } .group:hover .group-hover\:text-slate-900 { color: var(--color-slate-900); }
+				.group:hover .group-hover\:rotate-180 { rotate: 180deg; }
+				.group:hover .group-hover\:opacity-100 { opacity: 1; } .group:hover .group-hover\:visible { visibility: visible; } .group:hover .group-hover\:translate-y-0 { transform: translateY(0); }
+				
+				.hover\:-translate-y-1:hover { transform: translateY(-0.25rem); } .hover\:-translate-y-2:hover { transform: translateY(-0.5rem); }
+				.hover\:bg-\[\#06ad56\]:hover { background-color: #06ad56; } .hover\:bg-indigo-50:hover { background-color: var(--color-indigo-50); } .hover\:bg-indigo-700:hover { background-color: var(--color-indigo-700); } .hover\:bg-slate-50:hover { background-color: var(--color-slate-50); } .hover\:bg-slate-100:hover { background-color: var(--color-slate-100); }
+				.hover\:text-indigo-600:hover { color: var(--color-indigo-600); } .hover\:text-indigo-700:hover { color: var(--color-indigo-700); } .hover\:text-slate-900:hover { color: var(--color-slate-900); }
+				.hover\:shadow-xl:hover { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+				
+				.outline-none { outline: 2px solid transparent; outline-offset: 2px; }
+				
+				@media (min-width: 640px) {
+					.sm\:flex-row { flex-direction: row; } .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+				}
+				@media (min-width: 768px) {
+					.md\:-right-8 { right: -2rem; } .md\:-left-8 { left: -2rem; } .md\:-left-12 { left: -3rem; } .md\:mx-0 { margin-inline: 0; }
+					.md\:block { display: block; } .md\:flex { display: flex; } .md\:hidden { display: none; }
+					.md\:h-12 { height: 3rem; } .md\:h-\[600px\] { height: 600px; } .md\:w-1\/2 { width: 50%; }
+					.md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+					.md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+					.md\:flex-row { flex-direction: row; } .md\:justify-between { justify-content: space-between; } .md\:justify-start { justify-content: flex-start; }
+					.md\:gap-6 { gap: 1.5rem; } .md\:gap-12 { gap: 3rem; } .md\:p-5 { padding: 1.25rem; } .md\:px-0 { padding-left: 0; padding-right: 0; }
+					.md\:pt-24 { padding-top: 6rem; } .md\:pb-32 { padding-bottom: 8rem; }
+					.md\:text-left { text-align: left; } .md\:text-2xl { font-size: 1.5rem; line-height: 2rem; } .md\:text-3xl { font-size: 1.875rem; line-height: 2.25rem; } .md\:text-5xl { font-size: 3rem; line-height: 1; } .md\:text-6xl { font-size: 3.75rem; line-height: 1; } .md\:text-7xl { font-size: 4.5rem; line-height: 1; } .md\:text-sm { font-size: 0.875rem; line-height: 1.25rem; } .md\:text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+				}
+				@media (min-width: 1024px) {
+					.lg\:flex { display: flex; } .lg\:w-1\/2 { width: 50%; } .lg\:flex-row { flex-direction: row; }
+                    .lg\:text-left { text-align: left; }
+				}
 			}
 
-			/* --- CUSTOM STYLES --- */
+			/* --- CUSTOM STYLES & SPA ROUTING --- */
 			html { scroll-padding-top: 80px; }
 			body { font-family: 'Plus Jakarta Sans', sans-serif; }
 			.font-outfit { font-family: 'Outfit', sans-serif; }
 			
+			.page-view { display: none; opacity: 0; transition: opacity 0.3s ease-in-out; }
+			.page-active { display: block; opacity: 1; }
+
 			@keyframes float { 
             0% { transform: translateY(0px); } 
             50% { transform: translateY(-12px); } 
@@ -647,43 +259,42 @@
 			.marquee-wrapper:hover { animation-play-state: paused; }
 			
 			.review-card { 
-            width: 320px; 
-            flex-shrink: 0; 
-            background: white; 
-            border-radius: 1.5rem; 
-            padding: 1.5rem; 
-            box-shadow: 0 10px 40px -10px rgb(0 0 0 / 0.08); 
-            border: 1px solid #f8fafc; 
-            margin-right: 1.5rem; 
-			display: flex;
-			flex-direction: column;			
+            width: 320px; flex-shrink: 0; background: white; border-radius: 1.5rem; padding: 1.5rem; 
+            box-shadow: 0 10px 40px -10px rgb(0 0 0 / 0.08); border: 1px solid #f8fafc; margin-right: 1.5rem; 
+			display: flex; flex-direction: column;			
 			}
 			
-			.lang-menu { 
-            transition: all 0.2s ease-in-out; 
-            transform: translateY(10px); 
-            opacity: 0; 
-            visibility: hidden; 
-			}
-			.group:hover .lang-menu { 
-            transform: translateY(0); 
-            opacity: 1; 
-            visibility: visible; 
-			}
-			
+            /* 100% Bulletproof Desktop Dropdown CSS (Fixes Chrome Mouse Gap Bug) */
+            .dropdown-container { position: relative; height: 100%; display: flex; align-items: center; cursor: pointer; }
+            .dropdown-menu {
+                position: absolute;
+                top: calc(100% - 5px); /* Overlaps by 5px to prevent gap */
+                padding-top: 10px;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(10px);
+                transition: all 0.2s ease-in-out;
+                z-index: 100;
+                pointer-events: none;
+            }
+            .dropdown-menu-left { left: 0; }
+            .dropdown-menu-right { right: 0; }
+            
+            .dropdown-container:hover .dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+                pointer-events: auto;
+            }
+            .dropdown-container:hover .nav-arrow { transform: rotate(180deg); }
+            .dropdown-container:hover .nav-text { color: var(--color-indigo-600); }
+            .lang-container:hover .lang-text { color: var(--color-slate-900); }
+            .lang-container:hover .lang-btn { background-color: var(--color-slate-200); }
+
 			.timeline-line::before {
-            content: '';
-            position: absolute;
-            top: 2rem; 
-            left: 10%;
-            right: 10%;
-            height: 3px;
-            background: #e0e7ff; 
-            z-index: 0;
+            content: ''; position: absolute; top: 2rem; left: 10%; right: 10%; height: 3px; background: #e0e7ff; z-index: 0;
 			}
-			@media (max-width: 768px) {
-            .timeline-line::before { display: none; }
-			}
+			@media (max-width: 768px) { .timeline-line::before { display: none; } }
 		</style>
 	</head>
 	<body class="min-h-screen bg-slate-50 text-slate-800 overflow-x-hidden w-full">
@@ -694,7 +305,7 @@
 				<div class="flex items-center justify-between h-20 w-full">
 					
 					<!-- LOGO SECTION -->
-					<div class="flex items-center gap-3 cursor-pointer group" onclick="scrollToSection('home')">
+					<div class="flex items-center gap-3 cursor-pointer group" onclick="navigate('home')">
 						<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIxMjAwIiB2aWV3Qm94PSIwIDAgNDAwIDQwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgbWVldCI+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQwMCIgaGVpZ2h0PSI0MDAiIHJ4PSI0OCIgZmlsbD0iI2ZmZmZmZiI+PC9yZWN0PgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyMS41LCA1MCkiPgogICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjE3MCIgcng9IjE0IiBmaWxsPSIjMGYxNzJhIj48L3JlY3Q+CiAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTY1IiBoZWlnaHQ9IjM0IiByeD0iMTQiIGZpbGw9IiMwZjE3MmEiPjwvcmVjdD4KICAgIDxyZWN0IHg9IjAiIHk9IjEzNiIgd2lkdGg9IjE2NSIgaGVpZ2h0PSIzNCIgcng9IjE0IiBmaWxsPSIjMGYxNzJhIj48L3JlY3Q+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NSwgNjgpIj4KICAgICAgPHBhdGggZD0iTTAgMTYgSDE0IEMxNCAyIDI4IDIgNDIgMiBDNTYgMiA2MCAxNiA3NSAxNiBIODYgQzkxIDE2IDkxIDM0IDg2IDM0IEgwIFYxNloiIGZpbGw9IiM0MzM4Y2EiPjwvcGF0aD4KICAgICAgPGNpcmNsZSBjeD0iMjYiIGN5PSIzNCIgcj0iOSIgZmlsbD0iI2YxZjVmOSI+PC9jaXJjbGU+CiAgICAgIDxjaXJjbGUgY3g9IjY2IiBjeT0iMzQiIHI9IjkiIGZpbGw9IiNmMWY1ZjkiPjwvY2lyY2xlPgogICAgPC9nPgogIDwvZz4KICA8dGV4dCB4PSIyMDAiIHk9IjI5NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzBmMTcyYSIgZm9udC1mYW1pbHk9Ik91dGZpdCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI2NCIgZm9udC13ZWlnaHQ9IjkwMCIgc3R5bGU9ImxldHRlci1zcGFjaW5nOiAtMS41cHg7Ij5FdmVyZ3JlZW48L3RleHQ+CiAgPHRleHQgeD0iMjA0IiB5PSIzMzUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM0MzM4Y2EiIGZvbnQtZmFtaWx5PSJQbHVzIEpha2FydGEgU2Fucywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9IjgwMCIgc3R5bGU9ImxldHRlci1zcGFjaW5nOiA4cHg7Ij5EUklWSU5HIFNDSE9PTDwvdGV4dD4KPC9zdmc+Cg==" alt="Evergreen Driving School Logo" class="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-110">
 						<div class="flex flex-col">
 							<span class="text-xl md:text-2xl font-black text-slate-900 leading-none tracking-tight font-outfit">EVERGREEN</span>
@@ -703,22 +314,47 @@
 					</div>
 					
 					<!-- Desktop Menu -->
-					<div class="hidden md:flex items-center justify-end flex-1 gap-8">
-						<button data-nosnippet onclick="scrollToSection('home')" class="text-slate-600 hover:text-indigo-600 font-semibold transition-colors cursor-pointer" data-i18n="nav_home">Home</button>
-						<button data-nosnippet onclick="scrollToSection('features')" class="text-slate-600 hover:text-indigo-600 font-semibold transition-colors cursor-pointer" data-i18n="nav_why">Why Us</button>
-						<button data-nosnippet onclick="scrollToSection('prep')" class="text-slate-600 hover:text-indigo-600 font-semibold transition-colors cursor-pointer" data-i18n="nav_prep">ICBC Prep</button>
+					<div class="hidden md:flex items-center justify-end flex-1 gap-8 h-full">
+						<button data-nosnippet onclick="navigate('home')" class="text-slate-600 hover:text-indigo-600 font-semibold transition-colors cursor-pointer" data-i18n="nav_home">Home</button>
+						
+                        <!-- Unified Desktop Dropdown: Programs & Areas -->
+                        <div class="dropdown-container">
+                            <button class="flex items-center gap-1 font-semibold transition-colors cursor-pointer outline-none">
+                                <span class="nav-text text-slate-600 transition-colors" data-i18n="nav_services">Programs & Areas</span>
+                                <svg class="w-4 h-4 nav-arrow text-slate-600 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-left">
+                                <div class="w-64 bg-white border border-slate-100 rounded-2xl shadow-xl p-3 flex flex-col">
+                                    <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1 px-3 mt-1" data-i18n="nav_courses">Courses</div>
+                                    <button data-nosnippet onclick="navigate('class5')" class="w-full text-left px-3 py-2.5 hover:bg-indigo-50 hover:text-indigo-700 rounded-xl text-sm font-bold text-slate-700 transition-colors outline-none" data-i18n="nav_class5">Class 5 Road Test Prep</button>
+                                    <button data-nosnippet onclick="navigate('class7')" class="w-full text-left px-3 py-2.5 hover:bg-indigo-50 hover:text-indigo-700 rounded-xl text-sm font-bold text-slate-700 transition-colors outline-none" data-i18n="nav_class7">Class 7 Novice Lessons</button>
+                                    
+                                    <div class="w-full h-px bg-slate-100 my-2"></div>
+                                    
+                                    <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1 px-3 mt-1" data-i18n="nav_locations">Locations</div>
+                                    <button data-nosnippet onclick="navigate('richmond')" class="w-full text-left px-3 py-2.5 hover:bg-indigo-50 hover:text-indigo-700 rounded-xl text-sm font-bold text-slate-700 transition-colors outline-none" data-i18n="nav_richmond">Richmond</button>
+                                    <button data-nosnippet onclick="navigate('vancouver')" class="w-full text-left px-3 py-2.5 hover:bg-indigo-50 hover:text-indigo-700 rounded-xl text-sm font-bold text-slate-700 transition-colors outline-none" data-i18n="nav_vancouver">Vancouver</button>
+                                    <button data-nosnippet onclick="navigate('burnaby')" class="w-full text-left px-3 py-2.5 hover:bg-indigo-50 hover:text-indigo-700 rounded-xl text-sm font-bold text-slate-700 transition-colors outline-none" data-i18n="nav_burnaby">Burnaby</button>
+                                </div>
+                            </div>
+                        </div>
+
 						<button data-nosnippet onclick="scrollToSection('process')" class="text-slate-600 hover:text-indigo-600 font-semibold transition-colors cursor-pointer" data-i18n="nav_process">Process</button>
 						
-						<div class="relative group">
-							<button class="flex items-center gap-2 text-slate-500 hover:text-slate-900 bg-slate-100 px-4 py-2 rounded-full text-sm font-bold transition-all cursor-pointer">
-								<span id="lang-indicator">English</span>
-							</button>
-							<div class="lang-menu absolute right-0 mt-2 w-40 bg-white border border-slate-100 rounded-2xl shadow-xl z-50 overflow-hidden">
-								<button data-nosnippet onclick="setLanguage('en')" class="w-full text-left px-4 py-3 hover:bg-slate-50 text-sm font-bold text-slate-700 cursor-pointer">English</button>
-								<button data-nosnippet onclick="setLanguage('zh-TW')" class="w-full text-left px-4 py-3 hover:bg-slate-50 text-sm font-bold text-slate-700 cursor-pointer">繁體中文</button>
-								<button data-nosnippet onclick="setLanguage('zh-CN')" class="w-full text-left px-4 py-3 hover:bg-slate-50 text-sm font-bold text-slate-700 cursor-pointer">简体中文</button>
-							</div>
-						</div>
+                        <!-- Standard Desktop Dropdown: Language -->
+                        <div class="dropdown-container lang-container">
+                            <button class="lang-btn flex items-center gap-1 bg-slate-100 px-4 py-2 rounded-full text-sm font-bold transition-all cursor-pointer outline-none">
+                                <span id="lang-indicator" class="lang-text text-slate-500 transition-colors">English</span>
+                                <svg class="w-4 h-4 nav-arrow text-slate-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="w-40 bg-white border border-slate-100 rounded-2xl shadow-xl p-2 flex flex-col">
+                                    <button data-nosnippet onclick="setLanguage('en')" class="w-full text-left px-4 py-2.5 hover:bg-indigo-50 hover:text-indigo-700 rounded-xl text-sm font-bold text-slate-700 transition-colors outline-none">English</button>
+                                    <button data-nosnippet onclick="setLanguage('zh-TW')" class="w-full text-left px-4 py-2.5 hover:bg-indigo-50 hover:text-indigo-700 rounded-xl text-sm font-bold text-slate-700 transition-colors outline-none">繁體中文</button>
+                                    <button data-nosnippet onclick="setLanguage('zh-CN')" class="w-full text-left px-4 py-2.5 hover:bg-indigo-50 hover:text-indigo-700 rounded-xl text-sm font-bold text-slate-700 transition-colors outline-none">简体中文</button>
+                                </div>
+                            </div>
+                        </div>
 						
 						<button data-nosnippet onclick="scrollToSection('contact')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-7 py-3 rounded-full font-bold transition-all shadow-lg shadow-indigo-100 cursor-pointer" data-i18n="nav_book">
 							Book Now
@@ -734,564 +370,871 @@
 				</div>
 			</div>
 			
-			<!-- Mobile Dropdown Panel -->
-			<div id="mobile-menu" class="hidden bg-white border-t border-slate-100 px-6 py-8 space-y-4 shadow-xl absolute w-full z-50">
-				<button data-nosnippet onclick="scrollToSection('home')" class="block w-full text-left text-lg font-bold text-slate-800 cursor-pointer" data-i18n="nav_home">Home</button>
-				<button data-nosnippet onclick="scrollToSection('features')" class="block w-full text-left text-lg font-bold text-slate-800 cursor-pointer" data-i18n="nav_why">Why Us</button>
-				<button data-nosnippet onclick="scrollToSection('prep')" class="block w-full text-left text-lg font-bold text-slate-800 cursor-pointer" data-i18n="nav_prep">ICBC Prep</button>
-				<button data-nosnippet onclick="scrollToSection('process')" class="block w-full text-left text-lg font-bold text-slate-800 cursor-pointer" data-i18n="nav_process">Process</button>
-				<div class="grid grid-cols-3 gap-2 py-2">
-					<button data-nosnippet onclick="setLanguage('en')" class="text-xs font-bold p-2 bg-slate-50 rounded-lg cursor-pointer">EN</button>
-					<button data-nosnippet onclick="setLanguage('zh-TW')" class="text-xs font-bold p-2 bg-slate-50 rounded-lg cursor-pointer">繁中</button>
-					<button data-nosnippet onclick="setLanguage('zh-CN')" class="text-xs font-bold p-2 bg-slate-50 rounded-lg cursor-pointer">简中</button>
+			<!-- Mobile Dropdown Panel: Extra pb-32 to fix cut-off scrolling on iOS/Android -->
+			<div id="mobile-menu" class="hidden bg-white border-t border-slate-100 px-6 pt-6 pb-32 space-y-2 shadow-xl absolute w-full z-50 h-[calc(100vh-80px)] overflow-y-auto">
+				<button data-nosnippet onclick="navigate('home')" class="block w-full text-left text-lg font-bold text-slate-800 cursor-pointer py-2" data-i18n="nav_home">Home</button>
+				<hr class="border-slate-100 my-2">
+                
+                <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mt-4 mb-2" data-i18n="nav_courses">Courses</div>
+                <button data-nosnippet onclick="navigate('class5')" class="block w-full text-left text-lg font-bold text-slate-800 cursor-pointer ml-4 py-1" data-i18n="nav_class5">Class 5 Prep</button>
+                <button data-nosnippet onclick="navigate('class7')" class="block w-full text-left text-lg font-bold text-slate-800 cursor-pointer ml-4 py-1" data-i18n="nav_class7">Class 7 Novice</button>
+				
+                <hr class="border-slate-100 my-4">
+                
+                <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mt-4 mb-2" data-i18n="nav_locations">Locations</div>
+                <button data-nosnippet onclick="navigate('richmond')" class="block w-full text-left text-lg font-bold text-slate-800 cursor-pointer ml-4 py-1" data-i18n="nav_richmond">Richmond</button>
+                <button data-nosnippet onclick="navigate('vancouver')" class="block w-full text-left text-lg font-bold text-slate-800 cursor-pointer ml-4 py-1" data-i18n="nav_vancouver">Vancouver</button>
+                <button data-nosnippet onclick="navigate('burnaby')" class="block w-full text-left text-lg font-bold text-slate-800 cursor-pointer ml-4 py-1" data-i18n="nav_burnaby">Burnaby</button>
+                
+                <hr class="border-slate-100 my-4">
+
+                <button data-nosnippet onclick="scrollToSection('process')" class="block w-full text-left text-lg font-bold text-slate-800 cursor-pointer py-2" data-i18n="nav_process">Process</button>
+                
+                <hr class="border-slate-100 my-4">
+
+                <div class="grid grid-cols-3 gap-2 py-2">
+					<button data-nosnippet onclick="setLanguage('en')" class="text-xs font-bold p-3 bg-slate-50 border border-slate-100 rounded-lg cursor-pointer">EN</button>
+					<button data-nosnippet onclick="setLanguage('zh-TW')" class="text-xs font-bold p-3 bg-slate-50 border border-slate-100 rounded-lg cursor-pointer">繁中</button>
+					<button data-nosnippet onclick="setLanguage('zh-CN')" class="text-xs font-bold p-3 bg-slate-50 border border-slate-100 rounded-lg cursor-pointer">简中</button>
 				</div>
-				<button data-nosnippet onclick="scrollToSection('contact')" class="w-full bg-indigo-600 text-white py-4 rounded-xl font-bold cursor-pointer" data-i18n="nav_book">Book Now</button>
+				<button data-nosnippet onclick="scrollToSection('contact')" class="w-full bg-indigo-600 text-white py-4 mt-4 rounded-xl font-bold cursor-pointer" data-i18n="nav_book">Book Now</button>
 			</div>
 		</nav>
 		
-		<main>
+        <!-- SPA ROUTER CONTAINER -->
+		<div id="router-container">
+
+            <!-- ============================================== -->
+            <!-- 1. HOMEPAGE VIEW -->
+            <!-- ============================================== -->
+            <main id="page-home" class="page-view page-active">
+                
+                <!-- Hero Section -->
+                <section id="hero" class="relative bg-white overflow-hidden">
+                    <div class="absolute top-0 right-0 w-[50vw] h-full bg-indigo-50/50 rounded-bl-[100px] -z-10 hidden md:block"></div>
+                    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 px-6 pt-12 pb-24 md:pt-24 md:pb-32">
+                        <div class="w-full md:w-1/2 text-center md:text-left z-10">
+                            <div class="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-bold mb-8 mx-auto md:mx-0">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
+                                <span data-i18n="hero_badge">ICBC Approved Professional Training</span>
+                            </div>
+                            <h1 class="text-5xl md:text-7xl font-black text-slate-900 leading-[1.05] mb-6 font-outfit uppercase">
+                                <span class="block text-xl md:text-3xl text-indigo-600 mb-4 tracking-wider" data-i18n="hero_h1_seo">PREMIER DRIVING SCHOOL IN RICHMOND & VANCOUVER</span>
+                                <span data-i18n="hero_title_part1">Master the Road with</span> <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500" data-i18n="hero_title_part2">Confidence.</span>
+                            </h1>
+                            <p class="text-lg text-slate-600 mb-10 max-w-lg mx-auto md:mx-0 leading-relaxed">
+                                <span data-i18n="hero_subtitle_pre">Expert driving instruction from</span> <span class="font-bold text-slate-900">Evergreen Driving School</span>. <span data-i18n="hero_subtitle_post">Get your N or Class 5 license on the first try with our proven methodology.</span>
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                                <button data-nosnippet onclick="scrollToSection('contact')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-10 py-4 rounded-full font-bold text-lg transition-all shadow-xl shadow-indigo-200 flex items-center justify-center gap-2 hover:-translate-y-1 cursor-pointer">
+                                    <span data-i18n="hero_btn1">Start Learning</span> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                                </button>
+                                <button data-nosnippet onclick="scrollToSection('prep')" class="bg-white hover:bg-slate-50 border-2 border-slate-200 text-slate-700 px-10 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2 cursor-pointer">
+                                    <span data-i18n="nav_prep">ICBC Prep</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="w-full md:w-1/2 relative px-6 md:px-0">
+                            <div class="absolute inset-0 bg-indigo-600 rounded-[3rem] rotate-3 scale-95 opacity-10"></div>
+                            
+                            <!-- SMART FALLBACK SCRIPT -->
+                            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=80" 
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22800%22%3E%3Crect%20width%3D%221200%22%20height%3D%22800%22%20fill%3D%22%23e0e7ff%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22400%22%20font-family%3D%22sans-serif%22%20font-size%3D%2240%22%20font-weight%3D%22bold%22%20fill%3D%22%234f46e5%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3EEvergreen%20Driving%20School%3C%2Ftext%3E%3C%2Fsvg%3E';"
+                            alt="Professional Driving Instruction" 
+                            class="relative w-full h-[400px] md:h-[600px] object-cover rounded-[3rem] shadow-2xl z-10"/>
+                            
+                            <!-- RESTORED FLOATING BADGE DESIGN (White Background) -->
+                            <div class="absolute bottom-10 left-0 md:-left-12 bg-white/95 backdrop-blur-md p-6 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] animate-float border border-white flex items-center gap-5 z-20">
+                                <div class="w-16 h-16 bg-white p-1 rounded-2xl flex items-center justify-center border border-indigo-100 shadow-sm">
+                                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIxMjAwIiB2aWV3Qm94PSIwIDAgNDAwIDQwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgbWVldCI+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQwMCIgaGVpZ2h0PSI0MDAiIHJ4PSI0OCIgZmlsbD0iI2ZmZmZmZiI+PC9yZWN0PgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyMS41LCA1MCkiPgogICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjE3MCIgcng9IjE0IiBmaWxsPSIjMGYxNzJhIj48L3JlY3Q+CiAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTY1IiBoZWlnaHQ9IjM0IiByeD0iMTQiIGZpbGw9IiMwZjE3MmEiPjwvcmVjdD4KICAgIDxyZWN0IHg9IjAiIHk9IjEzNiIgd2lkdGg9IjE2NSIgaGVpZ2h0PSIzNCIgcng9IjE0IiBmaWxsPSIjMGYxNzJhIj48L3JlY3Q+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NSwgNjgpIj4KICAgICAgPHBhdGggZD0iTTAgMTYgSDE0IEMxNCAyIDI4IDIgNDIgMiBDNTYgMiA2MCAxNiA3NSAxNiBIODYgQzkxIDE2IDkxIDM0IDg2IDM0IEgwIFYxNloiIGZpbGw9IiM0MzM4Y2EiPjwvcGF0aD4KICAgICAgPGNpcmNsZSBjeD0iMjYiIGN5PSIzNCIgcj0iOSIgZmlsbD0iI2YxZjVmOSI+PC9jaXJjbGU+CiAgICAgIDxjaXJjbGUgY3g9IjY2IiBjeT0iMzQiIHI9IjkiIGZpbGw9IiNmMWY1ZjkiPjwvY2lyY2xlPgogICAgPC9nPgogIDwvZz4KICA8dGV4dCB4PSIyMDAiIHk9IjI5NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzBmMTcyYSIgZm9udC1mYW1pbHk9Ik91dGZpdCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI2NCIgZm9udC13ZWlnaHQ9IjkwMCIgc3R5bGU9ImxldHRlci1zcGFjaW5nOiAtMS41cHg7Ij5FdmVyZ3JlZW48L3RleHQ+CiAgPHRleHQgeD0iMjA0IiB5PSIzMzUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM0MzM4Y2EiIGZvbnQtZmFtaWx5PSJQbHVzIEpha2FydGEgU2Fucywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9IjgwMCIgc3R5bGU9ImxldHRlci1zcGFjaW5nOiA4cHg7Ij5EUklWSU5HIFNDSE9PTDwvdGV4dD4KPC9zdmc+Cg==" alt="Evergreen Icon" class="w-full h-full object-contain">
+                                </div>
+                                <div>
+                                    <p class="font-black text-slate-900 text-2xl" data-i18n="hero_stat_title">98% Pass Rate</p>
+                                    <p class="text-sm text-slate-500 font-bold tracking-wide uppercase mt-1" data-i18n="hero_stat_sub">On First Attempt</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Trust Banner -->
+                <div class="bg-slate-900 py-5 border-y border-slate-800">
+                    <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-6 text-slate-300 text-xs md:text-sm font-bold uppercase tracking-widest">
+                        <span class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span data-i18n="trust_1">ICBC Certified Instructors</span>
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span data-i18n="trust_2">Fully Insured & Bonded</span>
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span data-i18n="trust_3">Dual-Control Vehicles</span>
+                        </span>
+                        <span class="flex items-center gap-2 hidden lg:flex">
+                            <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span data-i18n="trust_4">5-Star Student Rated</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Why Us Section -->
+                <section id="features" class="py-24 bg-slate-50 scroll-mt-20">
+                    <div class="max-w-7xl mx-auto px-6">
+                        <div class="text-center mb-16">
+                            <p class="text-indigo-600 font-bold uppercase tracking-widest text-sm mb-3">The Evergreen Advantage</p>
+                            <h2 class="text-4xl md:text-5xl font-black text-slate-900 font-outfit uppercase">
+                                <span data-i18n="feat_header_pre">Why Choose</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500">Evergreen</span>
+                            </h2>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="bg-white p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                                <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-slate-900 mb-4" data-i18n="feat1_title">Dual-Control Safety</h3>
+                                <p class="text-slate-500 leading-relaxed" data-i18n="feat1_desc">Safety is our priority. All vehicles are ICBC certified and equipped with instructor dual-brakes.</p>
+                            </div>
+                            <div class="bg-white p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                                <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-slate-900 mb-4" data-i18n="feat2_title">Flexible Pick-up</h3>
+                                <p class="text-slate-500 leading-relaxed" data-i18n="feat2_desc">We come to you. Door-to-door service from your home or school in Richmond, Vancouver, and Burnaby.</p>
+                            </div>
+                            <div class="bg-white p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                                <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-slate-900 mb-4" data-i18n="feat3_title">Comprehensive Mock Tests</h3>
+                                <p class="text-slate-500 leading-relaxed" data-i18n="feat3_desc">Experience simulated ICBC exam routes to eliminate surprises and build test-day confidence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ICBC Skills Section -->
+                <section id="prep" class="py-24 bg-white scroll-mt-20 overflow-hidden border-t border-slate-100">
+                    <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
+                        <div class="w-full lg:w-1/2 relative">
+                            <div class="absolute inset-0 bg-indigo-500 rounded-[3rem] -rotate-6 scale-105 opacity-10"></div>
+                            
+                            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80" 
+                            loading="lazy"
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22800%22%3E%3Crect%20width%3D%221200%22%20height%3D%22800%22%20fill%3D%22%23e0e7ff%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22400%22%20font-family%3D%22sans-serif%22%20font-size%3D%2240%22%20font-weight%3D%22bold%22%20fill%3D%22%234f46e5%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3EICBC%20Road%20Test%20Prep%3C%2Ftext%3E%3C%2Fsvg%3E';"
+                            alt="Instructor teaching student driver" 
+                            class="relative w-full h-[500px] object-cover rounded-[3rem] shadow-lg z-10"/>
+                            
+                            <div class="absolute top-10 -right-4 md:-right-8 bg-white p-5 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-4 z-20">
+                                <div class="bg-emerald-100 p-2 rounded-full text-emerald-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                </div>
+                                <span class="font-bold text-slate-800">ICBC Standards Focus</span>
+                            </div>
+                        </div>
+                        
+                        <div class="w-full lg:w-1/2">
+                            <p class="text-indigo-600 font-bold uppercase tracking-widest text-sm mb-3">ICBC Road Test Prep</p>
+                            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-6 font-outfit uppercase leading-tight" data-i18n="prep_title">
+                                Master Essential Driving Skills
+                            </h2>
+                            <p class="text-lg text-slate-600 mb-8" data-i18n="prep_desc">
+                                We focus on the exact criteria ICBC examiners use to evaluate your driving. No surprises on test day.
+                            </p>
+                            
+                            <ul class="space-y-6">
+                                <li class="flex items-start gap-4">
+                                    <div class="mt-1 bg-indigo-100 text-indigo-600 p-1.5 rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 12h20"/><path d="m12 2 10 10-10 10"/></svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-slate-900" data-i18n="skill_1">Perfect Parallel Parking</h3>
+                                        <p class="text-slate-500 mt-1 text-sm">Step-by-step techniques to park effortlessly every time.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <div class="mt-1 bg-indigo-100 text-indigo-600 p-1.5 rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-slate-900" data-i18n="skill_2">360° Observation</h3>
+                                        <p class="text-slate-500 mt-1 text-sm">Mastering hazard perception and situational awareness.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <div class="mt-1 bg-indigo-100 text-indigo-600 p-1.5 rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-slate-900" data-i18n="skill_3">Shoulder Checks</h3>
+                                        <p class="text-slate-500 mt-1 text-sm">Crucial blind-spot management for safe lane changes.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <div class="mt-1 bg-indigo-100 text-indigo-600 p-1.5 rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 16a10 10 0 1 1 17.32 0"/></svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-slate-900" data-i18n="skill_4">Speed Control & Zones</h3>
+                                        <p class="text-slate-500 mt-1 text-sm">Navigating tricky school zones and playground areas flawlessly.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- LOCAL SEO & EXPERTISE SECTION -->
+                <section id="expertise" class="py-24 bg-white border-t border-slate-100">
+                    <div class="max-w-7xl mx-auto px-6">
+                        <div class="flex flex-col md:flex-row gap-16 items-center">
+                            <div class="w-full md:w-1/2">
+                                <h2 class="text-3xl md:text-4xl font-black text-slate-900 font-outfit uppercase mb-6" data-i18n="localseo_title_1">Mastering the Richmond ICBC Routes</h2>
+                                <p class="text-lg text-slate-600 mb-6 leading-relaxed" data-i18n="localseo_desc_1">
+                                    Navigating the Richmond ICBC testing routes requires specific local knowledge. Examiners frequently test your observation skills around the busy Lansdowne area, where pedestrian traffic and complex intersections demand heightened awareness. We extensively cover tricky school zones and playground areas, such as those near Minoru Park, ensuring you automatically adjust your speed to 30 km/h. We also train you to confidently handle unmarked crosswalks along Granville Avenue and complex right-of-way scenarios near No. 3 Road.
+                                </p>
+                            </div>
+                            <div class="w-full md:w-1/2 bg-slate-50 p-8 md:p-10 rounded-[2rem] border border-slate-100 shadow-sm relative overflow-hidden">
+                                <div class="absolute -right-10 -top-10 w-40 h-40 bg-indigo-100 rounded-full opacity-50 blur-3xl"></div>
+                                <h2 class="text-3xl font-black text-slate-900 font-outfit uppercase mb-6 relative z-10" data-i18n="localseo_title_2">The Secret to Perfect Parallel Parking</h2>
+                                <p class="text-lg text-slate-600 leading-relaxed relative z-10" data-i18n="localseo_desc_2">
+                                    Mastering parallel parking is often the most anxiety-inducing part of the ICBC road test. Our instructors break it down into a foolproof, step-by-step mathematical approach. We teach you exactly where to align your vehicle, the precise reference points on your windows and mirrors, and when to counter-steer. Instead of guessing, you'll have a reliable formula that works on any vehicle size, ensuring you park within the required 30cm of the curb effortlessly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Process Section -->
+                <section id="process" class="py-24 bg-slate-900 scroll-mt-20">
+                    <div class="max-w-7xl mx-auto px-6">
+                        <div class="text-center mb-20">
+                            <h2 class="text-4xl md:text-5xl font-black text-white mb-4 font-outfit uppercase" data-i18n="nav_process">The Success Process</h2>
+                            <p class="text-slate-400 text-lg">Four simple steps from your first lesson to getting your license.</p>
+                        </div>
+                        <div class="relative timeline-line">
+                            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
+                                <div class="text-center group">
+                                    <div class="w-16 h-16 bg-slate-800 text-indigo-400 border-4 border-slate-900 rounded-full flex items-center justify-center mx-auto mb-6 font-black text-2xl group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300 z-10 relative shadow-[0_0_0_8px_rgba(15,23,42,1)]">1</div>
+                                    <h3 class="font-bold text-white mb-3 text-xl" data-i18n="step1_title">Evaluation</h3>
+                                    <p class="text-slate-400 text-sm leading-relaxed" data-i18n="step1_desc">Assessment of current skills and identification of habits to improve.</p>
+                                </div>
+                                <div class="text-center group">
+                                    <div class="w-16 h-16 bg-slate-800 text-indigo-400 border-4 border-slate-900 rounded-full flex items-center justify-center mx-auto mb-6 font-black text-2xl group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300 z-10 relative shadow-[0_0_0_8px_rgba(15,23,42,1)]">2</div>
+                                    <h3 class="font-bold text-white mb-3 text-xl" data-i18n="step2_title">Practice</h3>
+                                    <p class="text-slate-400 text-sm leading-relaxed" data-i18n="step2_desc">Structured lessons focusing on ICBC safety standards and road rules.</p>
+                                </div>
+                                <div class="text-center group">
+                                    <div class="w-16 h-16 bg-slate-800 text-indigo-400 border-4 border-slate-900 rounded-full flex items-center justify-center mx-auto mb-6 font-black text-2xl group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300 z-10 relative shadow-[0_0_0_8px_rgba(15,23,42,1)]">3</div>
+                                    <h3 class="font-bold text-white mb-3 text-xl" data-i18n="step3_title">Mock Test</h3>
+                                    <p class="text-slate-400 text-sm leading-relaxed" data-i18n="step3_desc">Simulated road tests conducted on actual ICBC exam routes.</p>
+                                </div>
+                                <div class="text-center group">
+                                    <div class="w-16 h-16 bg-slate-800 text-emerald-400 border-4 border-slate-900 rounded-full flex items-center justify-center mx-auto mb-6 font-black text-2xl group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300 z-10 relative shadow-[0_0_0_8px_rgba(15,23,42,1)]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    </div>
+                                    <h3 class="font-bold text-white mb-3 text-xl" data-i18n="step4_title">Success</h3>
+                                    <p class="text-slate-400 text-sm leading-relaxed" data-i18n="step4_desc">Pass your test with confidence and receive your BC driver's license.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Reviews Marquee -->
+                <section class="py-24 bg-white overflow-hidden border-b border-slate-100">
+                    <h2 class="text-center text-3xl font-black text-slate-900 font-outfit uppercase tracking-wide mb-12" data-i18n="reviews_title">Evergreen Success Stories</h2>
+                    <div class="relative w-full overflow-hidden">
+                        <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+                        <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+                        <div id="reviews-marquee" class="marquee-wrapper py-4"></div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- ============================================== -->
+            <!-- 2. CLASS 5 PREP PAGE -->
+            <!-- ============================================== -->
+            <main id="page-class5" class="page-view pt-10 pb-24">
+                <div class="max-w-7xl mx-auto px-6">
+                    <div class="flex flex-col lg:flex-row items-center gap-12 mb-16">
+                        <div class="w-full lg:w-1/2 text-center lg:text-left">
+                            <p class="text-indigo-600 font-bold uppercase tracking-widest text-sm mb-3">Professional Training</p>
+                            <h1 class="text-5xl md:text-6xl font-black font-outfit uppercase text-slate-900 mb-6" data-i18n="c5_title">Class 5 Road Test Prep</h1>
+                            <p class="text-xl text-slate-600 leading-relaxed" data-i18n="c5_sub">Elevate your driving skills and eliminate bad habits to pass your full-privilege ICBC Class 5 road test with confidence.</p>
+                        </div>
+                        <div class="w-full lg:w-1/2">
+                            <!-- Fallback handles broken Unsplash links smoothly -->
+                            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80" 
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22800%22%3E%3Crect%20width%3D%221200%22%20height%3D%22800%22%20fill%3D%22%23e0e7ff%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22400%22%20font-family%3D%22sans-serif%22%20font-size%3D%2240%22%20font-weight%3D%22bold%22%20fill%3D%22%234f46e5%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3EClass%205%20Preparation%3C%2Ftext%3E%3C%2Fsvg%3E';" 
+                            alt="Class 5 Prep" class="rounded-[3rem] shadow-2xl object-cover h-[350px] w-full">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                        <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
+                            <h3 class="text-2xl font-bold mb-4" data-i18n="c5_pt1_title">Breaking Bad Habits</h3>
+                            <p class="text-slate-600 leading-relaxed" data-i18n="c5_pt1_desc">Experienced drivers often develop habits that ICBC examiners penalize. We identify and correct rolling stops, one-handed steering, and missed shoulder checks.</p>
+                        </div>
+                        <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
+                            <h3 class="text-2xl font-bold mb-4" data-i18n="c5_pt2_title">Highway & Complex Merging</h3>
+                            <p class="text-slate-600 leading-relaxed" data-i18n="c5_pt2_desc">The Class 5 test may include highway driving. We ensure you can confidently accelerate, merge smoothly, and maintain appropriate following distances at high speeds.</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- ============================================== -->
+            <!-- 3. CLASS 7 NOVICE PAGE -->
+            <!-- ============================================== -->
+            <main id="page-class7" class="page-view pt-10 pb-24">
+                <div class="max-w-7xl mx-auto px-6">
+                    <div class="flex flex-col lg:flex-row items-center gap-12 mb-16">
+                        <div class="w-full lg:w-1/2 text-center lg:text-left">
+                            <p class="text-indigo-600 font-bold uppercase tracking-widest text-sm mb-3">Beginner Friendly</p>
+                            <h1 class="text-5xl md:text-6xl font-black font-outfit uppercase text-slate-900 mb-6" data-i18n="c7_title">Class 7 (N) Lessons</h1>
+                            <p class="text-xl text-slate-600 leading-relaxed" data-i18n="c7_sub">Comprehensive driving instruction designed for beginners to build a lifetime of safe driving habits and pass the N test.</p>
+                        </div>
+                        <div class="w-full lg:w-1/2">
+                            <!-- Bulletproof SVG fallback on error -->
+                            <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80" 
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22800%22%3E%3Crect%20width%3D%221200%22%20height%3D%22800%22%20fill%3D%22%23e0e7ff%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22400%22%20font-family%3D%22sans-serif%22%20font-size%3D%2240%22%20font-weight%3D%22bold%22%20fill%3D%22%234f46e5%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3EClass%207%20Novice%20Lessons%3C%2Ftext%3E%3C%2Fsvg%3E';" 
+                            alt="Class 7 Learner" class="rounded-[3rem] shadow-2xl object-cover h-[350px] w-full">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                        <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
+                            <h3 class="text-2xl font-bold mb-4" data-i18n="c7_pt1_title">Core Vehicle Control</h3>
+                            <p class="text-slate-600 leading-relaxed" data-i18n="c7_pt1_desc">Starting from scratch? We teach you the fundamentals of steering, braking, and accelerating smoothly in quiet residential areas before moving to traffic.</p>
+                        </div>
+                        <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
+                            <h3 class="text-2xl font-bold mb-4" data-i18n="c7_pt2_title">Hazard Perception</h3>
+                            <p class="text-slate-600 leading-relaxed" data-i18n="c7_pt2_desc">A critical component of the Class 7 test. We train your eyes to scan intersections, identify potential hazards early, and communicate them effectively to the examiner.</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- ============================================== -->
+            <!-- 4. RICHMOND PAGE -->
+            <!-- ============================================== -->
+            <main id="page-richmond" class="page-view pt-10 pb-24">
+                <div class="max-w-7xl mx-auto px-6">
+                    <div class="flex flex-col lg:flex-row items-center gap-12 mb-16">
+                        <div class="w-full lg:w-1/2 text-center lg:text-left">
+                            <p class="text-indigo-600 font-bold uppercase tracking-widest text-sm mb-3">Local Service Area</p>
+                            <h1 class="text-5xl md:text-6xl font-black font-outfit uppercase text-slate-900 mb-6" data-i18n="rich_title">Driving Lessons in Richmond</h1>
+                            <p class="text-xl text-slate-600 leading-relaxed" data-i18n="rich_sub">Specialized training designed around the Richmond ICBC Lansdowne routes and local traffic conditions.</p>
+                        </div>
+                        <div class="w-full lg:w-1/2">
+                            <!-- Bulletproof SVG fallback on error -->
+                            <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1200&q=80" 
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22800%22%3E%3Crect%20width%3D%221200%22%20height%3D%22800%22%20fill%3D%22%23e0e7ff%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22400%22%20font-family%3D%22sans-serif%22%20font-size%3D%2240%22%20font-weight%3D%22bold%22%20fill%3D%22%234f46e5%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3ERichmond%20Driving%3C%2Ftext%3E%3C%2Fsvg%3E';" 
+                            alt="Richmond Driving" class="rounded-[3rem] shadow-2xl object-cover h-[350px] w-full">
+                        </div>
+                    </div>
+                    <div class="max-w-5xl mx-auto bg-slate-50 p-10 rounded-[2rem] border border-slate-100 shadow-sm text-center">
+                        <h3 class="text-3xl font-bold mb-6 text-slate-900" data-i18n="rich_pt1_title">Conquer the Lansdowne Area</h3>
+                        <p class="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto" data-i18n="rich_pt1_desc">Richmond's specific layout features wide multi-lane roads like No. 3 Road, complex parking lots, and heavy pedestrian zones. Our instructors are intimately familiar with the exact routes ICBC examiners use starting from the Lansdowne centre. We focus heavily on scanning for cyclists, dealing with right-turns on red, and understanding Richmond's specific school zone layouts.</p>
+                    </div>
+                </div>
+            </main>
+
+            <!-- ============================================== -->
+            <!-- 5. VANCOUVER PAGE -->
+            <!-- ============================================== -->
+            <main id="page-vancouver" class="page-view pt-10 pb-24">
+                <div class="max-w-7xl mx-auto px-6">
+                    <div class="flex flex-col lg:flex-row items-center gap-12 mb-16">
+                        <div class="w-full lg:w-1/2 text-center lg:text-left">
+                            <p class="text-indigo-600 font-bold uppercase tracking-widest text-sm mb-3">Local Service Area</p>
+                            <h1 class="text-5xl md:text-6xl font-black font-outfit uppercase text-slate-900 mb-6" data-i18n="vanc_title">Driving Lessons in Vancouver</h1>
+                            <p class="text-xl text-slate-600 leading-relaxed" data-i18n="vanc_sub">Expert preparation for the Point Grey and Commercial Drive testing routes.</p>
+                        </div>
+                        <div class="w-full lg:w-1/2">
+                            <!-- Bulletproof SVG fallback on error -->
+                            <img src="https://images.unsplash.com/photo-1559511260-66a654ae982a?auto=format&fit=crop&w=1200&q=80" 
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22800%22%3E%3Crect%20width%3D%221200%22%20height%3D%22800%22%20fill%3D%22%23e0e7ff%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22400%22%20font-family%3D%22sans-serif%22%20font-size%3D%2240%22%20font-weight%3D%22bold%22%20fill%3D%22%234f46e5%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3EVancouver%20Driving%3C%2Ftext%3E%3C%2Fsvg%3E';" 
+                            alt="Vancouver Driving" class="rounded-[3rem] shadow-2xl object-cover h-[350px] w-full">
+                        </div>
+                    </div>
+                    <div class="max-w-5xl mx-auto bg-slate-50 p-10 rounded-[2rem] border border-slate-100 shadow-sm text-center">
+                        <h3 class="text-3xl font-bold mb-6 text-slate-900" data-i18n="vanc_pt1_title">Navigate Urban Complexity</h3>
+                        <p class="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto" data-i18n="vanc_pt1_desc">Vancouver routes test your ability to handle dense urban environments. We focus heavily on scanning for cyclists in dedicated bike lanes, sharing the road with transit buses, and executing flawless parallel parking on steep inclines. Our instructors ensure you are fully prepared for the unique challenges of the Point Grey ICBC testing area.</p>
+                    </div>
+                </div>
+            </main>
+
+            <!-- ============================================== -->
+            <!-- 6. BURNABY PAGE -->
+            <!-- ============================================== -->
+            <main id="page-burnaby" class="page-view pt-10 pb-24">
+                <div class="max-w-7xl mx-auto px-6">
+                    <div class="flex flex-col lg:flex-row items-center gap-12 mb-16">
+                        <div class="w-full lg:w-1/2 text-center lg:text-left">
+                            <p class="text-indigo-600 font-bold uppercase tracking-widest text-sm mb-3">Local Service Area</p>
+                            <h1 class="text-5xl md:text-6xl font-black font-outfit uppercase text-slate-900 mb-6" data-i18n="burn_title">Driving Lessons in Burnaby</h1>
+                            <p class="text-xl text-slate-600 leading-relaxed" data-i18n="burn_sub">Expert training tailored for the challenging topography and testing centers of Burnaby.</p>
+                        </div>
+                        <div class="w-full lg:w-1/2">
+                            <!-- Bulletproof SVG fallback on error -->
+                            <img src="https://images.unsplash.com/photo-1600320254374-ce2d293c324e?auto=format&fit=crop&w=1200&q=80" 
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22800%22%3E%3Crect%20width%3D%221200%22%20height%3D%22800%22%20fill%3D%22%23e0e7ff%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22400%22%20font-family%3D%22sans-serif%22%20font-size%3D%2240%22%20font-weight%3D%22bold%22%20fill%3D%22%234f46e5%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3EBurnaby%20Driving%3C%2Ftext%3E%3C%2Fsvg%3E';" 
+                            alt="Burnaby Driving" class="rounded-[3rem] shadow-2xl object-cover h-[350px] w-full">
+                        </div>
+                    </div>
+                    <div class="max-w-5xl mx-auto bg-slate-50 p-10 rounded-[2rem] border border-slate-100 shadow-sm text-center">
+                        <h3 class="text-3xl font-bold mb-6 text-slate-900" data-i18n="burn_pt1_title">Master Hills and Highways</h3>
+                        <p class="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto" data-i18n="burn_pt1_desc">Unlike Richmond, Burnaby tests require excellent hill parking and gradient control. We prepare students extensively for the routes around the Lougheed and Wayburne ICBC centers. Our lessons in Burnaby emphasize smooth hill starts, speed maintenance on gradients, and safe merging onto major routes like Highway 1 or Lougheed Highway.</p>
+                    </div>
+                </div>
+            </main>
+
+        </div> <!-- END ROUTER CONTAINER -->
+
+        <!-- Shared Contact Section (Visible on all pages via logic or kept at bottom) -->
+        <section id="contact" class="py-24 bg-slate-900 text-white scroll-mt-20">
+            <div class="max-w-5xl mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-6xl font-black mb-6 font-outfit uppercase" data-i18n="contact_title">Ready to Start?</h2>
+                <p class="text-slate-400 text-xl mb-12" data-i18n="contact_desc">Contact Evergreen today to book your evaluation or lesson package.</p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto w-full">
+                    
+                    <a href="https://wa.me/+16725141176" target="_blank" class="aspect-square flex flex-col items-center justify-center gap-3 bg-white text-slate-900 hover:bg-slate-50 hover:-translate-y-2 transition-all p-4 rounded-[2rem] font-bold shadow-2xl shadow-black/40 group cursor-pointer border-none">
+                        <div class="bg-[#25D366] p-4 md:p-5 rounded-2xl text-white group-hover:scale-110 transition-transform shadow-lg shadow-[#25D366]/40">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.453-.883-.77-1.48-1.718-1.653-2.016-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </div>
+                        <span class="text-lg md:text-xl">WhatsApp</span>
+                    </a>
+                    
+                    <button onclick="openWechatModal()" class="aspect-square flex flex-col items-center justify-center gap-3 bg-white text-slate-900 hover:bg-slate-50 hover:-translate-y-2 transition-all p-4 rounded-[2rem] font-bold shadow-2xl shadow-black/40 group cursor-pointer w-full border-none">
+                        <div class="bg-[#07C160] p-4 md:p-5 rounded-2xl text-white group-hover:scale-110 transition-transform shadow-lg shadow-[#07C160]/40">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8.647 0C3.87 0 0 3.298 0 7.368c0 2.277 1.258 4.3 3.228 5.614l-.842 2.527 2.947-1.474c1.053.316 2.14.526 3.3.526.246 0 .491-.035.737-.035-.175-.491-.28-.982-.28-1.509 0-3.824 3.544-6.912 7.895-6.912 1.053 0 2.07.175 3.018.526C18.842 2.807 14.158 0 8.647 0zM5.72 5.684c.667 0 1.228.527 1.228 1.193 0 .667-.561 1.193-1.228 1.193-.667 0-1.228-.526-1.228-1.193 0-.666.561-1.193 1.228-1.193zm5.86 0c.666 0 1.228.527 1.228 1.193 0 .667-.561 1.193-1.228 1.193-.667 0-1.228-.526-1.228-1.193 0-.666.561-1.193 1.228-1.193zm4.631 3.544c-3.544 0-6.421 2.526-6.421 5.614 0 3.088 2.877 5.614 6.421 5.614 1.123 0 2.175-.246 3.123-.667l2.526 1.228-.702-2.105c1.579-1.088 2.526-2.667 2.526-4.421 0-3.088-2.877-5.614-6.421-5.614zm-1.895 3.754c.526 0 .947.421.947.947 0 .526-.421.947-.947.947-.526 0-.947-.421-.947-.947zm3.79 0c.526 0 .947.421.947.947 0 .526-.421.947-.947.947-.526 0-.947-.421-.947-.947 0-.526.421-.947.947-.947z"/>
+                            </svg>
+                        </div>
+                        <span class="text-lg md:text-xl" data-i18n="contact_wechat">WeChat</span>
+                    </button>
+                    
+                    <a href="sms:+16725141176?body=Hello%21%20I%27m%20interested%20in%20booking%20driving%20lessons." target="_blank" class="aspect-square flex flex-col items-center justify-center gap-3 bg-white text-slate-900 hover:bg-slate-50 hover:-translate-y-2 transition-all p-4 rounded-[2rem] font-bold shadow-2xl shadow-black/40 group border-none cursor-pointer">
+                        <div class="bg-[#007AFF] p-4 md:p-5 rounded-2xl text-white group-hover:scale-110 transition-transform shadow-lg shadow-[#007AFF]/40">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+                        </div>
+                        <span class="text-lg md:text-xl">SMS Text</span>
+                    </a>
+                    
+                    <a href="mailto:info@evergreendrivingschool.ca" target="_blank" class="aspect-square flex flex-col items-center justify-center gap-3 bg-white text-slate-900 hover:bg-slate-50 hover:-translate-y-2 transition-all p-4 rounded-[2rem] font-bold shadow-2xl shadow-black/40 group border-none cursor-pointer">
+                        <div class="bg-indigo-600 p-4 md:p-5 rounded-2xl text-white group-hover:scale-110 transition-transform shadow-lg shadow-indigo-600/40">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </div>
+                        <span class="text-lg md:text-xl">Email Us</span>
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
 			
-			<!-- Hero Section -->
-			<section id="home" class="relative bg-white overflow-hidden">
-				<div class="absolute top-0 right-0 w-[50vw] h-full bg-indigo-50/50 rounded-bl-[100px] -z-10 hidden md:block"></div>
-				<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 px-6 pt-12 pb-24 md:pt-24 md:pb-32">
-					<div class="w-full md:w-1/2 text-center md:text-left z-10">
-						<!-- SEO OPTIMIZATION: Structured E-E-A-T element -->
-						<div class="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-bold mb-8 mx-auto md:mx-0">
-							<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-							<span data-i18n="hero_badge">ICBC Approved Professional Training</span>
-						</div>
-						<!-- SEO OPTIMIZATION: H1 focuses on core local search intent keywords clearly -->
-						<h1 class="text-5xl md:text-7xl font-black text-slate-900 leading-[1.05] mb-6 font-outfit uppercase">
-							<span class="block text-xl md:text-3xl text-indigo-600 mb-4 tracking-wider" data-i18n="hero_h1_seo">PREMIER DRIVING SCHOOL IN RICHMOND & VANCOUVER</span>
-							<span data-i18n="hero_title_part1">Master the Road with</span> <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500" data-i18n="hero_title_part2">Confidence.</span>
-						</h1>
-						<p class="text-lg text-slate-600 mb-10 max-w-lg mx-auto md:mx-0 leading-relaxed">
-							<span data-i18n="hero_subtitle_pre">Expert driving instruction from</span> <span class="font-bold text-slate-900">Evergreen Driving School</span>. <span data-i18n="hero_subtitle_post">Get your N or Class 5 license on the first try with our proven methodology.</span>
-						</p>
-						<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-							<button data-nosnippet onclick="scrollToSection('contact')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-10 py-4 rounded-full font-bold text-lg transition-all shadow-xl shadow-indigo-200 flex items-center justify-center gap-2 hover:-translate-y-1 cursor-pointer">
-								<span data-i18n="hero_btn1">Start Learning</span> 
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-							</button>
-							<button data-nosnippet onclick="scrollToSection('prep')" class="bg-white hover:bg-slate-50 border-2 border-slate-200 text-slate-700 px-10 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2 cursor-pointer">
-								<span data-i18n="nav_prep">ICBC Prep</span>
-							</button>
-						</div>
-					</div>
-					
-					<div class="w-full md:w-1/2 relative px-6 md:px-0">
-						<div class="absolute inset-0 bg-indigo-600 rounded-[3rem] rotate-3 scale-95 opacity-10"></div>
-						<!-- Professional Hero Driving Image -->
-						<img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=80" 
-						onerror="this.src='https://via.placeholder.com/1200x800?text=Evergreen+Driving+School'"
-						alt="Professional Driving Instruction" 
-						class="relative w-full h-[400px] md:h-[600px] object-cover rounded-[3rem] shadow-2xl z-10"/>
-						
-						<div class="absolute bottom-10 left-0 md:-left-12 bg-white/95 backdrop-blur-md p-6 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] animate-float border border-white flex items-center gap-5 z-20">
-							<div class="w-16 h-16 bg-white p-1 rounded-2xl flex items-center justify-center border border-indigo-100 shadow-sm">
-								<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIxMjAwIiB2aWV3Qm94PSIwIDAgNDAwIDQwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgbWVldCI+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQwMCIgaGVpZ2h0PSI0MDAiIHJ4PSI0OCIgZmlsbD0iI2ZmZmZmZiI+PC9yZWN0PgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyMS41LCA1MCkiPgogICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQyIiBoZWlnaHQ9IjE3MCIgcng9IjE0IiBmaWxsPSIjMGYxNzJhIj48L3JlY3Q+CiAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTY1IiBoZWlnaHQ9IjM0IiByeD0iMTQiIGZpbGw9IiMwZjE3MmEiPjwvcmVjdD4KICAgIDxyZWN0IHg9IjAiIHk9IjEzNiIgd2lkdGg9IjE2NSIgaGVpZ2h0PSIzNCIgcng9IjE0IiBmaWxsPSIjMGYxNzJhIj48L3JlY3Q+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NSwgNjgpIj4KICAgICAgPHBhdGggZD0iTTAgMTYgSDE0IEMxNCAyIDI4IDIgNDIgMiBDNTYgMiA2MCAxNiA3NSAxNiBIODYgQzkxIDE2IDkxIDM0IDg2IDM0IEgwIFYxNloiIGZpbGw9IiM0MzM4Y2EiPjwvcGF0aD4KICAgICAgPGNpcmNsZSBjeD0iMjYiIGN5PSIzNCIgcj0iOSIgZmlsbD0iI2YxZjVmOSI+PC9jaXJjbGU+CiAgICAgIDxjaXJjbGUgY3g9IjY2IiBjeT0iMzQiIHI9IjkiIGZpbGw9IiNmMWY1ZjkiPjwvY2lyY2xlPgogICAgPC9nPgogIDwvZz4KICA8dGV4dCB4PSIyMDAiIHk9IjI5NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzBmMTcyYSIgZm9udC1mYW1pbHk9Ik91dGZpdCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI2NCIgZm9udC13ZWlnaHQ9IjkwMCIgc3R5bGU9ImxldHRlci1zcGFjaW5nOiAtMS41cHg7Ij5FdmVyZ3JlZW48L3RleHQ+CiAgPHRleHQgeD0iMjA0IiB5PSIzMzUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM0MzM4Y2EiIGZvbnQtZmFtaWx5PSJQbHVzIEpha2FydGEgU2Fucywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9IjgwMCIgc3R5bGU9ImxldHRlci1zcGFjaW5nOiA4cHg7Ij5EUklWSU5HIFNDSE9PTDwvdGV4dD4KPC9zdmc+Cg==" alt="Evergreen Icon" class="w-full h-full object-contain">
-							</div>
-							<div>
-								<p class="font-black text-slate-900 text-2xl" data-i18n="hero_stat_title">98% Pass Rate</p>
-								<p class="text-sm text-slate-500 font-bold tracking-wide uppercase mt-1" data-i18n="hero_stat_sub">On First Attempt</p>
-							</div>
-						</div>
-					</div>
+		<!-- WECHAT MODAL -->
+		<div id="wechat-modal" class="fixed inset-0 z-[100] bg-slate-900/80 backdrop-blur-sm hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
+			<div class="bg-white p-8 rounded-[2rem] max-w-sm w-full mx-4 shadow-2xl transform scale-95 transition-transform duration-300" id="wechat-modal-content">
+				<div class="flex justify-between items-center mb-6">
+					<h3 class="text-2xl font-bold text-slate-900" data-i18n="wechat_modal_title">Add on WeChat</h3>
+					<button onclick="closeWechatModal()" class="text-slate-400 hover:text-slate-900 cursor-pointer p-2 rounded-full bg-slate-50 hover:bg-slate-100">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+					</button>
 				</div>
-			</section>
-			
-			<!-- Trust Banner -->
-			<div class="bg-slate-900 py-5 border-y border-slate-800">
-				<div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-6 text-slate-300 text-xs md:text-sm font-bold uppercase tracking-widest">
-					<span class="flex items-center gap-2">
-						<svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-						<span data-i18n="trust_1">ICBC Certified Instructors</span>
-					</span>
-					<span class="flex items-center gap-2">
-						<svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-						<span data-i18n="trust_2">Fully Insured & Bonded</span>
-					</span>
-					<span class="flex items-center gap-2">
-						<svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-						<span data-i18n="trust_3">Dual-Control Vehicles</span>
-					</span>
-					<span class="flex items-center gap-2 hidden lg:flex">
-						<svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-						<span data-i18n="trust_4">5-Star Student Rated</span>
-					</span>
+				<div class="bg-slate-50 p-4 rounded-2xl mb-6 flex justify-center border border-slate-100">
+					<img src="wechat-qr.png" alt="WeChat QR Code" class="w-full max-w-[200px] aspect-square object-contain rounded-xl">
 				</div>
+				<p class="text-center text-slate-600 text-sm mb-6" data-i18n="wechat_modal_desc">Scan the QR code to add Evergreen Driving School on WeChat.</p>
+				<a href="weixin://" class="block w-full bg-[#07C160] hover:bg-[#06ad56] text-white text-center py-4 rounded-xl font-bold transition-all shadow-lg shadow-green-200 cursor-pointer text-lg" data-i18n="wechat_open_app">
+					Open WeChat App
+				</a>
 			</div>
+		</div>
 			
-			<!-- Why Us Section -->
-			<section id="features" class="py-24 bg-slate-50 scroll-mt-20">
-				<div class="max-w-7xl mx-auto px-6">
-					<div class="text-center mb-16">
-						<!-- SEO OPTIMIZATION: Included H2 structured local keyword logic -->
-						<p class="text-indigo-600 font-bold uppercase tracking-widest text-sm mb-3">The Evergreen Advantage</p>
-						<h2 class="text-4xl md:text-5xl font-black text-slate-900 font-outfit uppercase">
-							<span data-i18n="feat_header_pre">Why Choose Our Driving School</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500">Evergreen</span>
-						</h2>
-					</div>
-					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-						<div class="bg-white p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
-							<div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
-								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-							</div>
-							<h3 class="text-2xl font-bold text-slate-900 mb-4" data-i18n="feat1_title">Dual-Control Safety</h3>
-							<p class="text-slate-500 leading-relaxed" data-i18n="feat1_desc">Safety is our priority. All vehicles are ICBC certified and equipped with instructor dual-brakes.</p>
-						</div>
-						<div class="bg-white p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
-							<div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
-								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-							</div>
-							<h3 class="text-2xl font-bold text-slate-900 mb-4" data-i18n="feat2_title">Flexible Pick-up</h3>
-							<p class="text-slate-500 leading-relaxed" data-i18n="feat2_desc">We come to you. Door-to-door service from your home or school in Richmond, Vancouver, and Burnaby.</p>
-						</div>
-						<div class="bg-white p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
-							<div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
-								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-							</div>
-							<h3 class="text-2xl font-bold text-slate-900 mb-4" data-i18n="feat3_title">Comprehensive Mock Tests</h3>
-							<p class="text-slate-500 leading-relaxed" data-i18n="feat3_desc">Experience simulated ICBC exam routes to eliminate surprises and build test-day confidence.</p>
-						</div>
-					</div>
-				</div>
-			</section>
-			
-			<!-- ICBC Skills Section -->
-			<section id="prep" class="py-24 bg-white scroll-mt-20 overflow-hidden border-t border-slate-100">
-				<div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
-					<div class="w-full lg:w-1/2 relative">
-						<div class="absolute inset-0 bg-indigo-500 rounded-[3rem] -rotate-6 scale-105 opacity-10"></div>
-						<img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80" 
-						loading="lazy"
-						onerror="this.src='https://via.placeholder.com/800x600?text=Driving+Education'"
-						alt="Instructor teaching student driver" 
-						class="relative w-full h-[500px] object-cover rounded-[3rem] shadow-lg z-10"/>
-						
-						<div class="absolute top-10 -right-4 md:-right-8 bg-white p-5 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-4 z-20">
-							<div class="bg-emerald-100 p-2 rounded-full text-emerald-600">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-							</div>
-							<span class="font-bold text-slate-800">ICBC Standards Focus</span>
-						</div>
-					</div>
-					
-					<div class="w-full lg:w-1/2">
-						<p class="text-indigo-600 font-bold uppercase tracking-widest text-sm mb-3">ICBC Road Test Prep</p>
-						<h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-6 font-outfit uppercase leading-tight" data-i18n="prep_title">
-							Master Essential Driving Skills
-						</h2>
-						<p class="text-lg text-slate-600 mb-8" data-i18n="prep_desc">
-							We focus on the exact criteria ICBC examiners use to evaluate your driving. No surprises on test day.
-						</p>
-						
-						<ul class="space-y-6">
-							<li class="flex items-start gap-4">
-								<div class="mt-1 bg-indigo-100 text-indigo-600 p-1.5 rounded-lg">
-									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 12h20"/><path d="m12 2 10 10-10 10"/></svg>
-								</div>
-								<div>
-									<h3 class="text-xl font-bold text-slate-900" data-i18n="skill_1">Perfect Parallel Parking</h3>
-									<p class="text-slate-500 mt-1 text-sm">Step-by-step techniques to park effortlessly every time.</p>
-								</div>
-							</li>
-							<li class="flex items-start gap-4">
-								<div class="mt-1 bg-indigo-100 text-indigo-600 p-1.5 rounded-lg">
-									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
-								</div>
-								<div>
-									<h3 class="text-xl font-bold text-slate-900" data-i18n="skill_2">360° Observation</h3>
-									<p class="text-slate-500 mt-1 text-sm">Mastering hazard perception and situational awareness.</p>
-								</div>
-							</li>
-							<li class="flex items-start gap-4">
-								<div class="mt-1 bg-indigo-100 text-indigo-600 p-1.5 rounded-lg">
-									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-								</div>
-								<div>
-									<h3 class="text-xl font-bold text-slate-900" data-i18n="skill_3">Shoulder Checks</h3>
-									<p class="text-slate-500 mt-1 text-sm">Crucial blind-spot management for safe lane changes.</p>
-								</div>
-							</li>
-							<li class="flex items-start gap-4">
-								<div class="mt-1 bg-indigo-100 text-indigo-600 p-1.5 rounded-lg">
-									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 16a10 10 0 1 1 17.32 0"/></svg>
-								</div>
-								<div>
-									<h3 class="text-xl font-bold text-slate-900" data-i18n="skill_4">Speed Control & Zones</h3>
-									<p class="text-slate-500 mt-1 text-sm">Navigating tricky school zones and playground areas flawlessly.</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			
-			<!-- Process Section -->
-			<section id="process" class="py-24 bg-slate-900 scroll-mt-20">
-				<div class="max-w-7xl mx-auto px-6">
-					<div class="text-center mb-20">
-						<h2 class="text-4xl md:text-5xl font-black text-white mb-4 font-outfit uppercase" data-i18n="nav_process">The Success Process</h2>
-						<p class="text-slate-400 text-lg">Four simple steps from your first lesson to getting your license.</p>
-					</div>
-					<div class="relative timeline-line">
-						<div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
-							<div class="text-center group">
-								<div class="w-16 h-16 bg-slate-800 text-indigo-400 border-4 border-slate-900 rounded-full flex items-center justify-center mx-auto mb-6 font-black text-2xl group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300 z-10 relative shadow-[0_0_0_8px_rgba(15,23,42,1)]">1</div>
-								<h3 class="font-bold text-white mb-3 text-xl" data-i18n="step1_title">Evaluation</h3>
-								<p class="text-slate-400 text-sm leading-relaxed" data-i18n="step1_desc">Assessment of current skills and identification of habits to improve.</p>
-							</div>
-							<div class="text-center group">
-								<div class="w-16 h-16 bg-slate-800 text-indigo-400 border-4 border-slate-900 rounded-full flex items-center justify-center mx-auto mb-6 font-black text-2xl group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300 z-10 relative shadow-[0_0_0_8px_rgba(15,23,42,1)]">2</div>
-								<h3 class="font-bold text-white mb-3 text-xl" data-i18n="step2_title">Practice</h3>
-								<p class="text-slate-400 text-sm leading-relaxed" data-i18n="step2_desc">Structured lessons focusing on ICBC safety standards and road rules.</p>
-							</div>
-							<div class="text-center group">
-								<div class="w-16 h-16 bg-slate-800 text-indigo-400 border-4 border-slate-900 rounded-full flex items-center justify-center mx-auto mb-6 font-black text-2xl group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300 z-10 relative shadow-[0_0_0_8px_rgba(15,23,42,1)]">3</div>
-								<h3 class="font-bold text-white mb-3 text-xl" data-i18n="step3_title">Mock Test</h3>
-								<p class="text-slate-400 text-sm leading-relaxed" data-i18n="step3_desc">Simulated road tests conducted on actual ICBC exam routes.</p>
-							</div>
-							<div class="text-center group">
-								<div class="w-16 h-16 bg-slate-800 text-emerald-400 border-4 border-slate-900 rounded-full flex items-center justify-center mx-auto mb-6 font-black text-2xl group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300 z-10 relative shadow-[0_0_0_8px_rgba(15,23,42,1)]">
-									<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-								</div>
-								<h3 class="font-bold text-white mb-3 text-xl" data-i18n="step4_title">Success</h3>
-								<p class="text-slate-400 text-sm leading-relaxed" data-i18n="step4_desc">Pass your test with confidence and receive your BC driver's license.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			
-			<!-- Reviews Marquee -->
-			<section class="py-24 bg-white overflow-hidden border-b border-slate-100">
-				<h2 class="text-center text-3xl font-black text-slate-900 font-outfit uppercase tracking-wide mb-12" data-i18n="reviews_title">Evergreen Success Stories</h2>
-				<div class="relative w-full overflow-hidden">
-					<div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-					<div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
-					<div id="reviews-marquee" class="marquee-wrapper py-4"></div>
-				</div>
-			</section>
-			
-			<!-- Contact Section -->
-			<section id="contact" class="py-24 bg-slate-900 text-white scroll-mt-20">
-				<div class="max-w-5xl mx-auto px-6 text-center">
-					<h2 class="text-4xl md:text-6xl font-black mb-6 font-outfit uppercase" data-i18n="contact_title">Ready to Start?</h2>
-					<p class="text-slate-400 text-xl mb-12" data-i18n="contact_desc">Contact Evergreen today to book your evaluation or lesson package.</p>
-					
-					<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto w-full">
-						
-						<a href="https://wa.me/+16725141176" target="_blank" class="aspect-square flex flex-col items-center justify-center gap-3 bg-white text-slate-900 hover:bg-slate-50 hover:-translate-y-2 transition-all p-4 rounded-[2rem] font-bold shadow-2xl shadow-black/40 group cursor-pointer border-none">
-							<div class="bg-[#25D366] p-4 md:p-5 rounded-2xl text-white group-hover:scale-110 transition-transform shadow-lg shadow-[#25D366]/40">
-								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-									<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.453-.883-.77-1.48-1.718-1.653-2.016-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-								</svg>
-							</div>
-							<span class="text-lg md:text-xl">WhatsApp</span>
-						</a>
-						
-						<button onclick="openWechatModal()" class="aspect-square flex flex-col items-center justify-center gap-3 bg-white text-slate-900 hover:bg-slate-50 hover:-translate-y-2 transition-all p-4 rounded-[2rem] font-bold shadow-2xl shadow-black/40 group cursor-pointer w-full border-none">
-							<div class="bg-[#07C160] p-4 md:p-5 rounded-2xl text-white group-hover:scale-110 transition-transform shadow-lg shadow-[#07C160]/40">
-								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-									<path d="M8.647 0C3.87 0 0 3.298 0 7.368c0 2.277 1.258 4.3 3.228 5.614l-.842 2.527 2.947-1.474c1.053.316 2.14.526 3.3.526.246 0 .491-.035.737-.035-.175-.491-.28-.982-.28-1.509 0-3.824 3.544-6.912 7.895-6.912 1.053 0 2.07.175 3.018.526C18.842 2.807 14.158 0 8.647 0zM5.72 5.684c.667 0 1.228.527 1.228 1.193 0 .667-.561 1.193-1.228 1.193-.667 0-1.228-.526-1.228-1.193 0-.666.561-1.193 1.228-1.193zm5.86 0c.666 0 1.228.527 1.228 1.193 0 .667-.561 1.193-1.228 1.193-.667 0-1.228-.526-1.228-1.193 0-.666.561-1.193 1.228-1.193zm4.631 3.544c-3.544 0-6.421 2.526-6.421 5.614 0 3.088 2.877 5.614 6.421 5.614 1.123 0 2.175-.246 3.123-.667l2.526 1.228-.702-2.105c1.579-1.088 2.526-2.667 2.526-4.421 0-3.088-2.877-5.614-6.421-5.614zm-1.895 3.754c.526 0 .947.421.947.947 0 .526-.421.947-.947.947-.526 0-.947-.421-.947-.947 0-.526.421-.947.947-.947zm3.79 0c.526 0 .947.421.947.947 0 .526-.421.947-.947.947-.526 0-.947-.421-.947-.947 0-.526.421-.947.947-.947z"/>
-								</svg>
-							</div>
-							<span class="text-lg md:text-xl" data-i18n="contact_wechat">WeChat</span>
-						</button>
-						
-						<a href="sms:+16725141176?body=Hello%21%20I%27m%20interested%20in%20booking%20driving%20lessons." target="_blank" class="aspect-square flex flex-col items-center justify-center gap-3 bg-white text-slate-900 hover:bg-slate-50 hover:-translate-y-2 transition-all p-4 rounded-[2rem] font-bold shadow-2xl shadow-black/40 group border-none cursor-pointer">
-							<div class="bg-[#007AFF] p-4 md:p-5 rounded-2xl text-white group-hover:scale-110 transition-transform shadow-lg shadow-[#007AFF]/40">
-								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
-							</div>
-							<span class="text-lg md:text-xl">SMS Text</span>
-						</a>
-						
-						<a href="mailto:info@evergreendrivingschool.ca" target="_blank" class="aspect-square flex flex-col items-center justify-center gap-3 bg-white text-slate-900 hover:bg-slate-50 hover:-translate-y-2 transition-all p-4 rounded-[2rem] font-bold shadow-2xl shadow-black/40 group border-none cursor-pointer">
-							<div class="bg-indigo-600 p-4 md:p-5 rounded-2xl text-white group-hover:scale-110 transition-transform shadow-lg shadow-indigo-600/40">
-								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-							</div>
-							<span class="text-lg md:text-xl">Email Us</span>
-						</a>
-						
-					</div>
-				</div>
-			</section>
-			
-			<!-- WECHAT MODAL -->
-			<div id="wechat-modal" class="fixed inset-0 z-[100] bg-slate-900/80 backdrop-blur-sm hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
-				<div class="bg-white p-8 rounded-[2rem] max-w-sm w-full mx-4 shadow-2xl transform scale-95 transition-transform duration-300" id="wechat-modal-content">
-					<div class="flex justify-between items-center mb-6">
-						<h3 class="text-2xl font-bold text-slate-900" data-i18n="wechat_modal_title">Add on WeChat</h3>
-						<button onclick="closeWechatModal()" class="text-slate-400 hover:text-slate-900 cursor-pointer p-2 rounded-full bg-slate-50 hover:bg-slate-100">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-						</button>
-					</div>
-					
-					<div class="bg-slate-50 p-4 rounded-2xl mb-6 flex justify-center border border-slate-100">
-						<img src="wechat-qr.png" alt="WeChat QR Code" class="w-full max-w-[200px] aspect-square object-contain rounded-xl">
-					</div>
-					
-					<p class="text-center text-slate-600 text-sm mb-6" data-i18n="wechat_modal_desc">Scan the QR code to add Evergreen Driving School on WeChat.</p>
-					<a href="weixin://" class="block w-full bg-[#07C160] hover:bg-[#06ad56] text-white text-center py-4 rounded-xl font-bold transition-all shadow-lg shadow-green-200 cursor-pointer text-lg" data-i18n="wechat_open_app">
-						Open WeChat App
-					</a>
-				</div>
-			</div>
-			
-			<!-- SAFELIST FOR TAILWIND COMPILER (Hidden) -->
-			<div class="hidden">
-				<div class="review-card group">
-					<div class="flex text-yellow-400 mb-4 group-hover:scale-105 transition-transform origin-left">
-						<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-					</div>
-					<p class="text-slate-600 text-[15px] italic leading-relaxed">Test</p>
-					<div class="mt-auto pt-6 flex items-center gap-3">
-						<div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-black text-sm">A</div>
-						<p class="font-bold text-slate-900">Name</p>
-					</div>
-				</div>
-			</div>
-			
-			<!-- SEO OPTIMIZATION: Structured NAP (Name, Address, Phone) Footer for Google Local Maps ranking -->
-			<footer class="bg-slate-950 pt-16 pb-8 text-center border-t border-white/5">
-				<div class="max-w-4xl mx-auto px-6 mb-8 flex flex-col items-center">
-					<h3 class="text-white font-bold text-xl mb-3" data-i18n="footer_name">Evergreen Driving School</h3>
-					<p class="text-slate-400 text-sm mb-2" data-i18n="footer_areas">Serving Richmond, Vancouver, and Burnaby, BC</p>
-					<p class="text-slate-400 text-sm mb-4">
-						<span data-i18n="footer_phone_label">Phone:</span> 
-						<a href="tel:+16725141176" class="hover:text-white transition-colors font-semibold">+1 (672) 514-1176</a>
-					</p>
-				</div>
-				<p class="text-slate-500 text-xs font-bold uppercase tracking-widest mt-8 border-t border-slate-800/50 pt-8 max-w-4xl mx-auto">
-					© <span id="year"></span> Evergreen Driving School. All Rights Reserved.
+		<!-- Footer -->
+		<footer class="bg-slate-950 pt-16 pb-8 text-center border-t border-white/5">
+			<div class="max-w-4xl mx-auto px-6 mb-8 flex flex-col items-center">
+				<h3 class="text-white font-bold text-xl mb-3" data-i18n="footer_name">Evergreen Driving School</h3>
+				<p class="text-slate-400 text-sm mb-2" data-i18n="footer_areas">Serving Richmond, Vancouver, and Burnaby, BC</p>
+				<p class="text-slate-400 text-sm mb-4">
+					<span data-i18n="footer_phone_label">Phone:</span> 
+					<a href="tel:+16725141176" class="hover:text-white transition-colors font-semibold">+1 (672) 514-1176</a>
 				</p>
-			</footer>
+			</div>
+			<p class="text-slate-500 text-xs font-bold uppercase tracking-widest mt-8 border-t border-slate-800/50 pt-8 max-w-4xl mx-auto">
+				© <span id="year"></span> Evergreen Driving School. All Rights Reserved.
+			</p>
+		</footer>
 			
-			<script>
-				const translations = {
-					"en": {
-						"nav_home": "Home", "nav_why": "Why Us", "nav_prep": "ICBC Prep", "nav_process": "Process", "nav_book": "Book Now",
-						"hero_badge": "ICBC Approved Professional Training",
-						"hero_title_part1": "Master the Road with", "hero_title_part2": "Confidence.",
-						"hero_subtitle_pre": "Expert driving instruction from",
-						"hero_subtitle_post": "Get your N or Class 5 license on the first try with our proven methodology.",
-						"hero_btn1": "Start Learning", "hero_stat_title": "98% Pass Rate", "hero_stat_sub": "On First Attempt",
-						"trust_1": "ICBC Certified Instructors", "trust_2": "Fully Insured & Bonded", "trust_3": "Dual-Control Vehicles", "trust_4": "5-Star Student Rated",
-						"feat_header_pre": "Why Choose Our Driving School",
-						"feat1_title": "Dual-Control Safety", "feat1_desc": "Safety is our priority. All vehicles are ICBC certified and equipped with instructor dual-brakes.",
-						"feat2_title": "Flexible Pick-up", "feat2_desc": "We come to you. Door-to-door service from your home or school in Richmond, Vancouver, and Burnaby.",
-						"feat3_title": "Comprehensive Mock Tests", "feat3_desc": "Experience simulated ICBC exam routes to eliminate surprises and build test-day confidence.",
-						"prep_title": "Master Essential Driving Skills", "prep_desc": "We focus on the exact criteria ICBC examiners use to evaluate your driving. No surprises on test day.",
-						"skill_1": "Perfect Parallel Parking", "skill_2": "360° Observation", "skill_3": "Shoulder Checks", "skill_4": "Speed Control & Zones",
-						"reviews_title": "Evergreen Success Stories",
-						"rev1": "Best instructor ever! Very patient and knowledgeable. Corrected my bad habits in just a few sessions.",
-						"rev2": "Passed Class 5 road test on the first try! The tips on Richmond test routes were a lifesaver.",
-						"rev3": "Highly recommend Evergreen. Parallel parking and shoulder checks are easy to understand now.",
-						"rev4": "Very professional and punctual. Great for nervous beginners.",
-						"rev5": "They helped me clear my anxiety before the road test. Best in Richmond.",
-						"rev6": "Calm instructors and clear directions. Five stars!",
-						"step1_title": "Evaluation", "step1_desc": "Assessment of current skills and identification of habits to improve.",
-						"step2_title": "Practice", "step2_desc": "Structured lessons focusing on ICBC safety standards and road rules.",
-						"step3_title": "Mock Test", "step3_desc": "Simulated road tests conducted on actual ICBC exam routes.",
-						"step4_title": "Success", "step4_desc": "Pass your test with confidence and receive your BC driver's license.",
-						"contact_title": "Ready to Start?", "contact_desc": "Contact Evergreen today to book your evaluation or lesson package.",
-						"hero_h1_seo": "PREMIER DRIVING SCHOOL IN RICHMOND & VANCOUVER",
-						"contact_wechat": "WeChat",
-						"wechat_modal_title": "Add on WeChat",
-						"wechat_modal_desc": "Scan the QR code to add Evergreen Driving School on WeChat.",
-						"wechat_open_app": "Open WeChat App",
-						"footer_name": "Evergreen Driving School",
-						"footer_areas": "Serving Richmond, Vancouver, and Burnaby, BC",
-						"footer_phone_label": "Phone:"
-					},
-					"zh-TW": {
-						"nav_home": "首頁", "nav_why": "優勢", "nav_prep": "ICBC 備考", "nav_process": "流程", "nav_book": "預約",
-						"hero_badge": "ICBC 認證專業培訓",
-						"hero_title_part1": "自信掌握路況", "hero_title_part2": "順利取得駕照",
-						"hero_subtitle_pre": "來自", "hero_subtitle_post": "的專業指導。助您一次通過考試拿取 N 或 Class 5 牌照。",
-						"hero_btn1": "開始學習", "hero_stat_title": "98% 及格率", "hero_stat_sub": "首次考試通過率",
-						"trust_1": "ICBC 認證教練", "trust_2": "全額保險保障", "trust_3": "雙控安全車輛", "trust_4": "五星學員評價",
-						"feat_header_pre": "學生為什麼選擇",
-						"feat1_title": "雙控安全系統", "feat1_desc": "安全第一。所有教練車均經 ICBC 認證並配備教練副剎車。",
-						"feat2_title": "彈性接送服務", "feat2_desc": "專車接送。我們在列治文、溫哥華和本拿比提供上門接送服務。",
-						"feat3_title": "模擬真實路考", "feat3_desc": "在真實的 ICBC 考試路線上進行模擬測試，幫助您克服緊張，建立滿分自信。",
-						"prep_title": "掌握核心駕駛技巧", "prep_desc": "我們專注於 ICBC 考官評估的具體標準，讓您在考試當天成竹在胸。",
-						"skill_1": "完美平行泊車", "skill_2": "360度觀察與危險感知", "skill_3": "盲點檢查 (Shoulder Checks)", "skill_4": "學校與遊樂場區域限速駕駛",
-						"reviews_title": "Evergreen 成功案例",
-						"rev1": "最好的教練！非常有耐心且專業。糾正了我的所有壞習慣。",
-						"rev2": "第一次路考就通過了！關於列治文考場路線的建議非常有幫助。",
-						"rev3": "強烈推薦 Evergreen，讓平行泊車變得非常容易理解。",
-						"rev4": "非常專業且準時，對新手非常有幫助。",
-						"rev5": "他們幫我消除了考試前的焦慮，絕對是列治文的首選。",
-						"rev6": "教練很冷靜，指示非常明確。五星好評！",
-						"step1_title": "技能評估", "step1_desc": "評估您目前的駕駛水平和習慣。",
-						"step2_title": "練習培訓", "step2_desc": "專注於 ICBC 標準的結構化課程。",
-						"step3_title": "模擬路考", "step3_desc": "在實際考試路線上進行模擬測試。",
-						"step4_title": "考取證照", "step4_desc": "充滿自信地通過測試並獲得駕照。",
-						"contact_title": "準備好了嗎？", "contact_desc": "聯繫 Evergreen 預約您的第一堂課。",
-						"hero_h1_seo": "列治文與溫哥華首選駕訓班",
-						"contact_wechat": "微信",
-						"wechat_modal_title": "添加微信",
-						"wechat_modal_desc": "掃描二維碼添加 Evergreen Driving School 微信。",
-						"wechat_open_app": "打開微信 App",
-						"footer_name": "Evergreen 駕訓班",
-						"footer_areas": "服務列治文、溫哥華與本拿比地區",
-						"footer_phone_label": "電話:"
-					},
-					"zh-CN": {
-						"nav_home": "首页", "nav_why": "优势", "nav_prep": "ICBC 备考", "nav_process": "流程", "nav_book": "预约",
-						"hero_badge": "ICBC 认证专业培训",
-						"hero_title_part1": "自信掌握路况", "hero_title_part2": "顺利取得驾照",
-						"hero_subtitle_pre": "来自", "hero_subtitle_post": "的专业指导。助您一次通过考试拿取 N 或 Class 5 牌照。",
-						"hero_btn1": "开始学习", "hero_stat_title": "98% 及格率", "hero_stat_sub": "首次考试率",
-						"trust_1": "ICBC 认证教练", "trust_2": "全额保险保障", "trust_3": "双控安全车辆", "trust_4": "五星学员评价",
-						"feat_header_pre": "学生为什么选择",
-						"feat1_title": "双控安全系统", "feat1_desc": "安全第一。所有教练车均经 ICBC 认证并配备教练副刹车。",
-						"feat2_title": "弹性接送服务", "feat2_desc": "专车接送。我们在列治文、温哥华和本拿比提供上门接送服务。",
-						"feat3_title": "模拟真实路考", "feat3_desc": "在真实的 ICBC 考试路线上进行模拟测试，帮助您克服紧张，建立满分自信。",
-						"prep_title": "掌握核心驾驶技巧", "prep_desc": "我们专注于 ICBC 考官评估的具体标准，让您在考试当天成竹在胸。",
-						"skill_1": "完美平行泊车", "skill_2": "360度观察与危险感知", "skill_3": "盲点检查 (Shoulder Checks)", "skill_4": "学校与游乐场区域限速驾驶",
-						"reviews_title": "Evergreen 成功案例",
-						"rev1": "最好的教练！非常有耐心且专业。纠正了我的所有坏习惯。",
-						"rev2": "第一次路考就通过了！关于列治文考场路线的建议非常有帮助。",
-						"rev3": "强烈推荐 Evergreen，让平行泊车变得非常容易理解。",
-						"rev4": "非常专业且准时，对新手非常有帮助。",
-						"rev5": "他们帮我消除了考试前的焦虑，绝对是列治文的首选。",
-						"rev6": "教练很冷静，指示非常明确。五星好评！",
-						"step1_title": "技能评估", "step1_desc": "评估您目前的驾驶水平和习惯。",
-						"step2_title": "练习培训", "step2_desc": "专注于 ICBC 标准的结构化课程。",
-						"step3_title": "模拟路考", "step3_desc": "在实际考试路线上进行模拟测试。",
-						"step4_title": "考取证照", "step4_desc": "充满自信地通过测试并获得驾照。",
-						"contact_title": "准备好了吗？", "contact_desc": "联系 Evergreen 预约您的第一堂课。",
-						"hero_h1_seo": "列治文与温哥华首选驾训班",
-						"contact_wechat": "微信",
-						"wechat_modal_title": "添加微信",
-						"wechat_modal_desc": "扫描二维码添加 Evergreen Driving School 微信。",
-						"wechat_open_app": "打开微信 App",
-						"footer_name": "Evergreen 驾训班",
-						"footer_areas": "服务列治文、温哥华与本拿比地区",
-						"footer_phone_label": "电话:"
-					}
-				};
-				
-				const reviewsData = [
-				{ id: 'rev1', author: 'Raman K.' },
-				{ id: 'rev2', author: 'Sarah C.' },
-				{ id: 'rev3', author: 'Jason W.' },
-				{ id: 'rev4', author: 'Linda G.' },
-				{ id: 'rev5', author: 'Kevin M.' },
-				{ id: 'rev6', author: 'Emily Z.' }
-				];
-				
-				let currentLang = "en";
-				
-				function detectDeviceLanguage() {
-					const browserLang = navigator.language || navigator.userLanguage;
-					if (browserLang.includes('zh-TW') || browserLang.includes('zh-HK') || browserLang.includes('zh-MO')) {
-						currentLang = "zh-TW";
-						} else if (browserLang.includes('zh')) {
-						currentLang = "zh-CN";
-						} else {
-						currentLang = "en";
-					}
-				}
-				
-				function scrollToSection(id) {
-					const el = document.getElementById(id);
-					if (el) {
-						const offset = 80;
-						const bodyRect = document.body.getBoundingClientRect().top;
-						const elementRect = el.getBoundingClientRect().top;
-						const elementPosition = elementRect - bodyRect;
-						const offsetPosition = elementPosition - offset;
-						window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-					}
-					closeMobileMenu();
-				}
-				
-				function setLanguage(lang) {
-					currentLang = lang;
-					applyLanguage();
-					closeMobileMenu();
-				}
-				
-				function applyLanguage() {
-					document.querySelectorAll('[data-i18n]').forEach(el => {
-						const key = el.getAttribute('data-i18n');
-						if (translations[currentLang] && translations[currentLang][key]) {
-							el.innerText = translations[currentLang][key];
-						}
-					});
-					const langLabels = { "en": "English", "zh-TW": "繁體中文", "zh-CN": "简体中文" };
-					const indicator = document.getElementById('lang-indicator');
-					if (indicator) indicator.innerText = langLabels[currentLang] || langLabels["en"];
-					renderReviews();
-				}
-				
-				function renderReviews() {
-					const container = document.getElementById('reviews-marquee');
-					if (!container) return;
-					const content = reviewsData.map(rev => `
-					<div class="review-card group">
-					<div class="flex text-yellow-400 mb-4 group-hover:scale-105 transition-transform origin-left">
-					${Array(5).fill('<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>').join('')}
-					</div>
-					<p class="text-slate-600 text-[15px] italic leading-relaxed">"${translations[currentLang][rev.id] || translations["en"][rev.id]}"</p>
-					<div class="mt-auto pt-6 flex items-center gap-3">
-					<div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-black text-sm">
-					${rev.author.charAt(0)}
-					</div>
-					<p class="font-bold text-slate-900">${rev.author}</p>
-					</div>
-					</div>
-					`).join('');
-					container.innerHTML = content + content;
-				}
-				
-				function openWechatModal() {
-					const modal = document.getElementById('wechat-modal');
-					const content = document.getElementById('wechat-modal-content');
-					modal.classList.remove('hidden');
-					setTimeout(() => {
-						modal.classList.remove('opacity-0');
-						content.classList.remove('scale-95');
-					}, 10);
-				}
-				
-				function closeWechatModal() {
-					const modal = document.getElementById('wechat-modal');
-					const content = document.getElementById('wechat-modal-content');
-					modal.classList.add('opacity-0');
-					content.classList.add('scale-95');
-					setTimeout(() => {
-						modal.classList.add('hidden');
-					}, 300);
-				}
-				
-				const menuBtn = document.getElementById('mobile-menu-btn');
-				const menu = document.getElementById('mobile-menu');
-				
-				if(menuBtn && menu) {
-					menuBtn.addEventListener('click', (e) => {
-						e.stopPropagation();
-						menu.classList.toggle('hidden');
-					});
-				}
-				
-				function closeMobileMenu() { if(menu) menu.classList.add('hidden'); }
-				
-				document.addEventListener('click', (e) => {
-					if (menu && !menu.contains(e.target) && menuBtn && !menuBtn.contains(e.target)) closeMobileMenu();
-				});
-				
-				document.getElementById('year').innerText = "2019 - " + new Date().getFullYear();
-				
-				window.onload = function() {
-					detectDeviceLanguage();
-					applyLanguage();
-				};
-			</script>
-		</body>
-	</html>
+        <script>
+            // --- TRANSLATIONS (INCLUDING ENHANCED CHINESE SEO) ---
+            const translations = {
+                "en": {
+                    "seo_title": "Evergreen Driving School | ICBC Approved Lessons Richmond & Vancouver",
+                    "seo_desc": "Affordable ICBC Class 5/7 lessons in Richmond, Vancouver & Burnaby. Evergreen Driving School offers high pass rates & Cantonese instructors!",
+                    "nav_home": "Home", "nav_services": "Programs & Areas", "nav_courses": "Courses", "nav_class5": "Class 5 Road Test Prep", "nav_class7": "Class 7 Novice Lessons",
+                    "nav_locations": "Locations", "nav_richmond": "Richmond", "nav_vancouver": "Vancouver", "nav_burnaby": "Burnaby",
+                    "nav_process": "Process", "nav_book": "Book Now", "nav_prep": "ICBC Prep",
+                    
+                    "hero_badge": "ICBC Approved Professional Training",
+                    "hero_title_part1": "Master the Road with", "hero_title_part2": "Confidence.",
+                    "hero_subtitle_pre": "Expert driving instruction from",
+                    "hero_subtitle_post": "Get your N or Class 5 license on the first try with our proven methodology.",
+                    "hero_btn1": "Start Learning", "hero_stat_title": "98% Pass Rate", "hero_stat_sub": "On First Attempt",
+                    "trust_1": "ICBC Certified Instructors", "trust_2": "Fully Insured & Bonded", "trust_3": "Dual-Control Vehicles", "trust_4": "5-Star Student Rated",
+                    
+                    "feat_header_pre": "Why Choose",
+                    "feat1_title": "Dual-Control Safety", "feat1_desc": "Safety is our priority. All vehicles are ICBC certified and equipped with instructor dual-brakes.",
+                    "feat2_title": "Flexible Pick-up", "feat2_desc": "We come to you. Door-to-door service from your home or school in Richmond, Vancouver, and Burnaby.",
+                    "feat3_title": "Comprehensive Mock Tests", "feat3_desc": "Experience simulated ICBC exam routes to eliminate surprises and build test-day confidence.",
+                    
+                    "localseo_title_1": "Mastering the Richmond ICBC Routes",
+                    "localseo_desc_1": "Navigating the Richmond ICBC testing routes requires specific local knowledge. Examiners frequently test your observation skills around the busy Lansdowne area, where pedestrian traffic and complex intersections demand heightened awareness. We extensively cover tricky school zones and playground areas, such as those near Minoru Park, ensuring you automatically adjust your speed to 30 km/h. We also train you to confidently handle unmarked crosswalks along Granville Avenue and complex right-of-way scenarios near No. 3 Road.",
+                    "localseo_title_2": "The Secret to Perfect Parallel Parking",
+                    "localseo_desc_2": "Mastering parallel parking is often the most anxiety-inducing part of the ICBC road test. Our instructors break it down into a foolproof, step-by-step mathematical approach. We teach you exactly where to align your vehicle, the precise reference points on your windows and mirrors, and when to counter-steer. Instead of guessing, you'll have a reliable formula that works on any vehicle size, ensuring you park within the required 30cm of the curb effortlessly.",
+                    
+                    "step1_title": "Evaluation", "step1_desc": "Assessment of current skills and identification of habits to improve.",
+                    "step2_title": "Practice", "step2_desc": "Structured lessons focusing on ICBC safety standards and road rules.",
+                    "step3_title": "Mock Test", "step3_desc": "Simulated road tests conducted on actual ICBC exam routes.",
+                    "step4_title": "Success", "step4_desc": "Pass your test with confidence and receive your BC driver's license.",
+                    
+                    "c5_title": "Class 5 Road Test Prep", "c5_sub": "Elevate your driving skills and eliminate bad habits to pass your full-privilege ICBC Class 5 road test with confidence.",
+                    "c5_pt1_title": "Breaking Bad Habits", "c5_pt1_desc": "Experienced drivers often develop habits that ICBC examiners penalize. We identify and correct rolling stops, one-handed steering, and missed shoulder checks.",
+                    "c5_pt2_title": "Highway & Complex Merging", "c5_pt2_desc": "The Class 5 test may include highway driving. We ensure you can confidently accelerate, merge smoothly, and maintain appropriate following distances at high speeds.",
+                    
+                    "c7_title": "Class 7 (N) Lessons", "c7_sub": "Comprehensive driving instruction designed for beginners to build a lifetime of safe driving habits and pass the N test.",
+                    "c7_pt1_title": "Core Vehicle Control", "c7_pt1_desc": "Starting from scratch? We teach you the fundamentals of steering, braking, and accelerating smoothly in quiet residential areas before moving to traffic.",
+                    "c7_pt2_title": "Hazard Perception", "c7_pt2_desc": "A critical component of the Class 7 test. We train your eyes to scan intersections, identify potential hazards early, and communicate them effectively to the examiner.",
+                    
+                    "rich_title": "Driving Lessons in Richmond", "rich_sub": "Specialized training designed around the Richmond ICBC Lansdowne routes and local traffic conditions.",
+                    "rich_pt1_title": "Conquer the Lansdowne Area", "rich_pt1_desc": "Richmond's specific layout features wide multi-lane roads like No. 3 Road, complex parking lots, and heavy pedestrian zones. Our instructors are intimately familiar with the exact routes ICBC examiners use starting from the Lansdowne centre. We focus heavily on scanning for cyclists, dealing with right-turns on red, and understanding Richmond's specific school zone layouts.",
+                    
+                    "vanc_title": "Driving Lessons in Vancouver", "vanc_sub": "Expert preparation for the Point Grey and Commercial Drive testing routes.",
+                    "vanc_pt1_title": "Navigate Urban Complexity", "vanc_pt1_desc": "Vancouver routes test your ability to handle dense urban environments. We focus heavily on scanning for cyclists in dedicated bike lanes, sharing the road with transit buses, and executing flawless parallel parking on steep inclines. Our instructors ensure you are fully prepared for the unique challenges of the Point Grey ICBC testing area.",
+
+                    "burn_title": "Driving Lessons in Burnaby", "burn_sub": "Expert training tailored for the challenging topography and testing centers of Burnaby.",
+                    "burn_pt1_title": "Master Hills and Highways", "burn_pt1_desc": "Unlike Richmond, Burnaby tests require excellent hill parking and gradient control. We prepare students extensively for the routes around the Lougheed and Wayburne ICBC centers. Our lessons in Burnaby emphasize smooth hill starts, speed maintenance on gradients, and safe merging onto major routes like Highway 1 or Lougheed Highway.",
+
+                    "reviews_title": "Evergreen Success Stories",
+                    "rev1": "Best instructor ever! Very patient and knowledgeable. Corrected my bad habits in just a few sessions.",
+                    "rev2": "Passed Class 5 road test on the first try! The tips on Richmond test routes were a lifesaver.",
+                    "rev3": "Highly recommend Evergreen. Parallel parking and shoulder checks are easy to understand now.",
+                    "rev4": "Very professional and punctual. Great for nervous beginners.",
+                    "rev5": "They helped me clear my anxiety before the road test. Best in Richmond.",
+                    "rev6": "Calm instructors and clear directions. Five stars!",
+                    
+                    "contact_title": "Ready to Start?", "contact_desc": "Contact Evergreen today to book your evaluation or lesson package.",
+                    "hero_h1_seo": "PREMIER DRIVING SCHOOL IN RICHMOND & VANCOUVER",
+                    "contact_wechat": "WeChat",
+                    "wechat_modal_title": "Add on WeChat",
+                    "wechat_modal_desc": "Scan the QR code to add Evergreen Driving School on WeChat.",
+                    "wechat_open_app": "Open WeChat App",
+                    "footer_name": "Evergreen Driving School",
+                    "footer_areas": "Serving Richmond, Vancouver, and Burnaby, BC",
+                    "footer_phone_label": "Phone:"
+                },
+                "zh-TW": {
+                    "seo_title": "Evergreen 列治文駕校 | 溫哥華考駕照 | ICBC 5/7級路考 | 溫哥華中文駕駛教練",
+                    "seo_desc": "專業溫哥華中文駕駛教練，精通 ICBC 5/7級路考。Evergreen 列治文駕校 提供溫哥華考駕照全套服務，助您輕鬆拿牌。",
+                    "nav_home": "首頁", "nav_services": "課程與地區", "nav_courses": "課程介紹", "nav_class5": "Class 5 高級路考", "nav_class7": "Class 7 (N) 新手課程",
+                    "nav_locations": "服務地區", "nav_richmond": "列治文駕校服務", "nav_vancouver": "溫哥華駕校服務", "nav_burnaby": "本拿比駕校服務",
+                    "nav_process": "學習流程", "nav_book": "立即預約", "nav_prep": "ICBC 備考",
+                    
+                    "hero_badge": "ICBC 認證專業培訓",
+                    "hero_title_part1": "溫哥華考駕照首選", "hero_title_part2": "自信拿取駕照",
+                    "hero_subtitle_pre": "跟隨經驗豐富的",
+                    "hero_subtitle_post": "溫哥華中文駕駛教練。助您一次通過 ICBC 5/7級路考。",
+                    "hero_btn1": "開始學習", "hero_stat_title": "98% 及格率", "hero_stat_sub": "首次考試通過率",
+                    "trust_1": "ICBC 認證教練", "trust_2": "全額保險保障", "trust_3": "雙控安全車輛", "trust_4": "五星學員評價",
+                    
+                    "feat_header_pre": "為什麼選擇",
+                    "feat1_title": "雙控安全系統", "feat1_desc": "安全第一。所有教練車均經 ICBC 認證並配備教練副剎車。",
+                    "feat2_title": "彈性接送服務", "feat2_desc": "專車接送。我們提供列治文、溫哥華和本拿比上門接送服務。",
+                    "feat3_title": "模擬真實路考", "feat3_desc": "在真實的 ICBC 考試路線上進行模擬測試，建立滿分自信。",
+                    
+                    "localseo_title_1": "掌握列治文 ICBC 考試路線",
+                    "localseo_desc_1": "在列治文考駕照需要了解當地特定的路況。ICBC考官經常在繁忙的 Lansdowne 中心附近測試您的觀察力，那裡的行人流量和複雜路口需要高度警覺。我們作為專業的列治文駕校，會帶您反覆練習 Minoru 附近的學校區域（School Zones），確保您養成自動降速至 30 km/h 的習慣。我們還將訓練您自信地處理 Granville Avenue 上的無標誌人行道，以及 3號路 (No. 3 Road) 的複雜路權情境。",
+                    "localseo_title_2": "完美平行泊車的秘訣",
+                    "localseo_desc_2": "平行泊車（Parallel Parking）往往是 ICBC 5/7級路考 中最讓人緊張的環節。我們的溫哥華中文駕駛教練將其拆解為一套萬無一失的「公式化」步驟。我們教您確切的對齊位置、車窗與後視鏡的精確參考點，以及反打方向盤的最佳時機。告別憑感覺停車，您將掌握一套適用於任何車型的可靠公式，確保每次都能輕鬆停在距離路緣 30 公分以內的完美位置。",
+                    
+                    "step1_title": "技能評估", "step1_desc": "評估您目前的駕駛水平和習慣。",
+                    "step2_title": "練習培訓", "step2_desc": "專注於 ICBC 標準的結構化課程。",
+                    "step3_title": "模擬路考", "step3_desc": "在實際考試路線上進行模擬測試。",
+                    "step4_title": "考取證照", "step4_desc": "充滿自信地通過 ICBC 路考並獲得駕照。",
+                    
+                    "c5_title": "Class 5 高級路考備考", "c5_sub": "提升駕駛技巧，消除不良習慣，讓您自信通過 ICBC Class 5 完全權限駕照測試。",
+                    "c5_pt1_title": "打破駕駛壞習慣", "c5_pt1_desc": "老司機常有被 ICBC 考官扣分的壞習慣。我們會糾正您的滑行停車 (Rolling stops)、單手打方向盤以及漏做盲點檢查 (Shoulder checks)。",
+                    "c5_pt2_title": "高速公路與複雜匯入", "c5_pt2_desc": "Class 5 考試可能包含高速路段。我們確保您能自信加速、平穩匯入車流，並在高速行駛時保持安全距離。",
+                    
+                    "c7_title": "Class 7 (N) 新手課程", "c7_sub": "專為新手設計的全面駕駛教學，培養終生受用的安全駕駛習慣，順利通過 N 牌考試。",
+                    "c7_pt1_title": "核心車輛控制", "c7_pt1_desc": "零基礎起步？我們從安靜的住宅區開始，教您方向盤控制、平穩剎車與加速的基礎，然後再過渡到繁忙車流。",
+                    "c7_pt2_title": "危險感知能力", "c7_pt2_desc": "Class 7 考試的核心評分標準。我們訓練您掃視路口、及早發現潛在危險，並正確向考官表達您的觀察。",
+                    
+                    "rich_title": "列治文駕校專屬培訓", "rich_sub": "針對列治文 ICBC 考場路線與當地交通狀況量身打造的專業路考課程。",
+                    "rich_pt1_title": "征服 Lansdowne 考區", "rich_pt1_desc": "列治文以多車道（如 No. 3 Road）、複雜停車場和高人流量區域聞名。作為首選的列治文駕校，我們的中文教練對從 Lansdowne 考場出發的所有 ICBC 考試路線瞭如指掌。我們重點培訓您掃視自行車道、處理紅燈右轉，並完全掌握列治文特定的學校與遊樂場限速區域。",
+
+                    "vanc_title": "溫哥華考駕照課程", "vanc_sub": "針對 Point Grey 與溫哥華市區考場的專業備考指導。",
+                    "vanc_pt1_title": "應對複雜城市路況", "vanc_pt1_desc": "溫哥華的考試路線考驗您在密集市區的駕駛能力。我們特別著重於自行車道的盲點檢查、與公交車共用道路的規則，以及在陡坡上的完美平行泊車，讓您輕鬆應對 Point Grey 考場的各項挑戰。",
+                    
+                    "burn_title": "本拿比駕校課程", "burn_sub": "專為本拿比獨特的丘陵地形和考場環境量身定制的溫哥華考駕照課程。",
+                    "burn_pt1_title": "掌握坡道與高速路", "burn_pt1_desc": "與列治文不同，本拿比的路考對坡道停車和坡度速度控制有極高要求。我們為準備在 Lougheed 和 Wayburne ICBC 考試的學生提供深度培訓。本拿比課程強調平穩的坡道起步、斜坡車速維持，以及安全匯入 Highway 1 等主要幹道。",
+
+                    "reviews_title": "Evergreen 成功案例",
+                    "rev1": "最好的教練！非常有耐心且專業。糾正了我的所有壞習慣。",
+                    "rev2": "第一次路考就通過了！列治文駕校考場路線的建議非常有幫助。",
+                    "rev3": "強烈推薦這位溫哥華中文駕駛教練，讓平行泊車變得非常容易理解。",
+                    "rev4": "非常專業且準時，對考駕照的新手非常有幫助。",
+                    "rev5": "他們幫我消除了考試前的焦慮，絕對是列治文駕校的首選。",
+                    "rev6": "教練很冷靜，指示非常明確。五星好評！",
+                    
+                    "contact_title": "準備好了嗎？", "contact_desc": "聯繫 Evergreen 預約您的第一堂課，輕鬆搞定溫哥華考駕照。",
+                    "hero_h1_seo": "列治文駕校與溫哥華考駕照首選",
+                    "contact_wechat": "微信",
+                    "wechat_modal_title": "添加微信",
+                    "wechat_modal_desc": "掃描二維碼添加 Evergreen 駕校微信。",
+                    "wechat_open_app": "打開微信 App",
+                    "footer_name": "Evergreen 列治文駕校",
+                    "footer_areas": "服務列治文、溫哥華與本拿比地區",
+                    "footer_phone_label": "電話:"
+                },
+                "zh-CN": {
+                    "seo_title": "Evergreen 列治文驾校 | 温哥华考驾照 | ICBC 5/7级路考 | 温哥华中文驾驶教练",
+                    "seo_desc": "专业温哥华中文驾驶教练，精通 ICBC 5/7级路考。Evergreen 列治文驾校 提供温哥华考驾照全套服务，助您轻松拿牌。",
+                    "nav_home": "首页", "nav_services": "课程与地区", "nav_courses": "课程介绍", "nav_class5": "Class 5 高级路考", "nav_class7": "Class 7 (N) 新手课程",
+                    "nav_locations": "服务地区", "nav_richmond": "列治文驾校服务", "nav_vancouver": "温哥华驾校服务", "nav_burnaby": "本拿比驾校服务",
+                    "nav_process": "学习流程", "nav_book": "立即预约", "nav_prep": "ICBC 备考",
+                    
+                    "hero_badge": "ICBC 认证专业培训",
+                    "hero_title_part1": "温哥华考驾照首选", "hero_title_part2": "自信拿取驾照",
+                    "hero_subtitle_pre": "跟随经验丰富的",
+                    "hero_subtitle_post": "温哥华中文驾驶教练。助您一次通过 ICBC 5/7级路考。",
+                    "hero_btn1": "开始学习", "hero_stat_title": "98% 及格率", "hero_stat_sub": "首次考试率",
+                    "trust_1": "ICBC 认证教练", "trust_2": "全额保险保障", "trust_3": "双控安全车辆", "trust_4": "五星学员评价",
+                    
+                    "feat_header_pre": "为什么选择",
+                    "feat1_title": "双控安全系统", "feat1_desc": "安全第一。所有教练车均经 ICBC 认证并配备教练副刹车。",
+                    "feat2_title": "弹性接送服务", "feat2_desc": "专车接送。我们提供列治文、温哥华和本拿比上门接送服务。",
+                    "feat3_title": "模拟真实路考", "feat3_desc": "在真实的 ICBC 考试路线上进行模拟测试，建立满分自信。",
+                    
+                    "localseo_title_1": "掌握列治文 ICBC 考试路线",
+                    "localseo_desc_1": "在列治文考驾照需要了解当地特定的路况。ICBC考官经常在繁忙的 Lansdowne 中心附近测试您的观察力，那里的行人流量和复杂路口需要高度警觉。我们作为专业的列治文驾校，会带您反复练习 Minoru 附近的学校区域（School Zones），确保您养成自动降速至 30 km/h 的习惯。我们还将训练您自信地处理 Granville Avenue 上的无标志人行道，以及 3号路 (No. 3 Road) 的复杂路权情境。",
+                    "localseo_title_2": "完美平行泊车的秘诀",
+                    "localseo_desc_2": "平行泊车（Parallel Parking）往往是 ICBC 5/7级路考 中最让人紧张的环节。我们的温哥华中文驾驶教练将其拆解为一套万无一失的“公式化”步骤。我们教您确切的对齐位置、车窗与后视镜的精确参考点，以及反打方向盘的最佳时机。告别凭感觉停车，您将掌握一套适用于任何车型的可靠公式，确保每次都能轻松停在距离路缘 30 公分以内的完美位置。",
+                    
+                    "step1_title": "技能评估", "step1_desc": "评估您目前的驾驶水平和习惯。",
+                    "step2_title": "练习培训", "step2_desc": "专注于 ICBC 标准的结构化课程。",
+                    "step3_title": "模拟路考", "step3_desc": "在实际考试路线上进行模拟测试。",
+                    "step4_title": "考取证照", "step4_desc": "充满自信地通过 ICBC 路考并获得驾照。",
+                    
+                    "c5_title": "Class 5 高级路考备考", "c5_sub": "提升驾驶技巧，消除不良习惯，让您自信通过 ICBC Class 5 完全权限驾照测试。",
+                    "c5_pt1_title": "打破驾驶坏习惯", "c5_pt1_desc": "老司机常有被 ICBC 考官扣分的坏习惯。我们会纠正您的滑行停车 (Rolling stops)、单手打方向盘以及漏做盲点检查 (Shoulder checks)。",
+                    "c5_pt2_title": "高速公路与复杂汇入", "c5_pt2_desc": "Class 5 考试可能包含高速路段。我们确保您能自信加速、平稳汇入车流，并在高速行驶时保持安全距离。",
+                    
+                    "c7_title": "Class 7 (N) 新手课程", "c7_sub": "专为新手设计的全面驾驶教学，培养终生受用的安全驾驶习惯，顺利通过 N 牌考试。",
+                    "c7_pt1_title": "核心车辆控制", "c7_pt1_desc": "零基础起步？我们从安静的住宅区开始，教您方向盘控制、平稳刹车与加速的基础，然后再过渡到繁忙车流。",
+                    "c7_pt2_title": "危险感知能力", "c7_pt2_desc": "Class 7 考试的核心评分标准。我们训练您扫视路口、及早发现潜在危险，并正确向考官表达您的观察。",
+                    
+                    "rich_title": "列治文驾校专属培训", "rich_sub": "针对列治文 ICBC 考场路线与当地交通状况量身打造的专业路考课程。",
+                    "rich_pt1_title": "征服 Lansdowne 考区", "rich_pt1_desc": "列治文以多车道（如 No. 3 Road）、复杂停车场和高人流量区域闻名。作为首选的列治文驾校，我们的中文教练对从 Lansdowne 考场出发的所有 ICBC 考试路线了如指掌。我们重点培训您扫视自行车道、处理红灯右转，并完全掌握列治文特定的学校与游乐场限速区域。",
+                    
+                    "vanc_title": "温哥华考驾照课程", "vanc_sub": "针对 Point Grey 与温哥华市区考场的专业备考指导。",
+                    "vanc_pt1_title": "应对复杂城市路况", "vanc_pt1_desc": "温哥华的考试路线考验您在密集市区的驾驶能力。我们特别着重于自行车道的盲点检查、与公交车共用道路的规则，以及在陡坡上的完美平行泊车，让您轻松应对 Point Grey 考场的各项挑战。",
+
+                    "burn_title": "本拿比驾校课程", "burn_sub": "专为本拿比独特的丘陵地形和考场环境量身定制的温哥华考驾照课程。",
+                    "burn_pt1_title": "掌握坡道与高速路", "burn_pt1_desc": "与列治文不同，本拿比的路考对坡道停车和坡度速度控制有极高要求。我们为准备在 Lougheed 和 Wayburne ICBC 考试的学生提供深度培训。本拿比课程强调平稳的坡道起步、斜坡车速维持，以及安全汇入 Highway 1 等主要干道。",
+
+                    "reviews_title": "Evergreen 成功案例",
+                    "rev1": "最好的教练！非常有耐心且专业。纠正了我的所有坏习惯。",
+                    "rev2": "第一次路考就通过了！列治文驾校考场路线的建议非常有帮助。",
+                    "rev3": "强烈推荐这位温哥华中文驾驶教练，让平行泊车变得非常容易理解。",
+                    "rev4": "非常专业且准时，对考驾照的新手非常有帮助。",
+                    "rev5": "他们帮我消除了考试前的焦虑，绝对是列治文驾校的首选。",
+                    "rev6": "教练很冷静，指示非常明确。五星好评！",
+                    
+                    "contact_title": "准备好了吗？", "contact_desc": "联系 Evergreen 预约您的第一堂课，轻松搞定温哥华考驾照。",
+                    "hero_h1_seo": "列治文驾校与温哥华考驾照首选",
+                    "contact_wechat": "微信",
+                    "wechat_modal_title": "添加微信",
+                    "wechat_modal_desc": "扫描二维码添加 Evergreen 驾校微信。",
+                    "wechat_open_app": "打开微信 App",
+                    "footer_name": "Evergreen 列治文驾校",
+                    "footer_areas": "服务列治文、温哥华与本拿比地区",
+                    "footer_phone_label": "电话:"
+                }
+            };
+            
+            const reviewsData =[
+                { id: 'rev1', author: 'Raman K.' },
+                { id: 'rev2', author: 'Sarah C.' },
+                { id: 'rev3', author: 'Jason W.' },
+                { id: 'rev4', author: 'Linda G.' },
+                { id: 'rev5', author: 'Kevin M.' },
+                { id: 'rev6', author: 'Emily Z.' }
+            ];
+            
+            let currentLang = "en";
+            let currentPage = "home";
+            
+            function detectDeviceLanguage() {
+                const browserLang = navigator.language || navigator.userLanguage;
+                if (browserLang.includes('zh-TW') || browserLang.includes('zh-HK') || browserLang.includes('zh-MO')) {
+                    currentLang = "zh-TW";
+                } else if (browserLang.includes('zh')) {
+                    currentLang = "zh-CN";
+                } else {
+                    currentLang = "en";
+                }
+            }
+            
+            // SPA Navigation Routing Function
+            function navigate(pageId) {
+                // Hide all pages entirely
+                document.querySelectorAll('.page-view').forEach(page => {
+                    page.classList.remove('page-active');
+                    page.style.display = 'none';
+                    page.style.opacity = '0';
+                });
+
+                // Show target page
+                const targetPage = document.getElementById('page-' + pageId);
+                if (targetPage) {
+                    targetPage.style.display = 'block';
+                    setTimeout(() => {
+                        targetPage.classList.add('page-active');
+                        targetPage.style.opacity = '1'; 
+                    }, 10);
+                }
+                
+                currentPage = pageId;
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                if(document.activeElement) document.activeElement.blur(); // dismiss dropdowns
+                closeMobileMenu();
+            }
+
+            function scrollToSection(id) {
+                // If section lives specifically on the homepage, route back to home first
+                const homeSections =['hero', 'features', 'prep', 'expertise', 'process', 'reviews'];
+                if (currentPage !== 'home' && homeSections.includes(id)) {
+                    document.querySelectorAll('.page-view').forEach(page => {
+                        page.classList.remove('page-active');
+                        page.style.display = 'none';
+                        page.style.opacity = '0';
+                    });
+                    
+                    const homePage = document.getElementById('page-home');
+                    homePage.style.display = 'block';
+                    setTimeout(() => {
+                        homePage.classList.add('page-active');
+                        homePage.style.opacity = '1';
+                    }, 10);
+                    currentPage = 'home';
+                    
+                    setTimeout(() => { scrollToSection(id); }, 100);
+                    closeMobileMenu();
+                    return;
+                }
+
+                // Normal Scroll Logic
+                const el = document.getElementById(id);
+                if (el) {
+                    const offset = 80;
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = el.getBoundingClientRect().top;
+                    const elementPosition = elementRect - bodyRect;
+                    const offsetPosition = elementPosition - offset;
+                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                }
+                closeMobileMenu();
+            }
+            
+            function setLanguage(lang) {
+                currentLang = lang;
+                applyLanguage();
+                if(document.activeElement) document.activeElement.blur(); // dismiss dropdowns
+                closeMobileMenu();
+            }
+            
+            function applyLanguage() {
+                if(translations[currentLang]["seo_title"]) { document.title = translations[currentLang]["seo_title"]; }
+                if(translations[currentLang]["seo_desc"]) {
+                    const metaDesc = document.querySelector('meta[name="description"]');
+                    if(metaDesc) metaDesc.setAttribute("content", translations[currentLang]["seo_desc"]);
+                }
+
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    if (translations[currentLang] && translations[currentLang][key]) {
+                        el.innerHTML = translations[currentLang][key]; 
+                    }
+                });
+
+                const langLabels = { "en": "English", "zh-TW": "繁體中文", "zh-CN": "简体中文" };
+                const indicator = document.getElementById('lang-indicator');
+                if (indicator) indicator.innerText = langLabels[currentLang] || langLabels["en"];
+                renderReviews();
+            }
+            
+            function renderReviews() {
+                const container = document.getElementById('reviews-marquee');
+                if (!container) return;
+                const content = reviewsData.map(rev => `
+                <div class="review-card group">
+                    <div class="flex text-yellow-400 mb-4 group-hover:scale-105 transition-transform origin-left">
+                    ${Array(5).fill('<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>').join('')}
+                    </div>
+                    <p class="text-slate-600 text-[15px] italic leading-relaxed">"${translations[currentLang][rev.id] || translations["en"][rev.id]}"</p>
+                    <div class="mt-auto pt-6 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-black text-sm">
+                            ${rev.author.charAt(0)}
+                        </div>
+                        <p class="font-bold text-slate-900">${rev.author}</p>
+                    </div>
+                </div>
+                `).join('');
+                container.innerHTML = content + content;
+            }
+            
+            function openWechatModal() {
+                const modal = document.getElementById('wechat-modal');
+                const content = document.getElementById('wechat-modal-content');
+                modal.classList.remove('hidden');
+                setTimeout(() => { modal.classList.remove('opacity-0'); content.classList.remove('scale-95'); }, 10);
+            }
+            
+            function closeWechatModal() {
+                const modal = document.getElementById('wechat-modal');
+                const content = document.getElementById('wechat-modal-content');
+                modal.classList.add('opacity-0'); content.classList.add('scale-95');
+                setTimeout(() => { modal.classList.add('hidden'); }, 300);
+            }
+            
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            
+            if(menuBtn && menu) {
+                menuBtn.addEventListener('click', (e) => { e.stopPropagation(); menu.classList.toggle('hidden'); });
+            }
+            
+            function closeMobileMenu() { if(menu) menu.classList.add('hidden'); }
+            
+            document.addEventListener('click', (e) => {
+                if (menu && !menu.contains(e.target) && menuBtn && !menuBtn.contains(e.target)) closeMobileMenu();
+            });
+            
+            document.getElementById('year').innerText = "2019 - " + new Date().getFullYear();
+            
+            window.onload = function() {
+                detectDeviceLanguage();
+                applyLanguage();
+            };
+        </script>
+    </body>
+</html>
