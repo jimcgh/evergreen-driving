@@ -34,7 +34,8 @@
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
-				"@type": ["LocalBusiness", "DrivingSchool"],
+				"@type": "LocalBusiness",
+				"additionalType": "https://schema.org/DrivingSchool",
 				"name": "Evergreen Driving School",
 				"image": "https://evergreendrivingschool.ca/logo.png",
 				"@id": "https://evergreendrivingschool.ca/",
@@ -445,17 +446,44 @@
 		</div>
 		
 		<!-- Footer -->
-		<footer class="bg-slate-950 pt-16 pb-8 text-center border-t border-white/5">
-			<div class="max-w-4xl mx-auto px-6 mb-8 flex flex-col items-center">
-				<h3 class="text-white font-bold text-xl mb-3">Evergreen Driving School</h3>
-				<p class="text-slate-400 text-sm mb-2">Serving Richmond, Vancouver, and Burnaby, BC</p>
-				<p class="text-slate-400 text-sm mb-4">
-					<span>Phone:</span> 
-					<a href="tel:+16043286162" class="hover:text-white transition-colors font-semibold">+1 (604) 328-6162</a>
-				</p>
+		<!-- SEO Sitemap Footer (Traditional Chinese) -->
+		<footer class="bg-slate-950 pt-16 pb-8 border-t border-white/5">
+			<div class="max-w-7xl mx-auto px-6 mb-12">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+					
+					<!-- Column 1 -->
+					<div>
+						<h3 class="text-white font-bold text-xl mb-4">Evergreen 列治文駕校</h3>
+						<p class="text-slate-400 text-sm mb-4">服務列治文、溫哥華與本拿比地區。</p>
+						<p class="text-slate-400 text-sm">
+							<span class="font-bold text-slate-300">電話:</span> 
+							<a href="tel:+16043286162" class="hover:text-indigo-400 transition-colors font-semibold">+1 (604) 328-6162</a>
+						</p>
+					</div>
+					
+					<!-- Column 2: Courses (Internal Links for Googlebot) -->
+					<div>
+						<h4 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">課程介紹</h4>
+						<ul class="space-y-3 text-slate-400 text-sm">
+							<li><a href="/zh-tw/class-5-prep.html" class="hover:text-indigo-400 transition-colors">Class 5 高級路考備考</a></li>
+							<li><a href="/zh-tw/class-7-novice.html" class="hover:text-indigo-400 transition-colors">Class 7 (N) 新手課程</a></li>
+						</ul>
+					</div>
+					
+					<!-- Column 3: Locations (Internal Links for Googlebot) -->
+					<div>
+						<h4 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">服務地區</h4>
+						<ul class="space-y-3 text-slate-400 text-sm">
+							<li><a href="/zh-tw/richmond-driving-lessons.html" class="hover:text-indigo-400 transition-colors">列治文駕校培訓</a></li>
+							<li><a href="/zh-tw/vancouver-driving-lessons.html" class="hover:text-indigo-400 transition-colors">溫哥華考駕照課程</a></li>
+							<li><a href="/zh-tw/burnaby-driving-lessons.html" class="hover:text-indigo-400 transition-colors">本拿比駕校課程</a></li>
+						</ul>
+					</div>
+					
+				</div>
 			</div>
-			<p class="text-slate-500 text-xs font-bold uppercase tracking-widest mt-8 border-t border-slate-800/50 pt-8 max-w-4xl mx-auto">
-				© <span id="year"></span> Evergreen Driving School. All Rights Reserved.
+			<p class="text-slate-600 text-xs font-bold uppercase tracking-widest border-t border-slate-800/50 pt-8 text-center max-w-7xl mx-auto px-6">
+				© <span id="year"></span> Evergreen Driving School. 版權所有.
 			</p>
 		</footer>
 		
