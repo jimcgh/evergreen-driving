@@ -17,8 +17,9 @@
 		<title>Evergreen 列治文駕校 | 溫哥華考駕照 | ICBC 5/7級路考 | 溫哥華中文駕駛教練</title>
 		
 		<!-- NOTE: The slash '/' before favicon.png ensures it loads from the main folder -->
-		<link rel="icon" type="image/png" href="/favicon.png">
+		<link rel="icon" type="image/png" href="/favicon.png" sizes="192x192">
 		<link rel="apple-touch-icon" href="/favicon.png">
+		<meta name="theme-color" content="#ffffff">
 		
 		<!-- SEO OPTIMIZED CHINESE DESCRIPTION -->
 		<meta name="description" content="專業溫哥華中文駕駛教練，精通 ICBC 5/7級路考。Evergreen 列治文駕校 提供溫哥華考駕照全套服務，助您輕鬆拿牌。">
@@ -31,6 +32,23 @@
 		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
 		
 		<link rel="preload" as="image" href="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=80" fetchpriority="high">
+		
+		<!-- ========================================== -->
+		<!-- 修正 2: 增加 WebSite Schema (這能強迫 Google 顯示正確的網站名稱) -->
+		<!-- ========================================== -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"name": "Evergreen 列治文駕校",
+				"alternateName": "溫哥華中文駕駛教練",
+				"url": "https://evergreendrivingschool.ca/"
+			}
+		</script>
+		
+		<!-- ========================================== -->
+		<!-- 原有的 LocalBusiness Schema (保持不變，用來做地圖 SEO) -->
+		<!-- ========================================== -->
 		
 		<script type="application/ld+json">
 			{
