@@ -27,33 +27,29 @@
   
   <!-- 1. 導航欄 (Navbar) -->
   <!-- 請將此處替換為您 index.html 已優化的 Navbar 代碼，並注意將非首頁的連結（如 #contact）改為跨頁連結（如 index.html#contact） -->
-  <!-- 1. 導航欄 (Navbar) - 英文版 -->
+  <!-- 1. 導航欄 (Navbar) - 英文版 (已修復點擊與下拉問題) -->
   <header class="bg-white shadow-sm sticky top-0 z-40">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="privacy.html" class="text-xl font-bold text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1">
+      <a href="index.html" class="text-xl font-bold text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1">
         Evergreen Driving School
       </a>
       
       <div class="flex items-center gap-6">
         <nav class="hidden md:flex items-center space-x-6">
-          <a href="privacy.html" class="text-slate-600 hover:text-slate-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1">Home</a>
-          <a href="privacy.html#contact" class="text-slate-600 hover:text-slate-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1">Contact Us</a>
+          <a href="index.html" class="text-slate-600 hover:text-slate-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1">Home</a>
+          <a href="index.html#contact" class="text-slate-600 hover:text-slate-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1">Contact Us</a>
           
-          <!-- 語言切換選單 (Language Dropdown) -->
-          <div class="lang-container relative inline-block text-left">
+          <!-- 語言切換選單 (已加入 group hover 機制確保滑鼠移入時能展開) -->
+          <div class="lang-container group relative inline-block text-left">
             <button id="lang-btn" aria-haspopup="true" aria-expanded="false" class="text-slate-600 hover:text-slate-950 flex items-center gap-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-lg px-2 py-1 transition-colors">
               Language
-              <!-- 下拉箭頭圖示 -->
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             
-            <!-- 下拉選單選單內容 (點擊或聚焦時會顯示) -->
-            <div class="dropdown-menu absolute right-0 mt-2 w-32 bg-white border border-slate-200 rounded-lg shadow-lg py-1 hidden focus-within:block dropdown-container:focus-within">
-              <!-- 英文版指向自己 -->
+            <!-- 使用 group-hover:block 讓選單順暢顯示 -->
+            <div class="dropdown-menu absolute right-0 mt-2 w-32 bg-white border border-slate-200 rounded-lg shadow-lg py-1 hidden group-hover:block focus-within:block dropdown-container:focus-within">
               <a href="privacy.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 focus:outline-none focus:bg-slate-50">English</a>
-              <!-- 繁體版指向繁體隱私頁 -->
               <a href="privacy-tc.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 focus:outline-none focus:bg-slate-50">繁體中文</a>
-              <!-- 簡體版指向簡體隱私頁 -->
               <a href="privacy-sc.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 focus:outline-none focus:bg-slate-50">簡體中文</a>
             </div>
           </div>
@@ -196,16 +192,132 @@
   
   <!-- 6. 剛剛優化後的 JavaScript (包含動態更新日期邏輯) -->
   <script>
-    // 在頁面載入時，動態填入今天日期（作為更新日期）
-    document.getElementById('current-date').innerText = new Date().toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
+    document.addEventListener('DOMContentLoaded', function () {
+      // === 0. 动态填入今天日期（请根据页面语系修改这里的 'zh-CN' 为 'zh-HK' 或 'en-US'） ===
+      const lang = 'en-US'; // 英文版请改用 'en-US'，繁体版请改用 'zh-HK'
+      const dateEl = document.getElementById('current-date');
+      if (dateEl) {
+        dateEl.innerText = new Date().toLocaleDateString(lang, {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        });
+      }
+    
+      // === 1. WeChat 弹窗控制 ===
+      let lastActiveElement;
+      
+      window.openWechatModal = function() {
+        lastActiveElement = document.activeElement;
+        const modal = document.getElementById('wechat-modal');
+        const content = document.getElementById('wechat-modal-content');
+        if (modal && content) {
+          modal.classList.remove('hidden');
+          setTimeout(() => { 
+            modal.classList.remove('opacity-0'); 
+            content.classList.remove('scale-95'); 
+            const closeBtn = document.getElementById('wechat-close-btn');
+            if (closeBtn) closeBtn.focus();
+          }, 10);
+        }
+      };
+      
+      window.closeWechatModal = function() {
+        const modal = document.getElementById('wechat-modal');
+        const content = document.getElementById('wechat-modal-content');
+        if (modal && content) {
+          modal.classList.add('opacity-0'); 
+          content.classList.add('scale-95');
+          setTimeout(() => { 
+            modal.classList.add('hidden'); 
+            if (lastActiveElement) lastActiveElement.focus();
+          }, 300);
+        }
+      };
+      
+      document.addEventListener('keydown', (e) => {
+        const modal = document.getElementById('wechat-modal');
+        if (modal && e.key === 'Escape' && !modal.classList.contains('hidden')) {
+          closeWechatModal();
+        }
+      });
+    
+      // === 2. 手机版菜单控制 ===
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      
+      if (menuBtn && menu) {
+        menuBtn.addEventListener('click', (e) => { 
+          e.stopPropagation(); 
+          menu.classList.toggle('hidden'); 
+        });
+    
+        document.addEventListener('click', (e) => {
+          if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+            menu.classList.add('hidden');
+          }
+        });
+    
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            menu.classList.add('hidden');
+          });
+        });
+      }
+    
+      // === 3. 下拉菜单 A11Y 键盘导航 ===
+      const setupDropdownA11y = (containerId, buttonId) => {
+        const container = document.querySelector(containerId);
+        const button = document.getElementById(buttonId);
+        if (container && button) {
+          container.addEventListener('focusin', () => button.setAttribute('aria-expanded', 'true'));
+          container.addEventListener('focusout', () => button.setAttribute('aria-expanded', 'false'));
+        }
+      };
+      setupDropdownA11y('.lang-container', 'lang-btn');
+    
+      // === 4. 动态年份更新 ===
+      const yearEl = document.getElementById('year');
+      if (yearEl) {
+        yearEl.innerText = "2019 - " + new Date().getFullYear();
+      }
+    
+      // === 5. Cookie Consent Banner 控制 (修复版) ===
+      const cookieBanner = document.getElementById('cookie-banner');
+      const btnAccept = document.getElementById('btn-accept-cookie');
+      const btnDecline = document.getElementById('btn-decline-cookie');
+    
+      if (cookieBanner && btnAccept && btnDecline) {
+        const cookieConsent = localStorage.getItem('cookieConsent');
+    
+        if (!cookieConsent) {
+          cookieBanner.classList.remove('hidden');
+          cookieBanner.removeAttribute('hidden');
+          setTimeout(() => {
+            cookieBanner.classList.remove('translate-y-full');
+          }, 100);
+        }
+    
+        btnAccept.addEventListener('click', function () {
+          localStorage.setItem('cookieConsent', 'accepted');
+          hideBanner();
+        });
+    
+        btnDecline.addEventListener('click', function () {
+          localStorage.setItem('cookieConsent', 'declined');
+          hideBanner();
+        });
+    
+        function hideBanner() {
+          cookieBanner.classList.add('translate-y-full');
+          setTimeout(() => {
+            cookieBanner.classList.add('hidden');
+            cookieBanner.setAttribute('hidden', 'true');
+          }, 300);
+        }
+      }
     });
-  </script>
-  <!-- 請在此處貼上剛才整合優化後的通用 JS 代碼 -->
-  <script>
-    // [貼上先前整合好的通用 JS 代碼，包含 WeChat, Menu, Cookie Banner 等]
-  </script>
+    </script>
 </body>
 </html>
