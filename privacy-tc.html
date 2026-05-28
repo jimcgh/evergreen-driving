@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="zh-Hant" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,23 +27,21 @@
   
   <!-- 1. 導航欄 (Navbar) -->
   <!-- 請將此處替換為您 index.html 已優化的 Navbar 代碼，並注意將非首頁的連結（如 #contact）改為跨頁連結（如 index.html#contact） -->
-  <!-- 1. 導航欄 (Navbar) - 英文版 (支援電腦與手機) -->
+  <!-- 1. 導航欄 (Navbar) - 繁中版 (支援電腦與手機) -->
   <header class="bg-white shadow-sm sticky top-0 z-40">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative">
-      <!-- 標題 / Logo -->
-      <a href="index.html" class="text-xl font-bold text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1">
-        Evergreen Driving School
+      <a href="index-tc.html" class="text-xl font-bold text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1">
+        Evergreen 駕駛學校
       </a>
       
-      <!-- 【電腦版選單】 (螢幕寬度 md 以上顯示) -->
+      <!-- 【電腦版選單】 -->
       <nav class="hidden md:flex items-center space-x-6">
-        <a href="index.html" class="text-slate-600 hover:text-slate-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1">Home</a>
-        <a href="index.html#contact" class="text-slate-600 hover:text-slate-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1">Contact Us</a>
+        <a href="index-tc.html" class="text-slate-600 hover:text-slate-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1">首頁</a>
+        <a href="index-tc.html#contact" class="text-slate-600 hover:text-slate-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1">聯絡我們</a>
         
-        <!-- 語言切換選單 (已加入 hover 及 gap 修復) -->
         <div class="lang-container group relative inline-block text-left">
           <button id="lang-btn" aria-haspopup="true" aria-expanded="false" class="text-slate-600 hover:text-slate-950 flex items-center gap-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-lg px-2 py-1 transition-colors">
-            Language
+            語言
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
           </button>
           
@@ -55,21 +53,21 @@
         </div>
       </nav>
 
-      <!-- 【手機版漢堡選單按鈕】 (僅在手機版顯示) -->
-      <button id="mobile-menu-btn" class="md:hidden text-slate-600 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded p-1" aria-label="Toggle Menu">
+      <!-- 【手機版漢堡選單按鈕】 -->
+      <button id="mobile-menu-btn" class="md:hidden text-slate-600 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded p-1" aria-label="切換選單">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
 
-      <!-- 【手機版選單下拉區】 (預設隱藏 hidden，由 JS 控制顯示) -->
+      <!-- 【手機版選單下拉區】 -->
       <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white border-b border-slate-200 shadow-lg z-30">
         <div class="px-6 py-4 flex flex-col space-y-4">
-          <a href="index.html" class="text-slate-600 hover:text-slate-950 font-medium">Home</a>
-          <a href="index.html#contact" class="text-slate-600 hover:text-slate-950 font-medium">Contact Us</a>
+          <a href="index-tc.html" class="text-slate-600 hover:text-slate-950 font-medium">首頁</a>
+          <a href="index-tc.html#contact" class="text-slate-600 hover:text-slate-950 font-medium">聯絡我們</a>
           
           <div class="border-t border-slate-100 pt-4 flex flex-col space-y-2">
-            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Language</span>
+            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">語言 / Language</span>
             <a href="privacy.html" class="text-slate-600 hover:text-slate-950 font-medium pl-2">English</a>
             <a href="privacy-tc.html" class="text-slate-600 hover:text-slate-950 font-medium pl-2">繁體中文</a>
             <a href="privacy-sc.html" class="text-slate-600 hover:text-slate-950 font-medium pl-2">簡體中文</a>
@@ -81,100 +79,94 @@
   
   <!-- 2. 主要內容區 (Main Content) -->
   <main id="main-content" class="flex-grow max-w-4xl mx-auto px-6 py-12 md:py-20 focus:outline-none" tabIndex="-1">
-    <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">Privacy Policy</h1>
-    <p class="text-sm text-slate-500 mb-8">Last updated: <span id="current-date"></span></p>
+    <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">隱私權政策</h1>
+    <p class="text-sm text-slate-500 mb-8">最後更新日期：<span id="current-date"></span></p>
     
-    <!-- 條款內容，對齊 WCAG AA 顏色對比標準 (白底配 text-slate-700) -->
     <div class="prose prose-slate max-w-none space-y-8 text-slate-700 leading-relaxed">
       
       <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">1. Introduction</h2>
+        <h2 class="text-xl font-bold text-slate-900 mb-3">1. 簡介</h2>
         <p>
-          At Evergreen Driving School, we are committed to maintaining the trust and confidence of our visitors to our web site. 
-          This Privacy Policy outlines how we collect, use, and protect your personal information in compliance with the Personal Information Protection and Electronic Documents Act (PIPEDA) of Canada and other applicable privacy regulations.
+          在 Evergreen 駕駛學校，我們致力於維護您對我們網站的信任。本隱私權政策說明了我們如何根據加拿大《個人資訊保護與電子文件法》（PIPEDA）及其他適用之隱私法規，收集、使用並保護您的個人資訊。
         </p>
       </section>
       
       <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">2. Information We Collect</h2>
-        <p class="mb-3">We may collect two types of information when you visit our website:</p>
+        <h2 class="text-xl font-bold text-slate-900 mb-3">2. 我們收集的資訊</h2>
+        <p class="mb-3">當您訪問我們的網站時，我們可能會收集以下兩類資訊：</p>
         <ul class="list-disc pl-6 space-y-2">
-          <li><strong>Personal Information:</strong> Such as your name, email address, and phone number, which you voluntarily provide to us via our contact forms. This information is solely used to respond to your inquiries and arrange driving lessons.</li>
-          <li><strong>Anonymized Usage Data:</strong> We use Google Analytics (GA4) to collect anonymized data about how you interact with our website (e.g., pages visited, duration of visit, and device types). This data does not identify you personally.</li>
+          <li><strong>個人資訊：</strong>例如您的姓名、電子郵件地址和電話號碼。這些是您透過聯絡表單主動提供給我們的。此類資訊僅用於回覆您的查詢以及安排駕駛課程。</li>
+          <li><strong>匿名使用數據：</strong>我們使用 Google Analytics (GA4) 來收集有關您如何與網站互動的匿名數據（例如瀏覽的頁面、停留時間和設備類型）。這些數據無法用於識別您的個人身份。</li>
         </ul>
       </section>
       
       <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">3. How We Use Cookies</h2>
+        <h2 class="text-xl font-bold text-slate-900 mb-3">3. 我們如何使用 Cookie</h2>
         <p>
-          Cookies are small text files stored on your device. We use cookies to enhance your browsing experience and analyze site traffic through Google Analytics. 
-          You can choose to accept or decline cookies via our cookie consent banner. You can also configure your browser settings to block or delete cookies at any time.
+          Cookie 是儲存在您設備上的小型文字檔案。我們使用 Cookie 來優化您的瀏覽體驗，並透過 Google Analytics 分析網站流量。您可以透過我們的 Cookie 同意橫幅選擇接受或拒絕使用 Cookie。您也可以隨時透過瀏覽器設定來阻擋或刪除 Cookie。
         </p>
       </section>
       
       <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">4. Third-Party Services (Google Analytics)</h2>
+        <h2 class="text-xl font-bold text-slate-900 mb-3">4. 第三方服務（Google Analytics）</h2>
         <p>
-          Our website uses Google Analytics (GA4) to help us analyze website traffic. Google Analytics may store cookies on your device to gather anonymized information. 
-          Google's ability to use and share information collected by Google Analytics about your visits to this site is restricted by the Google Analytics Terms of Use and the Google Privacy Policy.
+          我們的網站使用 Google Analytics (GA4) 來協助我們分析網站流量。Google Analytics 可能會在您的設備上儲存 Cookie 以收集匿名資訊。Google 使用和共享由 Google Analytics 收集之資訊的能力，受到 Google Analytics 使用條款和 Google 隱私權政策的限制。
         </p>
       </section>
       
       <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">5. Information Sharing & Protection</h2>
+        <h2 class="text-xl font-bold text-slate-900 mb-3">5. 資訊共享與保護</h2>
         <p>
-          We do not sell, trade, or otherwise transfer your personal information to outside parties. 
-          We implement appropriate technical and organizational security measures to protect your personal data from unauthorized access, alteration, or disclosure.
+          我們不會將您的個人資訊出售、交易或以其他方式轉讓給外部第三方。我們實施了適當的技術與組織安全措施，以保護您的個人資料免受未經授權的存取、修改或洩露。
         </p>
       </section>
       
       <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">6. Your Rights</h2>
+        <h2 class="text-xl font-bold text-slate-900 mb-3">6. 您的權利</h2>
         <p>
-          Under PIPEDA, you have the right to access the personal information we hold about you, request corrections to any inaccuracies, or ask us to delete your data. 
-          If you have any questions or wish to exercise these rights, please contact us using the information below.
+          根據 PIPEDA 的規定，您有權查閱我們持有的您的個人資訊、要求更正任何不準確之處，或要求我們刪除您的數據。如果您有任何疑問或希望行使這些權利，請透過以下資訊與我們聯絡。
         </p>
       </section>
       
       <section class="border-t border-slate-200 pt-6">
-        <h2 class="text-xl font-bold text-slate-900 mb-3">7. Contact Us</h2>
-        <p class="mb-2">If you have any questions about this Privacy Policy, please contact us at:</p>
+        <h2 class="text-xl font-bold text-slate-900 mb-3">7. 聯絡我們</h2>
+        <p class="mb-2">如果您對本隱私權政策有任何疑問，請透過以下方式與我們聯絡：</p>
         <p class="font-semibold text-slate-950">Evergreen Driving School</p>
-        <p>Phone: <a href="tel:+16043286162" class="text-indigo-600 hover:text-indigo-500 underline font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1">+1 (604) 328-6162</a></p>
-        <p>Service Areas: Richmond, Vancouver, and Burnaby, BC</p>
+        <p>電話：<a href="tel:+16043286162" class="text-indigo-600 hover:text-indigo-500 underline font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1">+1 (604) 328-6162</a></p>
+        <p>服務區域：Richmond, Vancouver, and Burnaby, BC</p>
       </section>
       
     </div>
   </main>
   
-  <!-- 3. 頁尾 (Footer) -->
+  <!-- 3. 頁尾 (Footer) - 繁中版 (已補上中文翻譯) -->
   <footer class="bg-slate-950 pt-16 pb-8 border-t border-white/5">
     <div class="max-w-7xl mx-auto px-6 mb-12">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         
         <div>
           <h3 class="text-white font-bold text-xl mb-4">Evergreen Driving School</h3>
-          <p class="text-slate-400 text-sm mb-4">Serving Richmond, Vancouver, and Burnaby, BC.</p>
+          <p class="text-slate-400 text-sm mb-4">服務列治文、溫哥華、及本拿比地區 (Richmond, Vancouver, Burnaby, BC)</p>
           <p class="text-slate-400 text-sm">
-            <span class="font-bold text-slate-300">Phone:</span> 
+            <span class="font-bold text-slate-300">電話：</span> 
             <a href="tel:+16043286162" class="hover:text-indigo-400 transition-colors font-semibold">+1 (604) 328-6162</a>
           </p>
         </div>
         
         <div>
-          <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">Our Courses</h4>
+          <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">我們的課程</h4>
           <ul class="space-y-3 text-slate-400 text-sm">
-            <li><a href="class-5-prep.html" class="hover:text-indigo-400 transition-colors">Class 5 Road Test Prep</a></li>
-            <li><a href="class-7-novice.html" class="hover:text-indigo-400 transition-colors">Class 7 Novice Lessons</a></li>
+            <li><a href="class-5-prep.html" class="hover:text-indigo-400 transition-colors">Class 5 路考準備課程</a></li>
+            <li><a href="class-7-novice.html" class="hover:text-indigo-400 transition-colors">Class 7 新手駕駛培訓</a></li>
           </ul>
         </div>
         
         <div>
-          <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">Service Areas</h4>
+          <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">服務區域</h4>
           <ul class="space-y-3 text-slate-400 text-sm">
-            <li><a href="richmond-driving-lessons.html" class="hover:text-indigo-400 transition-colors">Richmond Driving Lessons</a></li>
-            <li><a href="vancouver-driving-lessons.html" class="hover:text-indigo-400 transition-colors">Vancouver Driving Lessons</a></li>
-            <li><a href="burnaby-driving-lessons.html" class="hover:text-indigo-400 transition-colors">Burnaby Driving Lessons</a></li>
+            <li><a href="richmond-driving-lessons.html" class="hover:text-indigo-400 transition-colors">列治文駕駛學校 (Richmond)</a></li>
+            <li><a href="vancouver-driving-lessons.html" class="hover:text-indigo-400 transition-colors">溫哥華駕駛學校 (Vancouver)</a></li>
+            <li><a href="burnaby-driving-lessons.html" class="hover:text-indigo-400 transition-colors">本拿比駕駛學校 (Burnaby)</a></li>
           </ul>
         </div>
         
@@ -182,10 +174,10 @@
     </div>
     <div class="border-t border-slate-800/50 pt-8 text-center max-w-7xl mx-auto px-6 flex flex-col items-center gap-2">
       <p class="text-slate-600 text-xs font-bold uppercase tracking-widest">
-        © <span id="year"></span> Evergreen Driving School. All Rights Reserved.
+        © <span id="year"></span> Evergreen Driving School. 版權所有。
       </p>
-      <a href="privacy.html" class="text-slate-500 hover:text-indigo-400 text-xs font-bold uppercase tracking-widest focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1 transition-colors">
-        Privacy Policy
+      <a href="privacy-tc.html" class="text-slate-500 hover:text-indigo-400 text-xs font-bold uppercase tracking-widest focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1 transition-colors">
+        隱私權政策
       </a>
     </div>
   </footer>
@@ -193,19 +185,19 @@
   <!-- 4. WeChat 彈窗 HTML -->
   <!-- 請在此處保留您 index.html 中的 WeChat modal HTML 結構 -->
   
-  <!-- 5. Cookie Consent Banner -->
-  <div id="cookie-banner" role="region" aria-label="Cookie Consent" class="fixed bottom-0 left-0 right-0 bg-slate-900 text-slate-100 p-4 z-50 transform translate-y-full transition-transform duration-300 ease-in-out shadow-2xl border-t border-slate-800" hidden>
+  <!-- 5. Cookie Consent Banner - 繁中版 (已修復 hidden 控制類別) -->
+  <div id="cookie-banner" role="region" aria-label="Cookie 同意聲明" class="hidden fixed bottom-0 left-0 right-0 bg-slate-900 text-slate-100 p-4 z-50 transform translate-y-full transition-transform duration-300 ease-in-out shadow-2xl border-t border-slate-800">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="text-sm text-slate-300">
-        We use cookies to improve your browsing experience and analyze site traffic via Google Analytics. By clicking "Accept", you consent to our use of cookies. Read our 
-        <a href="privacy.html" class="text-indigo-400 underline hover:text-indigo-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded">Privacy Policy</a>.
+        我們使用 Cookie 來優化您的瀏覽體驗，並透過 Google Analytics 分析網站流量。點擊「同意」即表示您接受我們使用 Cookie。閱讀我們的 
+        <a href="privacy-tc.html" class="text-indigo-400 underline hover:text-indigo-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded">隱私權政策</a>。
       </div>
       <div class="flex items-center gap-3 shrink-0">
         <button id="btn-accept-cookie" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-4 py-2 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-colors">
-          Accept
+          同意
         </button>
         <button id="btn-decline-cookie" class="text-slate-400 hover:text-slate-300 text-sm font-medium px-3 py-2 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-colors">
-          Decline
+          拒絕
         </button>
       </div>
     </div>
@@ -215,7 +207,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       // === 0. 动态填入今天日期（请根据页面语系修改这里的 'zh-CN' 为 'zh-HK' 或 'en-US'） ===
-      const lang = 'en-US'; // 英文版请改用 'en-US'，繁体版请改用 'zh-HK'
+      const lang = 'zh-HK'; // 英文版请改用 'en-US'，繁体版请改用 'zh-HK'
       const dateEl = document.getElementById('current-date');
       if (dateEl) {
         dateEl.innerText = new Date().toLocaleDateString(lang, {
