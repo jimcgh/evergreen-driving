@@ -827,7 +827,8 @@
 	</div>
 </footer>
 
-<div id="cookie-banner" role="region" aria-label="Cookie Consent" class="fixed bottom-0 left-0 right-0 bg-slate-900 text-slate-100 p-4 z-50 transform translate-y-full transition-transform duration-300 ease-in-out shadow-2xl border-t border-slate-800" hidden>
+<!-- Cookie Consent Banner (已在 class 內補上 hidden) -->
+<div id="cookie-banner" role="region" aria-label="Cookie Consent" class="hidden fixed bottom-0 left-0 right-0 bg-slate-900 text-slate-100 p-4 z-50 transform translate-y-full transition-transform duration-300 ease-in-out shadow-2xl border-t border-slate-800">
 	<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
 		<div class="text-sm text-slate-300">
 			We use cookies to improve your browsing experience and analyze site traffic via Google Analytics. By clicking "Accept", you consent to our use of cookies. Read our 
@@ -929,7 +930,7 @@
 			yearEl.innerText = "2019 - " + new Date().getFullYear();
 		}
 		
-		// === 5. Cookie Consent Banner 控制 ===
+		// === 5. Cookie Consent Banner 控制 (已同步安全防禦邏輯) ===
 		const cookieBanner = document.getElementById('cookie-banner');
 		const btnAccept = document.getElementById('btn-accept-cookie');
 		const btnDecline = document.getElementById('btn-decline-cookie');
@@ -938,6 +939,8 @@
 			const cookieConsent = localStorage.getItem('cookieConsent');
 			
 			if (!cookieConsent) {
+				// 核心修改：同時移除類別與屬性的 hidden，確保能順利被 Tailwind 渲染
+				cookieBanner.classList.remove('hidden');
 				cookieBanner.removeAttribute('hidden');
 				setTimeout(() => {
 					cookieBanner.classList.remove('translate-y-full');
@@ -957,6 +960,7 @@
 			function hideBanner() {
 				cookieBanner.classList.add('translate-y-full');
 				setTimeout(() => {
+					cookieBanner.classList.add('hidden');
 					cookieBanner.setAttribute('hidden', 'true');
 				}, 300);
 			}
