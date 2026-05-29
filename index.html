@@ -269,6 +269,18 @@
 			pointer-events: auto;
 		}
 		@media (max-width: 768px) { .timeline-line::before { display: none; } }
+
+		/* Cookie Banner 定位與動畫樣式 */
+.cookie-banner-custom {
+	position: fixed !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	transition: transform 0.3s ease-in-out !important;
+}
+.cookie-banner-hide {
+	transform: translateY(100%) !important;
+}
 	</style>
 </head>
 <body class="min-h-screen bg-slate-50 text-slate-800 overflow-x-hidden w-full">
@@ -827,145 +839,156 @@
 	</div>
 </footer>
 
-<!-- Cookie Consent Banner (已在 class 內補上 hidden) -->
-<div id="cookie-banner" role="region" aria-label="Cookie Consent" class="hidden fixed bottom-0 left-0 right-0 bg-slate-900 text-slate-100 p-4 z-50 transform translate-y-full transition-transform duration-300 ease-in-out shadow-2xl border-t border-slate-800">
-	<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-		<div class="text-sm text-slate-300">
-			We use cookies to improve your browsing experience and analyze site traffic via Google Analytics. By clicking "Accept", you consent to our use of cookies. Read our 
-			<a href="privacy.html" class="text-indigo-400 underline hover:text-indigo-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded">Privacy Policy</a>.
-		</div>
-		<div class="flex items-center gap-3 shrink-0">
-			<button id="btn-accept-cookie" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-4 py-2 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-colors">
-				Accept
-			</button>
-			<button id="btn-decline-cookie" class="text-slate-400 hover:text-slate-300 text-sm font-medium px-3 py-2 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-colors">
-				Decline
-			</button>
+<!-- Cookie Consent Banner -->
+	<div id="cookie-banner" role="region" aria-label="Cookie Consent" class="hidden cookie-banner-custom cookie-banner-hide bg-slate-900 text-slate-100 p-4 z-50 shadow-2xl border-t border-slate-800">
+		<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+			<div class="text-sm text-slate-300">
+				We use cookies to improve your browsing experience and analyze site traffic via Google Analytics. By clicking "Accept", you consent to our use of cookies. Read our <a href="privacy.html" class="text-indigo-400 underline hover:text-indigo-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded">Privacy Policy</a>.
+			</div>
+			<div class="flex items-center gap-3 shrink-0">
+				<button id="btn-accept-cookie" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-4 py-2 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-colors">
+					Accept
+				</button>
+				<button id="btn-decline-cookie" class="text-slate-400 hover:text-slate-300 text-sm font-medium px-3 py-2 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-colors">
+					Decline
+				</button>
+			</div>
 		</div>
 	</div>
-</div>
 
-<script>
-	document.addEventListener('DOMContentLoaded', function () {
-		// === 1. WeChat 彈窗控制 ===
-		let lastActiveElement; // 記錄打開彈窗前，用戶光標停在哪裡
-		
-		window.openWechatModal = function() { // 設為 window 屬性以便 HTML 的 onclick 呼叫
-			lastActiveElement = document.activeElement;
-			const modal = document.getElementById('wechat-modal');
-			const content = document.getElementById('wechat-modal-content');
-			if (modal && content) {
-				modal.classList.remove('hidden');
-				setTimeout(() => { 
-					modal.classList.remove('opacity-0'); 
-					content.classList.remove('scale-95'); 
-					const closeBtn = document.getElementById('wechat-close-btn');
-					if (closeBtn) closeBtn.focus();
-				}, 10);
-			}
-		};
-		
-		window.closeWechatModal = function() {
-			const modal = document.getElementById('wechat-modal');
-			const content = document.getElementById('wechat-modal-content');
-			if (modal && content) {
-				modal.classList.add('opacity-0'); 
-				content.classList.add('scale-95');
-				setTimeout(() => { 
-					modal.classList.add('hidden'); 
-					if (lastActiveElement) lastActiveElement.focus();
-				}, 300);
-			}
-		};
-		
-		// 支援 Esc 鍵關閉 WeChat 彈窗
-		document.addEventListener('keydown', (e) => {
-			const modal = document.getElementById('wechat-modal');
-			if (modal && e.key === 'Escape' && !modal.classList.contains('hidden')) {
-				closeWechatModal();
-			}
-		});
-		
-		// === 2. 手機版選單控制 ===
-		const menuBtn = document.getElementById('mobile-menu-btn');
-		const menu = document.getElementById('mobile-menu');
-		
-		if (menuBtn && menu) {
-			menuBtn.addEventListener('click', (e) => { 
-				e.stopPropagation(); 
-				menu.classList.toggle('hidden'); 
-			});
+	<script>
+		function initializeEvergreenSchool() {
+			// === 1. WeChat 彈窗控制 ===
+			let lastActiveElement;
 			
-			// 點擊選單外區域關閉選單
-			document.addEventListener('click', (e) => {
-				if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
-					menu.classList.add('hidden');
+			window.openWechatModal = function() {
+				lastActiveElement = document.activeElement;
+				const modal = document.getElementById('wechat-modal');
+				const content = document.getElementById('wechat-modal-content');
+				if (modal && content) {
+					modal.classList.remove('hidden');
+					setTimeout(() => { 
+						modal.classList.remove('opacity-0'); 
+						content.classList.remove('scale-95'); 
+						const closeBtn = document.getElementById('wechat-close-btn');
+						if (closeBtn) closeBtn.focus();
+					}, 10);
+				}
+			};
+			
+			window.closeWechatModal = function() {
+				const modal = document.getElementById('wechat-modal');
+				const content = document.getElementById('wechat-modal-content');
+				if (modal && content) {
+					modal.classList.add('opacity-0'); 
+					content.classList.add('scale-95');
+					setTimeout(() => { 
+						modal.classList.add('hidden'); 
+						if (lastActiveElement) lastActiveElement.focus();
+					}, 300);
+				}
+			};
+			
+			document.addEventListener('keydown', (e) => {
+				const modal = document.getElementById('wechat-modal');
+				if (modal && e.key === 'Escape' && !modal.classList.contains('hidden')) {
+					closeWechatModal();
 				}
 			});
 			
-			// 點擊選單內連結後關閉選單
-			const mobileLinks = menu.querySelectorAll('a');
-			mobileLinks.forEach(link => {
-				link.addEventListener('click', () => {
-					menu.classList.add('hidden');
+			// === 2. 手機版選單控制 ===
+			const menuBtn = document.getElementById('mobile-menu-btn');
+			const menu = document.getElementById('mobile-menu');
+			
+			if (menuBtn && menu) {
+				menuBtn.addEventListener('click', (e) => { 
+					e.stopPropagation(); 
+					menu.classList.toggle('hidden'); 
 				});
-			});
-		}
-		
-		// === 3. 下拉選單 A11Y 鍵盤導航 ===
-		const setupDropdownA11y = (containerId, buttonId) => {
-			const container = document.querySelector(containerId);
-			const button = document.getElementById(buttonId);
-			if (container && button) {
-				container.addEventListener('focusin', () => button.setAttribute('aria-expanded', 'true'));
-				container.addEventListener('focusout', () => button.setAttribute('aria-expanded', 'false'));
-			}
-		};
-		setupDropdownA11y('.dropdown-container', 'programs-btn');
-		setupDropdownA11y('.lang-container', 'lang-btn');
-		
-		// === 4. 動態年份更新 ===
-		const yearEl = document.getElementById('year');
-		if (yearEl) {
-			yearEl.innerText = "2019 - " + new Date().getFullYear();
-		}
-		
-		// === 5. Cookie Consent Banner 控制 (已同步安全防禦邏輯) ===
-		const cookieBanner = document.getElementById('cookie-banner');
-		const btnAccept = document.getElementById('btn-accept-cookie');
-		const btnDecline = document.getElementById('btn-decline-cookie');
-		
-		if (cookieBanner && btnAccept && btnDecline) {
-			const cookieConsent = localStorage.getItem('cookieConsent');
-			
-			if (!cookieConsent) {
-				// 核心修改：同時移除類別與屬性的 hidden，確保能順利被 Tailwind 渲染
-				cookieBanner.classList.remove('hidden');
-				cookieBanner.removeAttribute('hidden');
-				setTimeout(() => {
-					cookieBanner.classList.remove('translate-y-full');
-				}, 100);
+				
+				document.addEventListener('click', (e) => {
+					if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+						menu.classList.add('hidden');
+					}
+				});
+				
+				const mobileLinks = menu.querySelectorAll('a');
+				mobileLinks.forEach(link => {
+					link.addEventListener('click', () => {
+						menu.classList.add('hidden');
+					});
+				});
 			}
 			
-			btnAccept.addEventListener('click', function () {
-				localStorage.setItem('cookieConsent', 'accepted');
-				hideBanner();
-			});
+			// === 3. 下拉選單 A11Y 鍵盤導航 ===
+			const setupDropdownA11y = (containerId, buttonId) => {
+				const container = document.querySelector(containerId);
+				const button = document.getElementById(buttonId);
+				if (container && button) {
+					container.addEventListener('focusin', () => button.setAttribute('aria-expanded', 'true'));
+					container.addEventListener('focusout', () => button.setAttribute('aria-expanded', 'false'));
+				}
+			};
+			setupDropdownA11y('.dropdown-container', 'programs-btn');
+			setupDropdownA11y('.lang-container', 'lang-btn');
 			
-			btnDecline.addEventListener('click', function () {
-				localStorage.setItem('cookieConsent', 'declined');
-				hideBanner();
-			});
+			// === 4. 動態年份更新 ===
+			const yearEl = document.getElementById('year');
+			if (yearEl) {
+				yearEl.innerText = "2019 - " + new Date().getFullYear();
+			}
 			
-			function hideBanner() {
-				cookieBanner.classList.add('translate-y-full');
-				setTimeout(() => {
-					cookieBanner.classList.add('hidden');
-					cookieBanner.setAttribute('hidden', 'true');
-				}, 300);
+			// === 5. Cookie Consent Banner 控制 ===
+			const cookieBanner = document.getElementById('cookie-banner');
+			const btnAccept = document.getElementById('btn-accept-cookie');
+			const btnDecline = document.getElementById('btn-decline-cookie');
+			
+			if (cookieBanner && btnAccept && btnDecline) {
+				let cookieConsent = null;
+				
+				try {
+					cookieConsent = localStorage.getItem('cookieConsent');
+				} catch (e) {
+					console.warn("LocalStorage blocked by browser security.", e);
+				}
+				
+				if (!cookieConsent) {
+					cookieBanner.classList.remove('hidden');
+					cookieBanner.removeAttribute('hidden');
+					setTimeout(() => {
+						cookieBanner.classList.remove('cookie-banner-hide');
+					}, 100);
+				}
+				
+				btnAccept.addEventListener('click', function () {
+					try {
+						localStorage.setItem('cookieConsent', 'accepted');
+					} catch (e) {}
+					hideBanner();
+				});
+				
+				btnDecline.addEventListener('click', function () {
+					try {
+						localStorage.setItem('cookieConsent', 'declined');
+					} catch (e) {}
+					hideBanner();
+				});
+				
+				function hideBanner() {
+					cookieBanner.classList.add('cookie-banner-hide');
+					setTimeout(() => {
+						cookieBanner.classList.add('hidden');
+						cookieBanner.setAttribute('hidden', 'true');
+					}, 300);
+				}
 			}
 		}
-	});
-</script>
+	
+		if (document.readyState === 'interactive' || document.readyState === 'complete') {
+			initializeEvergreenSchool();
+		} else {
+			document.addEventListener('DOMContentLoaded', initializeEvergreenSchool);
+		}
+	</script>
 </body>
 </html>

@@ -275,6 +275,18 @@
 			pointer-events: auto;
 		}
 		@media (max-width: 768px) { .timeline-line::before { display: none; } }
+
+		/* Cookie Banner 定位與動畫樣式 */
+		.cookie-banner-custom {
+			position: fixed !important;
+			bottom: 0 !important;
+			left: 0 !important;
+			right: 0 !important;
+			transition: transform 0.3s ease-in-out !important;
+		}
+		.cookie-banner-hide {
+			transform: translateY(100%) !important;
+		}
 	</style>
 </head>
 <body class="min-h-screen bg-slate-50 text-slate-800 overflow-x-hidden w-full">
@@ -834,28 +846,28 @@
 		</div>
 	</footer>
 	
-	<div id="cookie-banner" role="region" aria-label="Cookie Consent" class="hidden fixed bottom-0 left-0 right-0 bg-slate-900 text-slate-100 p-4 z-50 transform translate-y-full transition-transform duration-300 ease-in-out shadow-2xl border-t border-slate-800">
+	<div id="cookie-banner" role="region" aria-label="Cookie 同意聲明" class="hidden cookie-banner-custom cookie-banner-hide bg-slate-900 text-slate-100 p-4 z-50 shadow-2xl border-t border-slate-800">
 		<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
 			<div class="text-sm text-slate-300">
-				我們使用 Cookie 來優化您的瀏覽體驗，並透過 Google Analytics 分析網站流量。點擊「同意」即表示您同意我們使用 Cookie。閱讀我們的 <a href="privacy-tc.html" class="text-indigo-400 underline hover:text-indigo-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded">隱私權政策</a>.
+				我們使用 Cookie 來優化您的瀏覽體驗，並透過 Google Analytics 分析網站流量。點擊「同意」即表示您接受我們使用 Cookie。閱讀我們的 <a href="privacy-tc.html" class="text-indigo-400 underline hover:text-indigo-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded">隱私權政策</a>。
 			</div>
 			<div class="flex items-center gap-3 shrink-0">
 				<button id="btn-accept-cookie" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-4 py-2 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-colors">
-					Accept
+					同意
 				</button>
 				<button id="btn-decline-cookie" class="text-slate-400 hover:text-slate-300 text-sm font-medium px-3 py-2 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-colors">
-					Decline
+					拒絕
 				</button>
 			</div>
 		</div>
 	</div>
 	
 	<script>
-		document.addEventListener('DOMContentLoaded', function () {
+		function initializeEvergreenSchool() {
 			// === 1. WeChat 彈窗控制 ===
-			let lastActiveElement; // 記錄打開彈窗前，用戶光標停在哪裡
+			let lastActiveElement;
 			
-			window.openWechatModal = function() { // 設為 window 屬性以便 HTML 的 onclick 呼叫
+			window.openWechatModal = function() {
 				lastActiveElement = document.activeElement;
 				const modal = document.getElementById('wechat-modal');
 				const content = document.getElementById('wechat-modal-content');
@@ -883,7 +895,6 @@
 				}
 			};
 			
-			// 支援 Esc 鍵關閉 WeChat 彈窗
 			document.addEventListener('keydown', (e) => {
 				const modal = document.getElementById('wechat-modal');
 				if (modal && e.key === 'Escape' && !modal.classList.contains('hidden')) {
@@ -901,14 +912,12 @@
 					menu.classList.toggle('hidden'); 
 				});
 				
-				// 點擊選單外區域關閉選單
 				document.addEventListener('click', (e) => {
 					if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
 						menu.classList.add('hidden');
 					}
 				});
 				
-				// 點擊選單內連結後關閉選單
 				const mobileLinks = menu.querySelectorAll('a');
 				mobileLinks.forEach(link => {
 					link.addEventListener('click', () => {
@@ -935,42 +944,57 @@
 				yearEl.innerText = "2019 - " + new Date().getFullYear();
 			}
 			
-			// === 5. Cookie Consent Banner 控制 (已同步安全防禦邏輯) ===
+			// === 5. Cookie Consent Banner 控制 ===
 			const cookieBanner = document.getElementById('cookie-banner');
 			const btnAccept = document.getElementById('btn-accept-cookie');
 			const btnDecline = document.getElementById('btn-decline-cookie');
 			
 			if (cookieBanner && btnAccept && btnDecline) {
-				const cookieConsent = localStorage.getItem('cookieConsent');
+				let cookieConsent = null;
+				
+				try {
+					cookieConsent = localStorage.getItem('cookieConsent');
+				} catch (e) {
+					console.warn("LocalStorage blocked by browser security.", e);
+				}
 				
 				if (!cookieConsent) {
-					// 核心修改：同時移除類別與屬性的 hidden，確保能順利被 Tailwind 渲染
 					cookieBanner.classList.remove('hidden');
 					cookieBanner.removeAttribute('hidden');
 					setTimeout(() => {
-						cookieBanner.classList.remove('translate-y-full');
+						cookieBanner.classList.remove('cookie-banner-hide');
 					}, 100);
 				}
 				
 				btnAccept.addEventListener('click', function () {
-					localStorage.setItem('cookieConsent', 'accepted');
+					try {
+						localStorage.setItem('cookieConsent', 'accepted');
+					} catch (e) {}
 					hideBanner();
 				});
 				
 				btnDecline.addEventListener('click', function () {
-					localStorage.setItem('cookieConsent', 'declined');
+					try {
+						localStorage.setItem('cookieConsent', 'declined');
+					} catch (e) {}
 					hideBanner();
 				});
 				
 				function hideBanner() {
-					cookieBanner.classList.add('translate-y-full');
+					cookieBanner.classList.add('cookie-banner-hide');
 					setTimeout(() => {
 						cookieBanner.classList.add('hidden');
 						cookieBanner.setAttribute('hidden', 'true');
 					}, 300);
 				}
 			}
-		});
+		}
+	
+		if (document.readyState === 'interactive' || document.readyState === 'complete') {
+			initializeEvergreenSchool();
+		} else {
+			document.addEventListener('DOMContentLoaded', initializeEvergreenSchool);
+		}
 	</script>
 </body>
 </html>
