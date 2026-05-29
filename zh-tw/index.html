@@ -935,7 +935,7 @@
 				yearEl.innerText = "2019 - " + new Date().getFullYear();
 			}
 			
-			// === 5. Cookie Consent Banner 控制 ===
+			// === 5. Cookie Consent Banner 控制 (已同步安全防禦邏輯) ===
 			const cookieBanner = document.getElementById('cookie-banner');
 			const btnAccept = document.getElementById('btn-accept-cookie');
 			const btnDecline = document.getElementById('btn-decline-cookie');
@@ -944,6 +944,8 @@
 				const cookieConsent = localStorage.getItem('cookieConsent');
 				
 				if (!cookieConsent) {
+					// 核心修改：同時移除類別與屬性的 hidden，確保能順利被 Tailwind 渲染
+					cookieBanner.classList.remove('hidden');
 					cookieBanner.removeAttribute('hidden');
 					setTimeout(() => {
 						cookieBanner.classList.remove('translate-y-full');
@@ -963,6 +965,7 @@
 				function hideBanner() {
 					cookieBanner.classList.add('translate-y-full');
 					setTimeout(() => {
+						cookieBanner.classList.add('hidden');
 						cookieBanner.setAttribute('hidden', 'true');
 					}, 300);
 				}
