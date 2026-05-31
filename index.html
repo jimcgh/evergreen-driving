@@ -28,14 +28,17 @@
 	
 	<meta name="description" content="Affordable ICBC Class 5/7 lessons in Richmond, Vancouver & Burnaby. Evergreen Driving School offers high pass rates & Cantonese/Mandarin instructors!">
 	
-	<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
 	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
 	
-	<link rel="preload" as="image" href="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=80" fetchpriority="high">
+	<link rel="preload" as="image" href="images/hero-desktop.webp" 
+	imagesrcset="images/hero-mobile.webp 800w, images/hero-desktop.webp 1200w" 
+	imagesizes="(max-width: 768px) 100vw, 50vw" 
+	fetchpriority="high">
 	
 	<script type="application/ld+json">
 		{
@@ -269,18 +272,18 @@
 			pointer-events: auto;
 		}
 		@media (max-width: 768px) { .timeline-line::before { display: none; } }
-
+		
 		/* Cookie Banner 定位與動畫樣式 */
-.cookie-banner-custom {
-	position: fixed !important;
-	bottom: 0 !important;
-	left: 0 !important;
-	right: 0 !important;
-	transition: transform 0.3s ease-in-out !important;
-}
-.cookie-banner-hide {
-	transform: translateY(100%) !important;
-}
+		.cookie-banner-custom {
+			position: fixed !important;
+			bottom: 0 !important;
+			left: 0 !important;
+			right: 0 !important;
+			transition: transform 0.3s ease-in-out !important;
+		}
+		.cookie-banner-hide {
+			transform: translateY(100%) !important;
+		}
 	</style>
 </head>
 <body class="min-h-screen bg-slate-50 text-slate-800 overflow-x-hidden w-full">
@@ -396,7 +399,7 @@
 					<span class="block text-4xl md:text-5xl mb-6">PREMIER DRIVING SCHOOL IN RICHMOND & VANCOUVER</span>
 					<span>Master the Road with</span> <br><span	class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500">Confidence.</span>
 				</h1>
-				<p class="text-lg text-slate-600 mb-10 max-w-lg mx-auto md:mx-0 leading-relaxed">
+				<p class="text-lg text-slate-700 mb-10 max-w-lg mx-auto md:mx-0 leading-relaxed">
 					<span>Expert driving instruction from</span> <span class="font-bold text-slate-900">Evergreen Driving School</span>. <span>Get your N or Class 5 license on the first try with our proven methodology.</span>
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -413,8 +416,10 @@
 			<div class="w-full md:w-1/2 relative px-6 md:px-0">
 				<div class="absolute inset-0 bg-indigo-600 rounded-[3rem] rotate-3 scale-95 opacity-10"></div>
 				
-				<img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=80" 
-				onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22800%22%3E%3Crect%20width%3D%221200%22%20height%3D%22800%22%20fill%3D%22%23e0e7ff%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22400%22%20font-family%3D%22sans-serif%22%20font-size%3D%2240%22%20font-weight%3D%22bold%22%20fill%3D%22%234f46e5%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3EEvergreen%20Driving%20School%3C%2Ftext%3E%3C%2Fsvg%3E';"
+				<img src="images/hero-desktop.webp" 
+				srcset="images/hero-mobile.webp 800w, images/hero-desktop.webp 1200w"
+				sizes="(max-width: 768px) 100vw, 50vw"
+				fetchpriority="high"
 				alt="Professional Driving Instruction" 
 				class="relative w-full h-[400px] md:h-[600px] object-cover rounded-[3rem] shadow-2xl z-10"/>
 				
@@ -514,9 +519,8 @@
 			<div class="w-full lg:w-1/2 relative">
 				<div class="absolute inset-0 bg-indigo-500 rounded-[3rem] -rotate-6 scale-105 opacity-10"></div>
 				
-				<img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80" 
+				<img src="images/prep-course.webp" 
 				loading="lazy"
-				onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22800%22%3E%3Crect%20width%3D%221200%22%20height%3D%22800%22%20fill%3D%22%23e0e7ff%22%2F%3E%3Ctext%20x%3D%22600%22%20y%3D%22400%22%20font-family%3D%22sans-serif%22%20font-size%3D%2240%22%20font-weight%3D%22bold%22%20fill%3D%22%234f46e5%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3EICBC%20Road%20Test%20Prep%3C%2Ftext%3E%3C%2Fsvg%3E';"
 				alt="Instructor teaching student driver" 
 				class="relative w-full h-[500px] object-cover rounded-[3rem] shadow-lg z-10"/>
 				
@@ -767,7 +771,8 @@
 			</div>
 			
 			<div class="w-full lg:w-1/2 relative min-h-[400px] h-[450px] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-slate-800 bg-slate-100 z-10 flex-shrink-0">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d333103.5516840149!2d-123.01534904999998!3d49.28830539999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb3dd40db24db76d%3A0x5bd0f2a79c574019!2sEvergreen%20Driving%20School!5e0!3m2!1sen!2sca!4v1777273554949!5m2!1sen!2sca" 
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d333103.5516840149!2d-123.01534904999998!3d49.28830539999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb3dd40db24db76d%3A0x5bd0f2a79c574019!2sEvergreen%20Driving%20School!5e0!3m2!1sen!2sca!4v1777273554949!5m2!1sen!2sca"
+				title="Evergreen Driving School Location Map" 
 				class="absolute inset-0 w-full h-full" 
 				style="border:0;" 
 				allowfullscreen="" 
@@ -806,189 +811,189 @@
 				<p class="text-slate-400 text-sm mb-4">Serving Richmond, Vancouver, and Burnaby, BC.</p>
 				<p class="text-slate-400 text-sm">
 					<span class="font-bold text-slate-300">Phone:</span> 
-					<a href="tel:+16043286162" class="hover:text-indigo-400 transition-colors font-semibold">+1 (604) 328-6162</a>
+					<a href="tel:+16043286162" class="inline-block py-1 hover:text-indigo-400 transition-colors font-semibold">+1 (604) 328-6162</a>
 				</p>
 			</div>
 			
 			<div>
 				<h4 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">Our Courses</h4>
 				<ul class="space-y-3 text-slate-400 text-sm">
-					<li><a href="/class-5-prep.html" class="hover:text-indigo-400 transition-colors">Class 5 Road Test Prep</a></li>
-					<li><a href="/class-7-novice.html" class="hover:text-indigo-400 transition-colors">Class 7 Novice Lessons</a></li>
+					<li><a href="/class-5-prep.html" class="inline-block py-1 hover:text-indigo-400 transition-colors">Class 5 Road Test Prep</a></li>
+					<li><a href="/class-7-novice.html" class="inline-block py-1 hover:text-indigo-400 transition-colors">Class 7 Novice Lessons</a></li>
 				</ul>
 			</div>
 			
 			<div>
 				<h4 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">Service Areas</h4>
 				<ul class="space-y-3 text-slate-400 text-sm">
-					<li><a href="/richmond-driving-lessons.html" class="hover:text-indigo-400 transition-colors">Richmond Driving Lessons</a></li>
-					<li><a href="/vancouver-driving-lessons.html" class="hover:text-indigo-400 transition-colors">Vancouver Driving Lessons</a></li>
-					<li><a href="/burnaby-driving-lessons.html" class="hover:text-indigo-400 transition-colors">Burnaby Driving Lessons</a></li>
+					<li><a href="/richmond-driving-lessons.html" class="inline-block py-1 hover:text-indigo-400 transition-colors">Richmond Driving Lessons</a></li>
+					<li><a href="/vancouver-driving-lessons.html" class="inline-block py-1 hover:text-indigo-400 transition-colors">Vancouver Driving Lessons</a></li>
+					<li><a href="/burnaby-driving-lessons.html" class="inline-block py-1 hover:text-indigo-400 transition-colors">Burnaby Driving Lessons</a></li>
 				</ul>
 			</div>
 			
 		</div>
 	</div>
 	<div class="border-t border-slate-800/50 pt-8 text-center max-w-7xl mx-auto px-6 flex flex-col items-center gap-2">
-		<p class="text-slate-600 text-xs font-bold uppercase tracking-widest">
+		<p class="text-slate-400 text-xs font-bold uppercase tracking-widest">
 			© <span id="year"></span> Evergreen Driving School. All Rights Reserved.
 		</p>
-		<a href="privacy.html" class="text-slate-500 hover:text-indigo-400 text-xs font-bold uppercase tracking-widest focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1 transition-colors">
+		<a href="privacy.html" class="text-slate-400 hover:text-indigo-300 text-xs font-bold uppercase tracking-widest focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded px-1 transition-colors">
 			Privacy Policy
 		</a>
 	</div>
 </footer>
 
 <!-- Cookie Consent Banner -->
-	<div id="cookie-banner" role="region" aria-label="Cookie Consent" class="hidden cookie-banner-custom cookie-banner-hide bg-slate-900 text-slate-100 p-4 z-50 shadow-2xl border-t border-slate-800">
-		<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-			<div class="text-sm text-slate-300">
-				We use cookies to improve your browsing experience and analyze site traffic via Google Analytics. By clicking "Accept", you consent to our use of cookies. Read our <a href="privacy.html" class="text-indigo-400 underline hover:text-indigo-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded">Privacy Policy</a>.
-			</div>
-			<div class="flex items-center gap-3 shrink-0">
-				<button id="btn-accept-cookie" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-4 py-2 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-colors">
-					Accept
-				</button>
-				<button id="btn-decline-cookie" class="text-slate-400 hover:text-slate-300 text-sm font-medium px-3 py-2 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-colors">
-					Decline
-				</button>
-			</div>
+<div id="cookie-banner" role="region" aria-label="Cookie Consent" class="hidden cookie-banner-custom cookie-banner-hide bg-slate-900 text-slate-100 p-4 z-50 shadow-2xl border-t border-slate-800">
+	<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+		<div class="text-sm text-slate-300">
+			We use cookies to improve your browsing experience and analyze site traffic via Google Analytics. By clicking "Accept", you consent to our use of cookies. Read our <a href="privacy.html" class="text-indigo-400 underline hover:text-indigo-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded">Privacy Policy</a>.
+		</div>
+		<div class="flex items-center gap-3 shrink-0">
+			<button id="btn-accept-cookie" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-4 py-2 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-colors">
+				Accept
+			</button>
+			<button id="btn-decline-cookie" class="text-slate-400 hover:text-slate-300 text-sm font-medium px-3 py-2 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-colors">
+				Decline
+			</button>
 		</div>
 	</div>
+</div>
 
-	<script>
-		function initializeEvergreenSchool() {
-			// === 1. WeChat 彈窗控制 ===
-			let lastActiveElement;
+<script>
+	function initializeEvergreenSchool() {
+		// === 1. WeChat 彈窗控制 ===
+		let lastActiveElement;
+		
+		window.openWechatModal = function() {
+			lastActiveElement = document.activeElement;
+			const modal = document.getElementById('wechat-modal');
+			const content = document.getElementById('wechat-modal-content');
+			if (modal && content) {
+				modal.classList.remove('hidden');
+				setTimeout(() => { 
+					modal.classList.remove('opacity-0'); 
+					content.classList.remove('scale-95'); 
+					const closeBtn = document.getElementById('wechat-close-btn');
+					if (closeBtn) closeBtn.focus();
+				}, 10);
+			}
+		};
+		
+		window.closeWechatModal = function() {
+			const modal = document.getElementById('wechat-modal');
+			const content = document.getElementById('wechat-modal-content');
+			if (modal && content) {
+				modal.classList.add('opacity-0'); 
+				content.classList.add('scale-95');
+				setTimeout(() => { 
+					modal.classList.add('hidden'); 
+					if (lastActiveElement) lastActiveElement.focus();
+				}, 300);
+			}
+		};
+		
+		document.addEventListener('keydown', (e) => {
+			const modal = document.getElementById('wechat-modal');
+			if (modal && e.key === 'Escape' && !modal.classList.contains('hidden')) {
+				closeWechatModal();
+			}
+		});
+		
+		// === 2. 手機版選單控制 ===
+		const menuBtn = document.getElementById('mobile-menu-btn');
+		const menu = document.getElementById('mobile-menu');
+		
+		if (menuBtn && menu) {
+			menuBtn.addEventListener('click', (e) => { 
+				e.stopPropagation(); 
+				menu.classList.toggle('hidden'); 
+			});
 			
-			window.openWechatModal = function() {
-				lastActiveElement = document.activeElement;
-				const modal = document.getElementById('wechat-modal');
-				const content = document.getElementById('wechat-modal-content');
-				if (modal && content) {
-					modal.classList.remove('hidden');
-					setTimeout(() => { 
-						modal.classList.remove('opacity-0'); 
-						content.classList.remove('scale-95'); 
-						const closeBtn = document.getElementById('wechat-close-btn');
-						if (closeBtn) closeBtn.focus();
-					}, 10);
-				}
-			};
-			
-			window.closeWechatModal = function() {
-				const modal = document.getElementById('wechat-modal');
-				const content = document.getElementById('wechat-modal-content');
-				if (modal && content) {
-					modal.classList.add('opacity-0'); 
-					content.classList.add('scale-95');
-					setTimeout(() => { 
-						modal.classList.add('hidden'); 
-						if (lastActiveElement) lastActiveElement.focus();
-					}, 300);
-				}
-			};
-			
-			document.addEventListener('keydown', (e) => {
-				const modal = document.getElementById('wechat-modal');
-				if (modal && e.key === 'Escape' && !modal.classList.contains('hidden')) {
-					closeWechatModal();
+			document.addEventListener('click', (e) => {
+				if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+					menu.classList.add('hidden');
 				}
 			});
 			
-			// === 2. 手機版選單控制 ===
-			const menuBtn = document.getElementById('mobile-menu-btn');
-			const menu = document.getElementById('mobile-menu');
+			const mobileLinks = menu.querySelectorAll('a');
+			mobileLinks.forEach(link => {
+				link.addEventListener('click', () => {
+					menu.classList.add('hidden');
+				});
+			});
+		}
+		
+		// === 3. 下拉選單 A11Y 鍵盤導航 ===
+		const setupDropdownA11y = (containerId, buttonId) => {
+			const container = document.querySelector(containerId);
+			const button = document.getElementById(buttonId);
+			if (container && button) {
+				container.addEventListener('focusin', () => button.setAttribute('aria-expanded', 'true'));
+				container.addEventListener('focusout', () => button.setAttribute('aria-expanded', 'false'));
+			}
+		};
+		setupDropdownA11y('.dropdown-container', 'programs-btn');
+		setupDropdownA11y('.lang-container', 'lang-btn');
+		
+		// === 4. 動態年份更新 ===
+		const yearEl = document.getElementById('year');
+		if (yearEl) {
+			yearEl.innerText = "2019 - " + new Date().getFullYear();
+		}
+		
+		// === 5. Cookie Consent Banner 控制 ===
+		const cookieBanner = document.getElementById('cookie-banner');
+		const btnAccept = document.getElementById('btn-accept-cookie');
+		const btnDecline = document.getElementById('btn-decline-cookie');
+		
+		if (cookieBanner && btnAccept && btnDecline) {
+			let cookieConsent = null;
 			
-			if (menuBtn && menu) {
-				menuBtn.addEventListener('click', (e) => { 
-					e.stopPropagation(); 
-					menu.classList.toggle('hidden'); 
-				});
-				
-				document.addEventListener('click', (e) => {
-					if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
-						menu.classList.add('hidden');
-					}
-				});
-				
-				const mobileLinks = menu.querySelectorAll('a');
-				mobileLinks.forEach(link => {
-					link.addEventListener('click', () => {
-						menu.classList.add('hidden');
-					});
-				});
+			try {
+				cookieConsent = localStorage.getItem('cookieConsent');
+			} catch (e) {
+				console.warn("LocalStorage blocked by browser security.", e);
 			}
 			
-			// === 3. 下拉選單 A11Y 鍵盤導航 ===
-			const setupDropdownA11y = (containerId, buttonId) => {
-				const container = document.querySelector(containerId);
-				const button = document.getElementById(buttonId);
-				if (container && button) {
-					container.addEventListener('focusin', () => button.setAttribute('aria-expanded', 'true'));
-					container.addEventListener('focusout', () => button.setAttribute('aria-expanded', 'false'));
-				}
-			};
-			setupDropdownA11y('.dropdown-container', 'programs-btn');
-			setupDropdownA11y('.lang-container', 'lang-btn');
-			
-			// === 4. 動態年份更新 ===
-			const yearEl = document.getElementById('year');
-			if (yearEl) {
-				yearEl.innerText = "2019 - " + new Date().getFullYear();
+			if (!cookieConsent) {
+				cookieBanner.classList.remove('hidden');
+				cookieBanner.removeAttribute('hidden');
+				setTimeout(() => {
+					cookieBanner.classList.remove('cookie-banner-hide');
+				}, 100);
 			}
 			
-			// === 5. Cookie Consent Banner 控制 ===
-			const cookieBanner = document.getElementById('cookie-banner');
-			const btnAccept = document.getElementById('btn-accept-cookie');
-			const btnDecline = document.getElementById('btn-decline-cookie');
-			
-			if (cookieBanner && btnAccept && btnDecline) {
-				let cookieConsent = null;
-				
+			btnAccept.addEventListener('click', function () {
 				try {
-					cookieConsent = localStorage.getItem('cookieConsent');
-				} catch (e) {
-					console.warn("LocalStorage blocked by browser security.", e);
-				}
-				
-				if (!cookieConsent) {
-					cookieBanner.classList.remove('hidden');
-					cookieBanner.removeAttribute('hidden');
-					setTimeout(() => {
-						cookieBanner.classList.remove('cookie-banner-hide');
-					}, 100);
-				}
-				
-				btnAccept.addEventListener('click', function () {
-					try {
-						localStorage.setItem('cookieConsent', 'accepted');
-					} catch (e) {}
-					hideBanner();
-				});
-				
-				btnDecline.addEventListener('click', function () {
-					try {
-						localStorage.setItem('cookieConsent', 'declined');
-					} catch (e) {}
-					hideBanner();
-				});
-				
-				function hideBanner() {
-					cookieBanner.classList.add('cookie-banner-hide');
-					setTimeout(() => {
-						cookieBanner.classList.add('hidden');
-						cookieBanner.setAttribute('hidden', 'true');
-					}, 300);
-				}
+					localStorage.setItem('cookieConsent', 'accepted');
+				} catch (e) {}
+				hideBanner();
+			});
+			
+			btnDecline.addEventListener('click', function () {
+				try {
+					localStorage.setItem('cookieConsent', 'declined');
+				} catch (e) {}
+				hideBanner();
+			});
+			
+			function hideBanner() {
+				cookieBanner.classList.add('cookie-banner-hide');
+				setTimeout(() => {
+					cookieBanner.classList.add('hidden');
+					cookieBanner.setAttribute('hidden', 'true');
+				}, 300);
 			}
 		}
+	}
 	
-		if (document.readyState === 'interactive' || document.readyState === 'complete') {
-			initializeEvergreenSchool();
-		} else {
-			document.addEventListener('DOMContentLoaded', initializeEvergreenSchool);
-		}
-	</script>
+	if (document.readyState === 'interactive' || document.readyState === 'complete') {
+		initializeEvergreenSchool();
+	} else {
+		document.addEventListener('DOMContentLoaded', initializeEvergreenSchool);
+	}
+</script>
 </body>
 </html>
